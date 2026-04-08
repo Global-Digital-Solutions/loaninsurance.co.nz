@@ -1,0 +1,54 @@
+1:"$Sreact.fragment"
+2:I[2594,["/_next/static/chunks/14b.vnfub~0gn.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/17i~hhhps7w-q.js"],"BlogPostClient"]
+6:I[97367,["/_next/static/chunks/14b.vnfub~0gn.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+7:"$Sreact.suspense"
+3:T114c,# Home Loan Insurance vs Life Insurance: Key Differences
+
+New Zealand homeowners often confuse home loan insurance with life insurance. While both can protect your family and financial obligations, they serve very different purposes and have important distinctions. Let's clarify these crucial differences.
+
+## What is Life Insurance?
+
+Life insurance is a fundamental insurance product that pays a benefit to your beneficiaries when you pass away. A typical life insurance policy might pay $500,000 to your family when you die, regardless of cause (with limited exclusions like suicide in the first two years).
+
+The purpose of life insurance is to replace the income you provided to your family, pay off outstanding debts including your mortgage, and provide financial security to your dependents. Life insurance is essential if anyone depends on your income - children, a spouse, aging parents, or business partners.
+
+## What is Home Loan Insurance?
+
+Home loan insurance (also called mortgage protection insurance or mortgage repayment insurance) is specifically designed to cover your home loan repayments if you're unable to work. This is different from life insurance because it focuses on income protection while you're alive.
+
+If you lose your job, suffer a serious accident, or become ill and unable to work, home loan insurance covers your monthly mortgage payment. This allows you to remain in your home while recovering from job loss or medical issues, without risking foreclosure due to missed payments.
+
+## Key Differences Explained
+
+The fundamental difference is timing and purpose. Life insurance protects your family after you die. Home loan insurance protects your home and financial stability while you're alive but unable to work. These serve completely different financial needs.
+
+Life insurance pays a lump sum when you pass away - a one-time benefit that your family receives. Home loan insurance pays monthly benefits covering your mortgage payment while you're temporarily unable to work due to covered events.
+
+Life insurance benefits are paid to your beneficiaries or estate. Home loan insurance benefits are typically paid directly to your lender to ensure your mortgage stays current. This protects your credit rating and your right to remain in your home.
+
+## Coverage Events
+
+Life insurance covers one primary event: your death. Your family receives the benefit regardless of the cause of death (except for specific exclusions), and they can use these funds for any purpose - mortgage payments, living expenses, children's education, or anything else.
+
+Home loan insurance covers specific income-loss events: involuntary unemployment, accident, illness, disability, and sometimes redundancy. It doesn't cover death - instead, you'd need a separate life insurance policy with a mortgage redemption feature that would pay off your home loan upon death.
+
+## Cost Comparison
+
+Life insurance in New Zealand is relatively affordable, with monthly premiums for a 30-year-old typically ranging from $20-50 for $500,000 coverage. Home loan insurance costs are typically based on your monthly mortgage payment and loan amount, usually ranging from 0.5%-2% of your monthly payment.
+
+For a typical New Zealand mortgage, you might pay $50-150 per month for home loan insurance. The combined cost of both types of insurance is still quite reasonable when you consider the comprehensive protection they provide.
+
+## Do You Need Both?
+
+The honest answer is: most New Zealand homeowners need both. Life insurance protects your family if you die. Home loan insurance protects your home if you become unable to work. These risks are different, and both need coverage.
+
+If you have a $400,000 mortgage and die, your family needs life insurance proceeds to pay off the mortgage and maintain their living situation. If you become unemployed or ill, home loan insurance covers the mortgage payments while you recover or find new employment.
+
+## Making the Right Choice
+
+The best approach is to have life insurance covering your full mortgage amount plus living expenses for your family, combined with home loan insurance covering your monthly mortgage payment. This provides complete protection for both situations.
+
+At LoanInsurance.co.nz, we help New Zealand homeowners understand these distinctions and obtain the right combination of insurance protection. Get a personalised recommendation for your specific situation.0:{"rsc":["$","$1","c",{"children":[[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Home Loan Insurance vs Life Insurance: Key Differences\",\"image\":\"https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=800&q=80\",\"datePublished\":\"2026-02-15\",\"author\":{\"@type\":\"Person\",\"name\":\"Sarah Mitchell\"},\"description\":\"Understanding the critical differences between home loan protection insurance and life insurance in New Zealand.\"}"}}],["$","$L2",null,{"post":{"slug":"home-loan-insurance-vs-life-insurance","title":"Home Loan Insurance vs Life Insurance: Key Differences","excerpt":"Understanding the critical differences between home loan protection insurance and life insurance in New Zealand.","content":"$3","author":"Sarah Mitchell","date":"2026-02-15","image":"https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=800&q=80","category":"Comparison","readTime":8},"relatedPosts":[]}]],["$L4"],"$L5"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"LuVhVQvR8cqfJQk4MOXew"}
+4:["$","script","script-0",{"src":"/_next/static/chunks/17i~hhhps7w-q.js","async":true}]
+5:["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]
+8:null

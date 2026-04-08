@@ -1,0 +1,62 @@
+1:"$Sreact.fragment"
+2:I[2594,["/_next/static/chunks/14b.vnfub~0gn.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/17i~hhhps7w-q.js"],"BlogPostClient"]
+6:I[97367,["/_next/static/chunks/14b.vnfub~0gn.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+7:"$Sreact.suspense"
+3:T1424,# What Happens to Your Loan If You Can't Work?
+
+Imagine waking up one morning and learning you can't work due to an accident, sudden illness, or job loss. You have bills to pay, a mortgage or personal loan to service, and no income. This is a reality for thousands of New Zealand borrowers every year. Understanding what happens to your loans when you can't work is crucial.
+
+## The Immediate Impact: Missed Payments
+
+When you can't work and have no income, the most immediate consequence is missing your loan payments. Most loans require monthly payments, and without income, these payments quickly become impossible to make.
+
+Your lender will first send reminder notices about missed payments. These initial communications are usually polite but firm. However, missing payments immediately damages your credit rating. Even one missed payment appears on your credit file, affecting your credit score and making future borrowing more expensive.
+
+## Escalating Consequences
+
+After missing your first payment, lenders typically give you 15-30 days to catch up before formal action begins. If you don't make payment within this period, your account goes into default. Once defaulted, your lender can impose late payment fees - typically between $15-50 per late payment.
+
+Additional interest may accumulate at higher rates. If your loan agreement includes a default interest rate clause (which many do), you'll owe interest at a premium rate once your account is in default. This compounds the debt rapidly.
+
+## Credit Rating Damage
+
+A defaulted loan stays on your credit file for seven years in New Zealand. This severely impacts your ability to borrow money. Future employers may check your credit rating when making employment decisions. Landlords increasingly check credit history when deciding on rental applications. Insurance companies use credit ratings when calculating premiums.
+
+Being unable to work due to injury or illness already creates financial stress. Adding a damaged credit rating on top of it creates a vicious cycle that's very difficult to escape.
+
+## Risk of Foreclosure or Asset Recovery
+
+For secured loans like mortgages and car finance, default creates additional risks. If you're unable to pay your mortgage, your bank can eventually initiate foreclosure proceedings, taking your home to recover the loan balance. For car finance, your lender can repossess your vehicle.
+
+These aren't quick processes in New Zealand - lenders typically must follow specific legal procedures - but they represent the ultimate consequence of extended default on secured loans. You could lose your home or vehicle while still owing money to the lender.
+
+## Personal and Family Impact
+
+The stress of being unable to work and unable to pay your loans has serious personal consequences. Financial stress is strongly linked to anxiety, depression, and relationship breakdown. Families struggle when one income earner becomes unable to work and loans continue to demand payment.
+
+Children's education, healthcare, and basic necessities may be compromised. Relationships strain under financial pressure. The psychological impact of being unable to meet financial obligations can be devastating.
+
+## Legal Consequences
+
+In extreme cases, if you have unsecured personal loans or credit cards, your lender can take legal action to recover the debt. This might include obtaining a civil judgment against you, allowing them to pursue wage garnishment (taking a portion of any income you do earn) or to pursue a charging order on your home.
+
+While New Zealand consumer protection laws limit debt collection activities, lenders do have legal remedies available when loans go unpaid for extended periods.
+
+## Prevention Through Loan Protection Insurance
+
+This is precisely why loan protection insurance exists. Instead of facing all these catastrophic consequences, loan insurance steps in to cover your loan payments when you can't work due to covered events.
+
+If you have loan protection insurance and become unemployed, suffer an accident, or fall ill, you can make a claim. After the policy's waiting period, the insurer pays your lender directly, keeping your loan current. Your credit rating remains pristine. You don't lose your home or car. You don't face legal action or debt collection.
+
+The relatively small cost of loan protection insurance - typically $15-100 per month depending on your loan amount - is tiny compared to the catastrophic costs of not having this protection.
+
+## Taking Action
+
+If you currently have loans without protection insurance, now is the time to evaluate your risk and consider adding coverage. If you're about to take on a significant loan, discuss insurance protection options before signing the loan agreement.
+
+At LoanInsurance.co.nz, we help New Zealand borrowers understand these risks and access affordable protection. Get a free quote to see how affordable loan protection insurance can be and how much peace of mind it provides.
+
+Don't take the risk of being unable to work without protection. Loan protection insurance ensures that life's unexpected events don't destroy your financial stability and creditworthiness.0:{"rsc":["$","$1","c",{"children":[[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"What Happens to Your Loan If You Can't Work?\",\"image\":\"https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80\",\"datePublished\":\"2026-02-28\",\"author\":{\"@type\":\"Person\",\"name\":\"James Cooper\"},\"description\":\"Exploring the serious consequences of being unable to repay your loan in New Zealand and how protection insurance helps.\"}"}}],["$","$L2",null,{"post":{"slug":"what-happens-to-loan-if-cant-work","title":"What Happens to Your Loan If You Can't Work?","excerpt":"Exploring the serious consequences of being unable to repay your loan in New Zealand and how protection insurance helps.","content":"$3","author":"James Cooper","date":"2026-02-28","image":"https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80","category":"Risk Management","readTime":10},"relatedPosts":[]}]],["$L4"],"$L5"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"LuVhVQvR8cqfJQk4MOXew"}
+4:["$","script","script-0",{"src":"/_next/static/chunks/17i~hhhps7w-q.js","async":true}]
+5:["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]
+8:null

@@ -1,0 +1,68 @@
+1:"$Sreact.fragment"
+2:I[2594,["/_next/static/chunks/14b.vnfub~0gn.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/17i~hhhps7w-q.js"],"BlogPostClient"]
+6:I[97367,["/_next/static/chunks/14b.vnfub~0gn.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+7:"$Sreact.suspense"
+3:T15fe,# Redundancy Protection: Securing Your Loan Repayments
+
+Job redundancy is one of the most stressful financial events a New Zealand borrower can experience. Losing your job suddenly, even if you're entitled to severance payments, creates immediate financial crisis for those with significant loan obligations. Redundancy protection insurance addresses this specific risk.
+
+## Understanding Redundancy in New Zealand
+
+Redundancy occurs when an employer permanently eliminates a position due to business restructuring, downsizing, or economic conditions. In New Zealand, redundancy is legally defined and employers have obligations to provide notice and severance payments based on length of service.
+
+However, redundancy redundancy doesn't always mean immediate reemployment. The average job search in New Zealand takes 3-6 months, even for skilled professionals. During this period, if you have mortgage payments, car finance, or personal loans, your financial obligations continue regardless of your employment status.
+
+## The Redundancy Impact on Loans
+
+When you're made redundant, your immediate income stops. Even if you receive a lump sum redundancy package, you must stretch this across living expenses, taxes, and loan payments. Most redundancy packages aren't designed to cover several months of loan repayments - they're meant to provide a buffer during your job search.
+
+If your monthly loan obligations total $2,000 and your job search takes five months, that's $10,000 in loan payments you need to cover during unemployment. Stretching a redundancy package across these payments, living expenses, and taxes becomes extremely tight.
+
+## How Redundancy Protection Works
+
+Redundancy protection insurance (included in comprehensive loan protection insurance) covers your loan payments if you lose your job through involuntary redundancy. When you're made redundant, you submit a claim with your redundancy letter and payslips.
+
+After the policy's waiting period (typically 30-90 days), the insurer begins paying your monthly loan payment directly to your lender. This payment continues for a specified period - usually 6-12 months - giving you time to find new employment without risking loan default.
+
+## Eligibility Requirements
+
+To qualify for redundancy protection, you must have been continuously employed by your employer. Self-employed individuals typically don't qualify for redundancy protection, as they don't have an employer who can declare them redundant. You must have been in your job for a minimum period (usually 3-6 months) to be eligible.
+
+The redundancy must be involuntary - you can't claim if you've voluntarily resigned. It must also be due to business restructuring or downsizing, not due to poor performance or misconduct.
+
+## Real Redundancy Scenarios
+
+Consider Sarah, a 35-year-old marketing manager with a $30,000 personal loan and $380,000 mortgage. Her employer announces restructuring and 200 positions are eliminated. Sarah's position is one of them. She receives a redundancy package but it's designed to cover four weeks of pay plus a small cushion.
+
+During her five-month job search, she must cover her $680 monthly mortgage and $400 personal loan payment. That's $5,400 in loan payments over five months. Without redundancy protection, this would severely strain her financial situation, potentially forcing her to sell her home or default on loans. With redundancy protection insurance, her lender receives these payments automatically.
+
+## The Cost of Redundancy Protection
+
+Redundancy protection is typically included as part of comprehensive loan protection insurance, not as a standalone product. The cost varies based on your loan amount and type, but generally ranges from 0.5%-2% of your monthly loan payment.
+
+For Sarah's situation, comprehensive loan protection insurance covering both mortgage and personal loan might cost $50-80 monthly. During a five-month redundancy period where she otherwise couldn't make her $1,080 in monthly loan payments, this insurance prevents financial disaster.
+
+## Why Redundancy Protection Matters
+
+New Zealand's employment landscape has become less stable. Company restructuring, automation, and industry disruption mean redundancy can affect anyone, regardless of skill level or job security perception. The financial impact of losing your primary income creates urgent need for loan payment protection.
+
+Without redundancy protection, redundant employees face difficult choices: dip deep into savings, borrow money at high interest rates, sell assets, or default on loans and damage their credit. None of these options are ideal.
+
+## Combining Strategies
+
+Redundancy protection insurance works best as part of a broader financial safety net. You should ideally have:
+- Three to six months of emergency savings for living expenses
+- Redundancy protection insurance covering your loan payments
+- Life and disability insurance protecting your dependents
+- Income protection insurance covering your overall living expenses
+
+This combination of strategies ensures you can weather extended unemployment without financial catastrophe.
+
+## Taking Action
+
+If you work in any industry where redundancy is possible - and honestly, that's virtually all industries in today's economy - redundancy protection insurance is worth serious consideration. The cost is minimal compared to the protection provided.
+
+At LoanInsurance.co.nz, we help New Zealand employees understand redundancy risk and access affordable protection. Get a free quote to see how redundancy protection insurance can secure your financial stability in a changing employment landscape.0:{"rsc":["$","$1","c",{"children":[[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Redundancy Protection: Securing Your Loan Repayments\",\"image\":\"https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=800&q=80\",\"datePublished\":\"2026-03-10\",\"author\":{\"@type\":\"Person\",\"name\":\"Aroha Ngata\"},\"description\":\"How redundancy protection insurance helps New Zealand employees maintain their loans during unexpected job loss.\"}"}}],["$","$L2",null,{"post":{"slug":"redundancy-protection-securing-loan-repayments","title":"Redundancy Protection: Securing Your Loan Repayments","excerpt":"How redundancy protection insurance helps New Zealand employees maintain their loans during unexpected job loss.","content":"$3","author":"Aroha Ngata","date":"2026-03-10","image":"https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=800&q=80","category":"Coverage","readTime":9},"relatedPosts":[]}]],["$L4"],"$L5"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"LuVhVQvR8cqfJQk4MOXew"}
+4:["$","script","script-0",{"src":"/_next/static/chunks/17i~hhhps7w-q.js","async":true}]
+5:["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]
+8:null

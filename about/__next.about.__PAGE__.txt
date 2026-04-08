@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[63042,["/_next/static/chunks/14b.vnfub~0gn.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/0sqrtlqmek1l7.js"],"AboutPageClient"]
+3:I[97367,["/_next/static/chunks/14b.vnfub~0gn.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"LoanInsurance.co.nz\",\"url\":\"https://loaninsurance.co.nz\",\"logo\":\"https://loaninsurance.co.nz/logo.png\",\"description\":\"Leading loan protection insurance comparison service in New Zealand\",\"address\":{\"@type\":\"PostalAddress\",\"addressCountry\":\"NZ\"},\"contactPoint\":{\"@type\":\"ContactPoint\",\"telephone\":\"09 885 9549\",\"contactType\":\"Customer Service\"}}"}}],["$","$L2",null,{}]],[["$","script","script-0",{"src":"/_next/static/chunks/0sqrtlqmek1l7.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"LuVhVQvR8cqfJQk4MOXew"}
+5:null

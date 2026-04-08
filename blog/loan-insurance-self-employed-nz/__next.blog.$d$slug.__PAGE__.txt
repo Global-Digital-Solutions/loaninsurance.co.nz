@@ -1,0 +1,98 @@
+1:"$Sreact.fragment"
+2:I[2594,["/_next/static/chunks/14b.vnfub~0gn.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/17i~hhhps7w-q.js"],"BlogPostClient"]
+6:I[97367,["/_next/static/chunks/14b.vnfub~0gn.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+7:"$Sreact.suspense"
+3:T1b0f,# Loan Insurance for Self-Employed New Zealanders
+
+Being self-employed in New Zealand offers independence and flexibility, but it comes with financial uncertainty. Many self-employed individuals mistakenly believe they can't access loan protection insurance due to variable income. However, loan insurance options do exist for self-employed borrowers - you just need to know where to look.
+
+## The Unique Challenge: Income Variability
+
+Self-employed individuals face a fundamental challenge with loan insurance: variable income. Insurance companies are accustomed to traditional employment with stable, predictable income. A self-employed person earning $80,000 one year and $60,000 the next creates assessment difficulties for insurers.
+
+Additionally, if you lose clients or have a business downturn, is this an "involuntary" job loss? Can your business insurance protect your loan payments? These definitional questions make self-employed loan insurance more complex than traditional employment insurance.
+
+## Traditional Insurance Limitations
+
+Standard loan protection insurance from many mainstream insurers explicitly excludes self-employed individuals or provides very limited coverage. Unemployment coverage is inapplicable when you're self-employed - there's no employer to make you redundant.
+
+This creates a protection gap: self-employed individuals often have significant loan obligations but can't access the unemployment and redundancy protection that traditional employees take for granted.
+
+## What Coverage IS Available for Self-Employed
+
+The good news is that comprehensive loan protection insurance does exist for self-employed New Zealanders, though you need to look beyond mainstream lenders. Coverage typically focuses on:
+
+**Accident and Injury Coverage**: If you suffer an accident that prevents you from working, the insurance covers your loan payments during recovery. This is available to self-employed individuals just as to traditional employees.
+
+**Illness Coverage**: If you become too ill to work, loan insurance covers your payments. Self-employed individuals can access this coverage, though pre-existing conditions may be excluded.
+
+**Disability Coverage**: If you become permanently disabled and unable to work, some policies include disability benefits. Self-employed individuals should look for this specific coverage.
+
+**Mortgage Protection**: Mortgage insurance is available to self-employed individuals, sometimes with special underwriting. Lenders recognise that protecting mortgage payments protects their security.
+
+## Special Underwriting for Self-Employed
+
+Self-employed loan insurance requires different underwriting than traditional employee insurance. Insurers typically request:
+- Last 2-3 years of tax returns showing income
+- Last 2-3 years of business accounts or financial statements
+- Evidence of business stability and sustainability
+- Current business turnover and profitability
+- Explanation of any income fluctuations
+
+Based on this information, insurers assess your "normal" income level. The insurance then covers loan payments based on this assessed income level, not your variable actual income.
+
+## Accessing Self-Employed Loan Insurance
+
+Not all insurance companies offer comprehensive self-employed coverage. You need to work with brokers who specialise in self-employed insurance or who have relationships with insurers offering this coverage.
+
+Mainstream banks and finance companies typically offer limited self-employed coverage. Specialist insurance brokers have access to insurers who understand self-employed lending and can structure policies accordingly.
+
+LoanInsurance.co.nz works with insurers offering comprehensive self-employed loan insurance. We understand the unique challenges and can help you access protection despite your self-employed status.
+
+## Cost Considerations for Self-Employed
+
+Self-employed loan insurance typically costs more than traditional employee coverage due to the higher underwriting complexity and risk. You might pay 1-3% of your monthly loan payment compared to 0.5%-2% for traditional employees.
+
+However, this additional cost is justified by the protection value. For self-employed individuals with volatile income, loan insurance provides essential security that keeps your loans current even when business revenue dips temporarily.
+
+## Case Study: The Self-Employed Contractor
+
+Mark is a 35-year-old electrical contractor in Auckland. He owns his contracting business and earns approximately $95,000 annually, though income varies seasonally. He has:
+- Mortgage: $280,000 with $1,600 monthly payment
+- Business equipment finance: $35,000 with $420 monthly payment
+- Personal loan: $15,000 with $280 monthly payment
+- Total monthly loan obligations: $2,300
+
+Mark's main risk is business downturn or a serious injury preventing him from contracting work. If he suffers a serious injury, he can't work and his business revenue stops.
+
+Mark accessed self-employed loan insurance covering accident and injury. When he suffered a serious back injury requiring three months of recovery, his loan insurance covered his $2,300 monthly obligations while he recovered. This allowed him to focus on recovery without financial crisis threatening his home and business assets.
+
+## Industry-Specific Challenges
+
+Some self-employed industries face higher insurance costs or exclusions:
+- Seasonal workers (builders, landscapers) may have limited coverage during off-season
+- High-risk occupations (window washers, roofers) face higher costs
+- Creative industries with variable income face specific challenges
+- Tradespeople may need industry-specific underwriting
+
+Understanding your industry's specific insurance landscape helps you find appropriate coverage. Specialist brokers understand these industry nuances and can navigate them.
+
+## Building Your Self-Employed Insurance Strategy
+
+Self-employed loan insurance is part of a broader insurance strategy. You should also consider:
+- Income protection insurance covering broader living expenses beyond just loans
+- Permanent disability insurance protecting your business income
+- Critical illness insurance covering major health events
+- Professional indemnity insurance if applicable to your industry
+- Business interruption insurance protecting revenue during forced closure
+
+Combining these protections creates comprehensive security for your self-employed business and personal finances.
+
+## Taking Action
+
+If you're self-employed and have significant loan obligations, don't assume you can't access protection. Specialist brokers like LoanInsurance.co.nz understand self-employed lending and insurance.
+
+Get a free quote today. We'll assess your specific self-employed situation and help you access loan protection insurance appropriate for your income variability and business risks. Don't leave your self-employed income unprotected - secure your loans and your livelihood.0:{"rsc":["$","$1","c",{"children":[[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Loan Insurance for Self-Employed New Zealanders\",\"image\":\"https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=800&q=80\",\"datePublished\":\"2026-04-05\",\"author\":{\"@type\":\"Person\",\"name\":\"Aroha Ngata\"},\"description\":\"How self-employed individuals can access loan protection insurance despite income variability and unique challenges.\"}"}}],["$","$L2",null,{"post":{"slug":"loan-insurance-self-employed-nz","title":"Loan Insurance for Self-Employed New Zealanders","excerpt":"How self-employed individuals can access loan protection insurance despite income variability and unique challenges.","content":"$3","author":"Aroha Ngata","date":"2026-04-05","image":"https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=800&q=80","category":"Specialist","readTime":11},"relatedPosts":[]}]],["$L4"],"$L5"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"LuVhVQvR8cqfJQk4MOXew"}
+4:["$","script","script-0",{"src":"/_next/static/chunks/17i~hhhps7w-q.js","async":true}]
+5:["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]
+8:null
