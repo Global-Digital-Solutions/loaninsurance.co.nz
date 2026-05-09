@@ -8,10 +8,10 @@ interface Stat {
 }
 
 const stats: Stat[] = [
-  { value: '10+', label: 'NZ Insurers' },
-  { value: '$500M+', label: 'Cover Arranged' },
-  { value: '24hr', label: 'Quote Response' },
-  { value: '4.8★', label: 'Customer Rating' },
+  { value: '$3.9B', label: 'NZ Life Insurance Market' },
+  { value: '31+', label: 'Life Insurers in NZ' },
+  { value: '$3.8B', label: 'Claims Paid Annually' },
+  { value: '95%', label: 'Market via ICNZ Members' },
 ];
 
 function AnimatedCounter({ value, label, isVisible }: { value: string; label: string; isVisible: boolean }) {

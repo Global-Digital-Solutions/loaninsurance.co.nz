@@ -28,7 +28,7 @@ export function AboutPageClient() {
       icon: CheckCircle2,
       title: 'Trust & Integrity',
       description:
-        'ICNZ registered and committed to the highest ethical standards in insurance brokerage and customer service.',
+        'Our broker network is ICNZ registered and committed to the highest ethical standards in insurance brokerage and customer service.',
     },
   ];
 
@@ -109,20 +109,20 @@ export function AboutPageClient() {
 
             <div className="bg-gradient-to-br from-sky-50 to-teal-50 p-8 rounded-lg border border-slate-200">
               <h3 className="text-2xl font-bold text-slate-900 mb-6">
-                By The Numbers
+                NZ Insurance Industry
               </h3>
               <div className="space-y-4">
                 <div>
-                  <div className="text-3xl font-bold text-teal-600">10+</div>
-                  <p className="text-slate-700">Insurer Partners</p>
+                  <div className="text-3xl font-bold text-teal-600">$3.9B</div>
+                  <p className="text-slate-700">NZ Life Insurance Market</p>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-teal-600">$500M+</div>
-                  <p className="text-slate-700">Cover Arranged</p>
+                  <div className="text-3xl font-bold text-teal-600">31+</div>
+                  <p className="text-slate-700">Life Insurers in NZ</p>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-teal-600">24hr</div>
-                  <p className="text-slate-700">Quote Response</p>
+                  <div className="text-3xl font-bold text-teal-600">$3.8B</div>
+                  <p className="text-slate-700">Claims Paid Annually</p>
                 </div>
               </div>
             </div>
@@ -193,18 +193,20 @@ export function AboutPageClient() {
       <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-sky-50 to-teal-50">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
-            Trusted & Regulated
+            Trusted Broker Network
           </h2>
 
           <div className="bg-white p-8 rounded-lg border border-slate-200 mb-8">
             <p className="text-lg text-slate-700 mb-4 leading-relaxed">
-              LoanInsurance.co.nz is registered with the Insurance Council of
-              New Zealand (ICNZ) and committed to the highest standards of
+              LoanInsurance.co.nz connects you with a network of insurance
+              brokers and advisers who are registered with the Insurance Council
+              of New Zealand (ICNZ) and committed to the highest standards of
               professional conduct and customer service.
             </p>
             <p className="text-slate-600">
-              We comply with all relevant NZ insurance regulations and best
-              practice standards to ensure your protection and confidence.
+              Our broker network complies with all relevant NZ insurance
+              regulations and best practice standards to ensure your protection
+              and confidence.
             </p>
           </div>
 
@@ -214,7 +216,7 @@ export function AboutPageClient() {
             rel="noopener noreferrer"
             className="inline-block bg-gradient-to-r from-sky-600 to-teal-500 hover:from-sky-700 hover:to-teal-600 text-white font-semibold py-2 px-6 rounded-lg transition-all duration-200"
           >
-            Verify with ICNZ
+            Learn About ICNZ
           </Link>
         </div>
       </section>

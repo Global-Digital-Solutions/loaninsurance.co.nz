@@ -3,7 +3,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-import AnimatedTrustBar from '@/components/AnimatedTrustBar';
 import AnimatedStats from '@/components/AnimatedStats';
 import { faqs } from '@/data/faqs';
 import {
@@ -14,6 +13,9 @@ import {
   TrendingUp,
   ChevronDown,
   CheckCircle2,
+  Lock,
+  Zap,
+  MessageCircle,
 } from 'lucide-react';
 
 interface FAQItem {
@@ -141,13 +143,13 @@ export default function HomePage() {
           className="relative lg:min-h-[100vh] pt-28 pb-12 sm:pt-28 sm:pb-16 lg:py-28 flex items-center"
           style={{
             backgroundImage:
-              'url(https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1920&h=1080&fit=crop)',
+              'url(https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1920&h=1080&fit=crop)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
         >
           {/* Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/85 to-slate-900/70" />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 to-slate-900/70" />
 
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <div className="max-w-3xl">
@@ -160,31 +162,48 @@ export default function HomePage() {
                 hardship, we've got your loan payments covered.
               </p>
 
+              {/* Trust Badges - Overlaid on Hero */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-10">
+                <div className="flex items-center gap-3 bg-white/10 rounded-lg px-4 py-3 backdrop-blur-sm border border-white/20">
+                  <Shield className="w-5 h-5 text-teal-400 flex-shrink-0" />
+                  <span className="text-sm sm:text-base text-white font-semibold">ICNZ Registered Brokers</span>
+                </div>
+                <div className="flex items-center gap-3 bg-white/10 rounded-lg px-4 py-3 backdrop-blur-sm border border-white/20">
+                  <CheckCircle2 className="w-5 h-5 text-teal-400 flex-shrink-0" />
+                  <span className="text-sm sm:text-base text-white font-semibold">No Broker Fees</span>
+                </div>
+                <div className="flex items-center gap-3 bg-white/10 rounded-lg px-4 py-3 backdrop-blur-sm border border-white/20">
+                  <Lock className="w-5 h-5 text-teal-400 flex-shrink-0" />
+                  <span className="text-sm sm:text-base text-white font-semibold">256-bit SSL Secure</span>
+                </div>
+                <div className="flex items-center gap-3 bg-white/10 rounded-lg px-4 py-3 backdrop-blur-sm border border-white/20">
+                  <Zap className="w-5 h-5 text-teal-400 flex-shrink-0" />
+                  <span className="text-sm sm:text-base text-white font-semibold">24hr Quote Response</span>
+                </div>
+                <div className="flex items-center gap-3 bg-white/10 rounded-lg px-4 py-3 backdrop-blur-sm border border-white/20">
+                  <MessageCircle className="w-5 h-5 text-teal-400 flex-shrink-0" />
+                  <span className="text-sm sm:text-base text-white font-semibold">Free Consultation</span>
+                </div>
+              </div>
+
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/contact"
-                  className="bg-gradient-to-r from-sky-600 to-teal-500 hover:from-sky-700 hover:to-teal-600 text-white font-bold py-3 px-8 rounded-lg transition-all duration-200 inline-flex items-center justify-center gap-2"
+                  className="bg-gradient-to-r from-sky-600 to-teal-500 hover:from-sky-700 hover:to-teal-600 text-white font-bold py-3.5 px-8 rounded-lg transition-all duration-200 inline-flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
                 >
                   Get a Free Quote
                   <span>→</span>
                 </Link>
                 <Link
                   href="/compare"
-                  className="bg-white/20 hover:bg-white/30 text-white font-bold py-3 px-8 rounded-lg transition-all duration-200 border border-white/40 inline-flex items-center justify-center gap-2 backdrop-blur-sm"
+                  className="bg-white/20 hover:bg-white/30 text-white font-bold py-3.5 px-8 rounded-lg transition-all duration-200 border border-white/40 inline-flex items-center justify-center gap-2 backdrop-blur-sm"
                 >
                   Compare Providers
                   <span>→</span>
                 </Link>
               </div>
             </div>
-          </div>
-        </section>
-
-        {/* Animated Trust Bar */}
-        <section className="bg-white py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-7xl mx-auto">
-            <AnimatedTrustBar />
           </div>
         </section>
 
@@ -288,10 +307,10 @@ export default function HomePage() {
         <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-white">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 text-center mb-4">
-              Trusted by New Zealanders
+              NZ Insurance Industry at a Glance
             </h2>
             <p className="text-center text-slate-600 mb-12">
-              Our track record speaks for itself
+              The strength of New Zealand's insurance market
             </p>
             <AnimatedStats />
           </div>

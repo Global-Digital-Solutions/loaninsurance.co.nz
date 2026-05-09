@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import QuoteForm from '@/components/QuoteForm';
+import TrustBanner from '@/components/TrustBanner';
 import {
   Heart,
   Zap,
@@ -243,6 +244,9 @@ export function CoveragePageClient() {
           </div>
         </div>
       </section>
+
+      {/* Trust Banner */}
+      <TrustBanner variant="light" />
 
       {/* CTA Banner */}
       <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-sky-600 to-teal-500">

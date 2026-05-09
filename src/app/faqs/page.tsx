@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { faqs } from '@/data/faqs';
 import { ChevronDown } from 'lucide-react';
 import { FAQsClient } from '@/components/FAQsClient';
+import TrustBanner from '@/components/TrustBanner';
 
 interface FAQItem {
   slug: string;
@@ -106,6 +107,9 @@ export default function FAQsPage() {
             </div>
           </div>
         </section>
+
+        {/* Trust Banner */}
+        <TrustBanner variant="gradient" />
       </main>
     </>
   );

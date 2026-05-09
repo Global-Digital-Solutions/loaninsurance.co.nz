@@ -24,7 +24,7 @@ const loanAmounts = [
 ];
 
 const trustBadges = [
-  { icon: '✓', label: 'ICNZ Registered' },
+  { icon: '✓', label: 'ICNZ Registered Brokers' },
   { icon: '✓', label: 'No Broker Fees' },
   { icon: '✓', label: '256-bit SSL Secure' },
   { icon: '✓', label: '24hr Response' },
@@ -48,13 +48,13 @@ export default function QuoteForm({ mode = 'full' }: QuoteFormProps) {
 
         {/* Form Content */}
         <form
-          action="https://formsubmit.co/hello@cover4you.co.nz"
+          action="https://shiny-bush-41cd.darinbutler.workers.dev"
           method="POST"
           onSubmit={handleSubmit}
           className="p-4 sm:p-6 space-y-4"
         >
           {/* Hidden Fields */}
-          <input type="hidden" name="_next" value="https://loaninsurance.co.nz/thank-you/" />
+          <input type="hidden" name="_next" value="https://darinbutler.github.io/loaninsurance.co.nz/thank-you/" />
           <input type="hidden" name="_subject" value="New Quote Request - LoanInsurance.co.nz" />
           <input type="hidden" name="_cc" value="butlerdarin@gmail.com" />
           <input type="hidden" name="_captcha" value="false" />
@@ -68,7 +68,7 @@ export default function QuoteForm({ mode = 'full' }: QuoteFormProps) {
             <input
               id="fullName"
               type="text"
-              name="fullName"
+              name="name"
               required
               className="w-full px-4 py-2.5 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
               placeholder="John Doe"
@@ -180,13 +180,13 @@ export default function QuoteForm({ mode = 'full' }: QuoteFormProps) {
 
         {/* Form */}
         <form
-          action="https://formsubmit.co/hello@cover4you.co.nz"
+          action="https://shiny-bush-41cd.darinbutler.workers.dev"
           method="POST"
           onSubmit={handleSubmit}
           className="p-6 sm:p-8"
         >
           {/* Hidden Fields */}
-          <input type="hidden" name="_next" value="https://loaninsurance.co.nz/thank-you/" />
+          <input type="hidden" name="_next" value="https://darinbutler.github.io/loaninsurance.co.nz/thank-you/" />
           <input type="hidden" name="_subject" value="New Quote Request - LoanInsurance.co.nz" />
           <input type="hidden" name="_cc" value="butlerdarin@gmail.com" />
           <input type="hidden" name="_captcha" value="false" />
@@ -202,7 +202,7 @@ export default function QuoteForm({ mode = 'full' }: QuoteFormProps) {
                 <input
                   id="fullName"
                   type="text"
-                  name="fullName"
+                  name="name"
                   required
                   className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-base"
                   placeholder="John Doe"
@@ -285,7 +285,7 @@ export default function QuoteForm({ mode = 'full' }: QuoteFormProps) {
               </label>
               <textarea
                 id="details"
-                name="additionalDetails"
+                name="message"
                 rows={4}
                 className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-base resize-none"
                 placeholder="Tell us anything else we should know about your situation..."

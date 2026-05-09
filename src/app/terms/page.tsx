@@ -74,7 +74,7 @@ export default function TermsPage() {
 
           <h2>9. Insurance Brokerage Services</h2>
           <p>
-            LoanInsurance.co.nz is a registered insurance broker in New Zealand. When you request a quote through our Site, you authorize us to share your personal information with insurance companies to obtain quotes on your behalf. These quotes are provided by licensed insurance companies and are subject to their own terms and conditions.
+            LoanInsurance.co.nz connects you with registered insurance brokers and advisers in New Zealand. When you request a quote through our Site, you authorize us to share your personal information with our broker network and insurance companies to obtain quotes on your behalf. These quotes are provided by licensed insurance companies through our ICNZ-registered broker partners and are subject to their own terms and conditions.
           </p>
 
           <h2>10. Quotes and Offers</h2>

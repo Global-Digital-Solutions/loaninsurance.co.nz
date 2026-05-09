@@ -13,11 +13,11 @@ const insuranceTypes = [
 ];
 
 const navLinks = [
-  { label: 'Coverage', href: '#coverage' },
-  { label: 'Compare', href: '#compare' },
+  { label: 'Coverage', href: '/coverage' },
+  { label: 'Compare', href: '/compare' },
   { label: 'Blog', href: '/blog' },
-  { label: 'About', href: '#about' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'About', href: '/about' },
+  { label: 'Contact', href: '/contact' },
 ];
 
 export default function Header() {
@@ -84,9 +84,9 @@ export default function Header() {
 
             {/* CTA Button (Desktop) */}
             <div className="hidden lg:block">
-              <button className="bg-gradient-to-r from-sky-600 to-teal-500 hover:from-sky-700 hover:to-teal-600 text-white font-semibold px-6 py-2.5 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg">
+              <Link href="/contact" className="bg-gradient-to-r from-sky-600 to-teal-500 hover:from-sky-700 hover:to-teal-600 text-white font-semibold px-6 py-2.5 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg">
                 Get a Free Quote
-              </button>
+              </Link>
             </div>
 
             {/* Mobile Menu Button */}
@@ -181,9 +181,9 @@ export default function Header() {
 
                 {/* Mobile CTA */}
                 <div className="pt-4">
-                  <button className="w-full bg-gradient-to-r from-sky-600 to-teal-500 hover:from-sky-700 hover:to-teal-600 text-white font-semibold px-6 py-2.5 rounded-lg transition-all duration-200">
+                  <Link href="/contact" className="block w-full text-center bg-gradient-to-r from-sky-600 to-teal-500 hover:from-sky-700 hover:to-teal-600 text-white font-semibold px-6 py-2.5 rounded-lg transition-all duration-200" onClick={() => setMobileMenuOpen(false)}>
                     Get a Free Quote
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

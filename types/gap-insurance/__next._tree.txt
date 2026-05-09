@@ -1,0 +1,2 @@
+:HL["/loaninsurance.co.nz/_next/static/chunks/0bxeu69d93-jw.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"types","param":null,"prefetchHints":0,"slots":{"children":{"name":"gap-insurance","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"6TSWh3h_YzdlAJwtJTpOX"}

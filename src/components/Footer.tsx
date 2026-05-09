@@ -5,8 +5,8 @@ const footerLinks = {
   company: {
     title: 'Company',
     links: [
-      { label: 'About', href: '#about' },
-      { label: 'Contact', href: '#contact' },
+      { label: 'About', href: '/about' },
+      { label: 'Contact', href: '/contact' },
       { label: 'FAQs', href: '/faqs' },
     ],
   },
@@ -24,7 +24,7 @@ const footerLinks = {
     title: 'Resources',
     links: [
       { label: 'Blog', href: '/blog' },
-      { label: 'Coverage Guide', href: '/coverage-guide' },
+      { label: 'Coverage Guide', href: '/coverage' },
       { label: 'Compare Providers', href: '/compare' },
     ],
   },
@@ -33,6 +33,7 @@ const footerLinks = {
     links: [
       { label: 'Privacy Policy', href: '/privacy' },
       { label: 'Terms & Conditions', href: '/terms' },
+      { label: 'Disclaimer', href: '/disclaimer' },
     ],
   },
 };
@@ -140,6 +141,23 @@ export default function Footer() {
         </div>
       </div>
 
+      {/* Disclaimer */}
+      <div className="border-t border-slate-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <p className="text-xs text-slate-500 leading-relaxed">
+            <strong className="text-slate-400">Disclaimer:</strong> LoanInsurance.co.nz
+            is a lead generation and comparison service — we are not an insurer,
+            broker, or financial adviser. We connect you with ICNZ-registered
+            insurance brokers and advisers who can provide personalised quotes and
+            advice. All insurance products are issued by licensed insurers through
+            our broker network. Information on this website is general in nature and
+            does not constitute financial advice. You should seek independent
+            financial advice before making insurance decisions. Past performance and
+            industry statistics do not guarantee future results.
+          </p>
+        </div>
+      </div>
+
       {/* Bottom Bar */}
       <div className="border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
@@ -147,9 +165,13 @@ export default function Footer() {
             <p className="text-slate-400 text-sm">
               © {currentYear} LoanInsurance.co.nz. All rights reserved.
             </p>
-            <p className="text-slate-400 text-sm">
-              Proudly ICNZ Registered Insurance Intermediary
-            </p>
+            <div className="flex items-center gap-4 text-slate-400 text-sm">
+              <span>Partnered with ICNZ Registered Insurance Brokers</span>
+              <span className="hidden sm:inline">|</span>
+              <Link href="/disclaimer" className="hover:text-teal-300 transition-colors">
+                Disclaimer
+              </Link>
+            </div>
           </div>
         </div>
       </div>

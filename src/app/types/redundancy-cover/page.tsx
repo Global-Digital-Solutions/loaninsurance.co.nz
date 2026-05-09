@@ -65,7 +65,7 @@ export default function RedundancyCoverPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-12">
                 <div className="flex items-start gap-3 bg-white/10 rounded-lg p-4 backdrop-blur-sm">
                   <Shield className="w-4 h-4 sm:w-5 sm:h-5 text-teal-300 flex-shrink-0 mt-1" />
-                  <span className="text-xs sm:text-sm text-slate-100 font-medium">ICNZ Registered & Regulated</span>
+                  <span className="text-xs sm:text-sm text-slate-100 font-medium">ICNZ Registered Broker Network</span>
                 </div>
                 <div className="flex items-start gap-3 bg-white/10 rounded-lg p-4 backdrop-blur-sm">
                   <Lock className="w-4 h-4 sm:w-5 sm:h-5 text-teal-300 flex-shrink-0 mt-1" />

@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { blogPosts } from '@/data/blog-posts';
 import { Calendar, Clock } from 'lucide-react';
+import TrustBanner from '@/components/TrustBanner';
 
 interface BlogPost {
   slug: string;
@@ -133,6 +134,9 @@ export default function BlogPage() {
             </div>
           </div>
         </section>
+
+        {/* Trust Banner */}
+        <TrustBanner variant="light" />
 
         {/* CTA Banner */}
         <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-sky-600 to-teal-500">
