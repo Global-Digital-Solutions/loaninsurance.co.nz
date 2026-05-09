@@ -74,7 +74,7 @@ export default function PersonalLoanPage() {
             {/* Left Column */}
             <div className="lg:col-span-3">
               <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                Personal Loan Insurance New Zealand
+                Personal Loan Insurance
               </h1>
 
               <p className="text-lg sm:text-xl text-slate-100 mb-6">
@@ -248,7 +248,7 @@ export default function PersonalLoanPage() {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-slate-900 mb-2">Dedicated NZ Claims Team</h3>
+                  <h3 className="text-lg font-semibold text-slate-900 mb-2">Dedicated Claims Team</h3>
                   <p className="text-slate-700">
                     Our New Zealand-based team handles claims Monday-Friday, 9am-5pm. Get personal support and claims processed within 5-10 business days.
                   </p>

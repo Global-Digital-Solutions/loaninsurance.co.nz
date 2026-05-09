@@ -154,7 +154,7 @@ export default function HomePage() {
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <div className="max-w-3xl">
               <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-white mb-6">
-                Protect Your Loan Repayments in New Zealand
+                Protect Your Loan Repayments
               </h1>
               <p className="text-lg sm:text-xl text-slate-100 mb-8 max-w-2xl leading-relaxed">
                 Get peace of mind with affordable loan protection insurance. If
@@ -307,10 +307,10 @@ export default function HomePage() {
         <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-white">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 text-center mb-4">
-              NZ Insurance Industry at a Glance
+              The Insurance Industry at a Glance
             </h2>
             <p className="text-center text-slate-600 mb-12">
-              The strength of New Zealand's insurance market
+              The strength of the insurance market
             </p>
             <AnimatedStats />
           </div>

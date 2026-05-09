@@ -50,7 +50,7 @@ export default function RedundancyCoverPage() {
             {/* Left Column */}
             <div className="lg:col-span-3">
               <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                Redundancy Cover New Zealand
+                Redundancy Cover
               </h1>
 
               <p className="text-lg sm:text-xl text-slate-100 mb-6">

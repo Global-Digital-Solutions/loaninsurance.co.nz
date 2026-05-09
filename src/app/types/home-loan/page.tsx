@@ -50,7 +50,7 @@ export default function HomeLoanPage() {
             {/* Left Column */}
             <div className="lg:col-span-3">
               <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                Home Loan Insurance New Zealand
+                Home Loan Insurance
               </h1>
 
               <p className="text-lg sm:text-xl text-slate-100 mb-6">
