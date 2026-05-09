@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "LoanInsurance.co.nz | Loan Protection Insurance NZ",
+  title: "LoanInsurance.co.nz | Loan Protection Insurance",
   description:
-    "Protect your loan repayments with affordable loan protection insurance in New Zealand. Personal loans, car finance, mortgages, and more. Free quotes within 24 hours.",
+    "Protect your loan repayments with affordable loan protection insurance. Personal loans, car finance, mortgages, and more. Free quotes within 24 hours.",
   keywords: [
     "loan insurance",
     "loan protection insurance",
@@ -16,21 +16,54 @@ export const metadata: Metadata = {
     "mortgage insurance",
     "GAP insurance",
     "redundancy cover",
-    "New Zealand insurance",
   ],
   authors: [{ name: "LoanInsurance.co.nz" }],
   openGraph: {
     type: "website",
     locale: "en_NZ",
     url: "https://loaninsurance.co.nz",
-    title: "LoanInsurance.co.nz | Loan Protection Insurance NZ",
+    title: "LoanInsurance.co.nz | Loan Protection Insurance",
     description:
-      "Protect your loan repayments with affordable loan protection insurance in New Zealand.",
+      "Protect your loan repayments with affordable loan protection insurance. Personal loans, car finance, mortgages, and more.",
     siteName: "LoanInsurance.co.nz",
   },
   icons: {
     icon: "/favicon.ico",
   },
+};
+
+const schemaOrg = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://loaninsurance.co.nz/#organization",
+      name: "LoanInsurance.co.nz",
+      url: "https://loaninsurance.co.nz",
+      logo: "https://loaninsurance.co.nz/favicon.ico",
+      contactPoint: {
+        "@type": "ContactPoint",
+        telephone: "+6498859549",
+        contactType: "customer service",
+        areaServed: "NZ",
+        availableLanguage: "English",
+      },
+      sameAs: [],
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://loaninsurance.co.nz/#website",
+      url: "https://loaninsurance.co.nz",
+      name: "LoanInsurance.co.nz",
+      description: "Loan protection insurance comparison and broker referral service",
+      publisher: { "@id": "https://loaninsurance.co.nz/#organization" },
+      potentialAction: {
+        "@type": "SearchAction",
+        target: "https://loaninsurance.co.nz/?s={search_term_string}",
+        "query-input": "required name=search_term_string",
+      },
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -43,9 +76,9 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#0284c7" />
-        <meta
-          name="description"
-          content="Protect your loan repayments with affordable loan protection insurance in New Zealand. Personal loans, car finance, mortgages, and more. Free quotes within 24 hours."
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaOrg) }}
         />
       </head>
       <body className="min-h-full flex flex-col bg-white font-sans antialiased">
