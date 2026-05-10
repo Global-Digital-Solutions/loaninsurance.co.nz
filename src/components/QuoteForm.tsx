@@ -48,7 +48,7 @@ export default function QuoteForm({ mode = 'full' }: QuoteFormProps) {
 
         {/* Form Content */}
         <form
-          action="https://shiny-bush-41cd.darinbutler.workers.dev"
+          action="/api/submit-form"
           method="POST"
           onSubmit={handleSubmit}
           className="p-4 sm:p-6 space-y-4"
@@ -180,7 +180,7 @@ export default function QuoteForm({ mode = 'full' }: QuoteFormProps) {
 
         {/* Form */}
         <form
-          action="https://shiny-bush-41cd.darinbutler.workers.dev"
+          action="/api/submit-form"
           method="POST"
           onSubmit={handleSubmit}
           className="p-6 sm:p-8"
