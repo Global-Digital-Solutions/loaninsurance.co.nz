@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Script from 'next/script';
 
 interface QuoteFormProps {
   mode?: 'compact' | 'full';
@@ -143,6 +144,11 @@ export default function QuoteForm({ mode = 'full' }: QuoteFormProps) {
                 </option>
               ))}
             </select>
+          </div>
+
+          <Script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer strategy="afterInteractive" />
+          <div className="flex justify-center">
+            <div className="cf-turnstile" data-sitekey="0x4AAAAAADMnq1OKyxf3JvVv" data-theme="light" />
           </div>
 
           {/* Submit Button */}
@@ -290,6 +296,11 @@ export default function QuoteForm({ mode = 'full' }: QuoteFormProps) {
                 className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-base resize-none"
                 placeholder="Tell us anything else we should know about your situation..."
               />
+            </div>
+
+            <Script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer strategy="afterInteractive" />
+            <div className="flex justify-center">
+              <div className="cf-turnstile" data-sitekey="0x4AAAAAADMnq1OKyxf3JvVv" data-theme="light" />
             </div>
 
             {/* Submit Button */}
