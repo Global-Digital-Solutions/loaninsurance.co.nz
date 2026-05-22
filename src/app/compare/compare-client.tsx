@@ -657,6 +657,19 @@ export function ComparePageClient() {
         </div>
       </section>
 
+      {/* Disclaimer */}
+      <section className="px-4 sm:px-6 lg:px-8 py-8 bg-slate-50 border-t border-slate-200">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex items-start gap-3">
+            <AlertCircle className="w-4 h-4 text-slate-400 flex-shrink-0 mt-0.5" />
+            <p className="text-xs text-slate-500 leading-relaxed">
+              <strong className="text-slate-600">Comparison Disclaimer:</strong> Provider information on this page is editorial, based on publicly available data, and may not reflect current terms, premiums, or product availability. Ratings are our assessment at the time of publishing and are not a guarantee of performance or suitability. LoanInsurance.co.nz is a comparison and referral service — we are not an insurer, broker, or FMA-licensed financial adviser. Always visit providers directly for current policy wording and seek advice from a qualified financial adviser before making any insurance decision.{' '}
+              <a href="/disclaimer" className="text-teal-600 hover:text-teal-700 underline">Full disclaimer</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Banner */}
       <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-sky-600 to-teal-500">
         <div className="max-w-4xl mx-auto text-center">

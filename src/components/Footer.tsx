@@ -134,18 +134,19 @@ export default function Footer() {
       </div>
 
       {/* Disclaimer */}
-      <div className="border-t border-slate-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <div className="border-t border-slate-700 bg-slate-950">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Important Disclaimer</p>
+          <p className="text-xs text-slate-500 leading-relaxed mb-3">
+            LoanInsurance.co.nz is a comparison and referral website operated by Cover4You. We are <strong className="text-slate-400">not</strong> an insurance company, insurance broker, or financial adviser. We do not provide regulated financial advice under the Financial Markets Conduct Act 2013 (FMCA). The insurance advisers and brokers we refer enquiries to hold their own FMA licences and operate independently — they are responsible for the advice and products they recommend to you.
+          </p>
+          <p className="text-xs text-slate-500 leading-relaxed mb-3">
+            All insurance products referenced on this website are issued by licensed New Zealand insurance companies. Provider information, ratings, and comparisons are editorial in nature, based on publicly available data, and may not reflect current terms, premiums, or availability. You should visit providers directly and seek advice from a qualified, FMA-licensed financial adviser before making any insurance decision.
+          </p>
           <p className="text-xs text-slate-500 leading-relaxed">
-            <strong className="text-slate-400">Disclaimer:</strong> LoanInsurance.co.nz
-            is a lead generation and comparison service — we are not an insurer,
-            broker, or financial adviser. We connect you with ICNZ-registered
-            insurance brokers and advisers who can provide personalised quotes and
-            advice. All insurance products are issued by licensed insurers through
-            our broker network. Information on this website is general in nature and
-            does not constitute financial advice. You should seek independent
-            financial advice before making insurance decisions. Past performance and
-            industry statistics do not guarantee future results.
+            Information on this website is general in nature and does not take into account your individual financial situation, objectives, or needs. Past performance and industry statistics referenced on this site do not guarantee future outcomes.{' '}
+            <a href="/disclaimer" className="text-slate-400 hover:text-teal-400 underline transition-colors">Read our full disclaimer</a> ·{' '}
+            <a href="/privacy" className="text-slate-400 hover:text-teal-400 underline transition-colors">Privacy Policy</a>
           </p>
         </div>
       </div>
