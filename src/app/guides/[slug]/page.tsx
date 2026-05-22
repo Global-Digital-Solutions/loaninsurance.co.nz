@@ -35,25 +35,47 @@ export default async function GuidePage({ params }: Props) {
   const guide = guidePages.find((g) => g.slug === slug);
   if (!guide) notFound();
 
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: guide.title,
-    description: guide.metaDescription,
-    author: {
-      '@type': 'Person',
-      name: guide.author.name,
-      jobTitle: guide.author.title,
+  const jsonLd = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: guide.title,
+      description: guide.metaDescription,
+      image: (guide as unknown as { heroImage: string }).heroImage,
+      url: `https://loaninsurance.co.nz/guides/${guide.slug}`,
+      mainEntityOfPage: `https://loaninsurance.co.nz/guides/${guide.slug}`,
+      author: {
+        '@type': 'Person',
+        name: guide.author.name,
+        jobTitle: guide.author.title,
+      },
+      publisher: {
+        '@type': 'Organization',
+        name: 'LoanInsurance.co.nz',
+        url: 'https://loaninsurance.co.nz',
+      },
+      datePublished: guide.datePublished,
+      dateModified: guide.dateModified,
     },
-    publisher: {
-      '@type': 'Organization',
-      name: 'Loan Insurance NZ',
-      url: 'https://loaninsurance.co.nz',
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://loaninsurance.co.nz' },
+        { '@type': 'ListItem', position: 2, name: 'Guides', item: 'https://loaninsurance.co.nz/guides' },
+        { '@type': 'ListItem', position: 3, name: guide.title, item: `https://loaninsurance.co.nz/guides/${guide.slug}` },
+      ],
     },
-    datePublished: guide.datePublished,
-    dateModified: guide.dateModified,
-    mainEntityOfPage: `https://loaninsurance.co.nz/guides/${guide.slug}`,
-  };
+    {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: guide.faqs.map((faq) => ({
+        '@type': 'Question',
+        name: faq.question,
+        acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+      })),
+    },
+  ];
 
   const otherGuides = guidePages.filter((g) => g.slug !== slug);
 

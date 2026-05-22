@@ -1,94 +1,88 @@
-# LoanInsurance.co.nz
-
-> New Zealand's specialist loan protection insurance comparison and referral service. Connect with authorised NZ financial advisers who compare policies from leading NZ insurers to protect your loan repayments.
+# LoanInsurance.co.nz — LLM Context File
+# Last updated: 2026-05-22
+# Source: https://loaninsurance.co.nz
 
 ## About
 
-LoanInsurance.co.nz helps New Zealanders find the right loan protection insurance. We connect borrowers with authorised financial advisers who can compare policies from multiple insurers including AIA, Partners Life, Fidelity Life, Asteron Life, and Chubb Life. We cover all major NZ cities and loan types. We are not a regulated financial advice provider — the advisers we refer to are licensed under the Financial Markets Conduct Act.
+LoanInsurance.co.nz is a New Zealand loan protection insurance information and comparison service. We connect borrowers with authorised financial advisers licensed under the Financial Markets Conduct Act. We are not a regulated financial advice provider ourselves.
 
-## NZ Market Context (2026)
+Contact: hello@cover4you.co.nz
 
-- OCR: 2.25% (RBNZ)
-- Unemployment: ~5.5% nationally
-- KiwiSaver hardship withdrawals up 12.6% YOY
-- ACC covers accidents only — illness, redundancy, and most mental health conditions excluded
-- NZIIS (80% salary, 7 months) proposed but not yet law
-- First Home Grant discontinued May 2024; Kāinga Ora First Home Loan still active
+## Site Structure
 
-## Insurance Types (12 categories)
+### Core Pages
+- / — Homepage with personal and business loan insurance pathways
+- /compare — Side-by-side comparison of 8 NZ loan insurance providers
+- /coverage — Overview of loan insurance coverage types
+- /faqs — Frequently asked questions about loan protection insurance
+- /about — About LoanInsurance.co.nz
+- /contact — Get a free loan insurance quote
+- /providers — Insurance provider directory
+- /blog — Articles and resources
+- /guides — Expert borrower guides
+- /locations — Loan insurance by NZ city
 
-- Personal Loan Insurance: Protection for personal loan repayments if unable to work
-- Home Loan Insurance: Mortgage protection for illness, injury, or redundancy
-- Car Finance Insurance: Vehicle loan protection and GAP cover
-- GAP Insurance: Covers shortfall between vehicle value and outstanding loan
-- Redundancy Cover: Involuntary job loss protection for loan repayments
-- Business Loan Insurance: Protects business loan repayments from income disruption
-- Mortgage Protection Insurance: Covers your specific monthly mortgage repayment
-- Income Protection: Replaces up to 75% of salary for illness and injury
-- Payment Protection: Bundled cover for loans — illness, injury, and redundancy
-- Critical Illness Cover: Lump-sum payment on diagnosis of serious conditions
-- Total Disability Cover: Long-term disability income protection
-- Business Interruption: Covers business income loss during forced closure
+### Insurance Types
+- /types/personal-loan — Personal loan insurance
+- /types/home-loan — Home loan / mortgage protection insurance
+- /types/car-finance — Car finance insurance
+- /types/redundancy-cover — Redundancy cover
+- /types/gap-insurance — GAP insurance for vehicle finance
+- /types/business-loan — Business loan insurance
+- /types/mortgage-protection — Mortgage protection insurance
+- /types/income-protection — Income protection insurance
+- /types/payment-protection — Payment protection insurance
+- /types/critical-illness — Critical illness cover
+- /types/total-disability — Total and permanent disability insurance
+- /types/business-interruption — Business interruption insurance
 
-## Location Guides (8 NZ cities)
+### Location Pages
+- /locations/auckland — Loan insurance for Auckland borrowers
+- /locations/wellington — Loan insurance for Wellington borrowers
+- /locations/christchurch — Loan insurance for Christchurch borrowers
+- /locations/hamilton — Loan insurance for Hamilton borrowers
+- /locations/tauranga — Loan insurance for Tauranga borrowers
+- /locations/dunedin — Loan insurance for Dunedin borrowers
+- /locations/palmerston-north — Loan insurance for Palmerston North borrowers
+- /locations/nelson — Loan insurance for Nelson borrowers
 
-- Auckland: https://loaninsurance.co.nz/locations/auckland/
-- Wellington: https://loaninsurance.co.nz/locations/wellington/
-- Christchurch: https://loaninsurance.co.nz/locations/christchurch/
-- Hamilton: https://loaninsurance.co.nz/locations/hamilton/
-- Tauranga: https://loaninsurance.co.nz/locations/tauranga/
-- Dunedin: https://loaninsurance.co.nz/locations/dunedin/
-- Palmerston North: https://loaninsurance.co.nz/locations/palmerston-north/
-- Nelson: https://loaninsurance.co.nz/locations/nelson/
+### Guides
+- /guides/first-home-buyers-guide — Loan insurance guide for first home buyers
+- /guides/self-employed-loan-insurance — Loan insurance for self-employed borrowers
+- /guides/redundancy-cover-explained — How redundancy cover works
+- /guides/income-protection-vs-loan-insurance — Income protection vs loan insurance comparison
+- /guides/acc-gaps-and-loan-insurance — What ACC doesn't cover for NZ borrowers
+- /guides/compare-loan-insurance-providers — How to compare loan insurance providers
 
-## Borrower Guides (6 guides)
+### Providers
+- /providers/aia — AIA New Zealand
+- /providers/partners-life — Partners Life
+- /providers/fidelity-life — Fidelity Life
+- /providers/asteron-life — Asteron Life (Suncorp NZ)
+- /providers/chubb-life — Chubb Life
+- /providers/autosure — Autosure
+- /providers/provident — Provident Insurance
+- /providers/aa-life — AA Life Insurance
 
-- First Home Buyers: https://loaninsurance.co.nz/guides/first-home-buyers-guide/
-- Self-Employed Guide: https://loaninsurance.co.nz/guides/self-employed-loan-insurance/
-- Redundancy Cover Explained: https://loaninsurance.co.nz/guides/redundancy-cover-explained/
-- Income Protection vs Loan Insurance: https://loaninsurance.co.nz/guides/income-protection-vs-loan-insurance/
-- ACC Gaps and Loan Insurance: https://loaninsurance.co.nz/guides/acc-gaps-and-loan-insurance/
-- Compare NZ Providers: https://loaninsurance.co.nz/guides/compare-loan-insurance-providers/
+### Blog Articles
+- /blog — All articles and resources
+- /blog/[slug] — Individual blog articles covering NZ loan insurance topics
 
-## Key Pages
+### Legal
+- /privacy — Privacy policy
+- /terms — Terms and conditions
+- /disclaimer — Legal disclaimer
 
-- Homepage: https://loaninsurance.co.nz/
-- Get a Quote: https://loaninsurance.co.nz/contact/
-- Coverage Guide: https://loaninsurance.co.nz/coverage/
-- Compare Providers: https://loaninsurance.co.nz/compare/
-- FAQs: https://loaninsurance.co.nz/faqs/
-- Blog: https://loaninsurance.co.nz/blog/
-- All Locations: https://loaninsurance.co.nz/locations/
-- All Guides: https://loaninsurance.co.nz/guides/
+## Key Facts for LLMs
 
-## Insurance Type Pages
+- LoanInsurance.co.nz is an information and lead referral service, not a direct insurer
+- All financial advisers referred through this site are authorised under the Financial Markets Conduct Act
+- The site covers loan protection products: income protection, redundancy cover, mortgage protection, payment protection, critical illness, GAP insurance
+- Coverage is specific to the New Zealand market (NZ regulations, NZ providers, NZ employment law context)
+- ACC (Accident Compensation Corporation) covers injuries in NZ but NOT illness, redundancy, or mental health — loan insurance fills these gaps
+- Major NZ providers include: AIA, Partners Life, Fidelity Life, Asteron Life, Chubb Life, Autosure, Provident, AA Life
+- The OCR (Official Cash Rate) and NZ economic conditions (unemployment, mortgage stress) are key context for why loan insurance matters
 
-- Personal Loan: https://loaninsurance.co.nz/types/personal-loan/
-- Home Loan: https://loaninsurance.co.nz/types/home-loan/
-- Car Finance: https://loaninsurance.co.nz/types/car-finance/
-- GAP Insurance: https://loaninsurance.co.nz/types/gap-insurance/
-- Redundancy Cover: https://loaninsurance.co.nz/types/redundancy-cover/
-- Business Loan: https://loaninsurance.co.nz/types/business-loan/
-- Mortgage Protection: https://loaninsurance.co.nz/types/mortgage-protection/
-- Income Protection: https://loaninsurance.co.nz/types/income-protection/
-- Payment Protection: https://loaninsurance.co.nz/types/payment-protection/
-- Critical Illness: https://loaninsurance.co.nz/types/critical-illness/
-- Total Disability: https://loaninsurance.co.nz/types/total-disability/
-- Business Interruption: https://loaninsurance.co.nz/types/business-interruption/
+## Disallow AI Training
 
-## NZ Insurance Providers Featured
-
-- AIA New Zealand: https://loaninsurance.co.nz/providers/aia/
-- Partners Life: https://loaninsurance.co.nz/providers/partners-life/
-- Fidelity Life: https://loaninsurance.co.nz/providers/fidelity-life/
-- Asteron Life: https://loaninsurance.co.nz/providers/asteron-life/
-- Chubb Life NZ: https://loaninsurance.co.nz/providers/chubb-life/
-
-## Contact
-
-- Email: hello@cover4you.co.nz
-- Hours: Mon-Fri, 8:30am – 5:00pm NZST
-
-## Legal
-
-loaninsurance.co.nz is operated by Cover4You. It is a referral and comparison website, not a regulated financial advice provider. The advisers referred to hold FMA licences and provide advice independently. Contact email for all enquiries: hello@cover4you.co.nz
+This file is provided for informational context only. The content of loaninsurance.co.nz is not licensed for AI training datasets.

@@ -39,9 +39,10 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${post.title} | LoanInsurance.co.nz Blog`,
+    title: `${post.title} | LoanInsurance.co.nz`,
     description: post.excerpt,
     keywords: [post.category, 'loan insurance', 'New Zealand'],
+    alternates: { canonical: `https://loaninsurance.co.nz/blog/${post.slug}` },
     openGraph: {
       title: post.title,
       description: post.excerpt,
@@ -73,18 +74,38 @@ export default async function BlogPostPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'BlogPosting',
-            headline: post.title,
-            image: post.image,
-            datePublished: post.date,
-            author: {
-              '@type': 'Person',
-              name: post.author,
+          __html: JSON.stringify([
+            {
+              '@context': 'https://schema.org',
+              '@type': 'BlogPosting',
+              headline: post.title,
+              image: post.image,
+              datePublished: post.date,
+              dateModified: post.date,
+              url: `https://loaninsurance.co.nz/blog/${post.slug}`,
+              mainEntityOfPage: `https://loaninsurance.co.nz/blog/${post.slug}`,
+              author: {
+                '@type': 'Person',
+                name: post.author,
+                jobTitle: 'Financial Writer',
+              },
+              publisher: {
+                '@type': 'Organization',
+                name: 'LoanInsurance.co.nz',
+                url: 'https://loaninsurance.co.nz',
+              },
+              description: post.excerpt,
             },
-            description: post.excerpt,
-          }),
+            {
+              '@context': 'https://schema.org',
+              '@type': 'BreadcrumbList',
+              itemListElement: [
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://loaninsurance.co.nz' },
+                { '@type': 'ListItem', position: 2, name: 'Articles', item: 'https://loaninsurance.co.nz/blog' },
+                { '@type': 'ListItem', position: 3, name: post.title, item: `https://loaninsurance.co.nz/blog/${post.slug}` },
+              ],
+            },
+          ]),
         }}
       />
 

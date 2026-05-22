@@ -35,20 +35,40 @@ export default async function LocationPage({ params }: Props) {
   const loc = locationPages.find((l) => l.slug === slug);
   if (!loc) notFound();
 
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'WebPage',
-    name: loc.metaTitle,
-    description: loc.metaDescription,
-    url: `https://loaninsurance.co.nz/locations/${loc.slug}`,
-    publisher: {
-      '@type': 'Organization',
-      name: 'Loan Insurance NZ',
-      url: 'https://loaninsurance.co.nz',
+  const jsonLd = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      name: loc.metaTitle,
+      description: loc.metaDescription,
+      url: `https://loaninsurance.co.nz/locations/${loc.slug}`,
+      publisher: {
+        '@type': 'Organization',
+        name: 'LoanInsurance.co.nz',
+        url: 'https://loaninsurance.co.nz',
+      },
+      datePublished: loc.datePublished,
+      dateModified: loc.dateModified,
     },
-    datePublished: loc.datePublished,
-    dateModified: loc.dateModified,
-  };
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://loaninsurance.co.nz' },
+        { '@type': 'ListItem', position: 2, name: 'Locations', item: 'https://loaninsurance.co.nz/locations' },
+        { '@type': 'ListItem', position: 3, name: loc.city, item: `https://loaninsurance.co.nz/locations/${loc.slug}` },
+      ],
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: loc.faqs.map((faq) => ({
+        '@type': 'Question',
+        name: faq.question,
+        acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+      })),
+    },
+  ];
 
   const otherLocations = locationPages.filter((l) => l.slug !== slug).slice(0, 5);
 

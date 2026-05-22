@@ -7,11 +7,11 @@ export const metadata: Metadata = {
   title: 'GAP Insurance NZ | Guaranteed Asset Protection for Car Finance',
   description:
     'GAP insurance covers the shortfall between your car loan balance and insurance payout if your vehicle is written off. Compare NZ providers and get a quote.',
-  alternates: { canonical: 'https://www.loaninsurance.co.nz/types/gap-insurance/' },
+  alternates: { canonical: 'https://loaninsurance.co.nz/types/gap-insurance/' },
   openGraph: {
     title: 'GAP Insurance NZ | Guaranteed Asset Protection for Car Finance',
     description: 'Compare NZ GAP insurance providers. Covers your shortfall if your financed car is written off or stolen.',
-    url: 'https://www.loaninsurance.co.nz/types/gap-insurance/',
+    url: 'https://loaninsurance.co.nz/types/gap-insurance/',
     type: 'website',
   },
 };

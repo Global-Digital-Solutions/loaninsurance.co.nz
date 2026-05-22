@@ -35,25 +35,47 @@ export default async function InsuranceTypePage({ params }: Props) {
   const type = insuranceTypes.find((t) => t.slug === slug);
   if (!type) notFound();
 
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: type.title,
-    description: type.metaDescription,
-    author: {
-      '@type': 'Person',
-      name: type.author.name,
-      jobTitle: type.author.title,
+  const jsonLd = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: type.title,
+      description: type.metaDescription,
+      image: type.heroImage,
+      url: `https://loaninsurance.co.nz/types/${type.slug}`,
+      mainEntityOfPage: `https://loaninsurance.co.nz/types/${type.slug}`,
+      author: {
+        '@type': 'Person',
+        name: type.author.name,
+        jobTitle: type.author.title,
+      },
+      publisher: {
+        '@type': 'Organization',
+        name: 'LoanInsurance.co.nz',
+        url: 'https://loaninsurance.co.nz',
+      },
+      datePublished: type.datePublished,
+      dateModified: type.dateModified,
     },
-    publisher: {
-      '@type': 'Organization',
-      name: 'Loan Insurance NZ',
-      url: 'https://loaninsurance.co.nz',
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://loaninsurance.co.nz' },
+        { '@type': 'ListItem', position: 2, name: 'Insurance Types', item: 'https://loaninsurance.co.nz/types' },
+        { '@type': 'ListItem', position: 3, name: type.title, item: `https://loaninsurance.co.nz/types/${type.slug}` },
+      ],
     },
-    datePublished: type.datePublished,
-    dateModified: type.dateModified,
-    mainEntityOfPage: `https://loaninsurance.co.nz/types/${type.slug}`,
-  };
+    {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: type.faqs.map((faq) => ({
+        '@type': 'Question',
+        name: faq.question,
+        acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+      })),
+    },
+  ];
 
   const otherTypes = insuranceTypes.filter((t) => t.slug !== slug).slice(0, 4);
 

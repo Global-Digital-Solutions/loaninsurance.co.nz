@@ -4,14 +4,37 @@ import { locationPages } from '@/data/landing-pages';
 import { MapPin, ChevronRight, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Loan Insurance by Location | NZ City Guides 2026',
+  title: 'Loan Insurance by Location | City Guides 2026',
   description: 'Find loan insurance information for your city. We cover Auckland, Wellington, Christchurch, Hamilton, Tauranga, Dunedin, Palmerston North, and Nelson.',
   alternates: { canonical: 'https://loaninsurance.co.nz/locations' },
+  openGraph: {
+    title: 'Loan Insurance by Location | City Guides 2026',
+    description: "Local context matters. Find loan insurance information tailored to your city's property market, employment landscape, and economic conditions.",
+    url: 'https://loaninsurance.co.nz/locations',
+    type: 'website',
+  },
 };
 
 export default function LocationsIndexPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'CollectionPage',
+            name: 'Loan Insurance by Location',
+            description: 'Loan insurance information tailored to NZ cities and regions',
+            url: 'https://loaninsurance.co.nz/locations',
+            publisher: {
+              '@type': 'Organization',
+              name: 'LoanInsurance.co.nz',
+              url: 'https://loaninsurance.co.nz',
+            },
+          }),
+        }}
+      />
       <section className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white py-20">
         <div className="max-w-6xl mx-auto px-4">
           <div className="inline-flex items-center gap-2 bg-blue-700/60 border border-blue-500/40 rounded-full px-4 py-1.5 text-blue-100 text-sm font-medium mb-5">

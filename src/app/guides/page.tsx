@@ -4,14 +4,37 @@ import { guidePages } from '@/data/landing-pages';
 import { BookOpen, ChevronRight, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Loan Insurance Guides NZ | Expert Borrower Resources 2026',
-  description: 'In-depth guides on loan insurance for NZ borrowers. Covering first home buyers, self-employed, redundancy cover, ACC gaps, income protection, and more.',
+  title: 'Loan Insurance Guides | Expert Borrower Resources 2026',
+  description: 'In-depth guides on loan insurance for borrowers. Covering first home buyers, self-employed, redundancy cover, ACC gaps, income protection comparisons, and more.',
   alternates: { canonical: 'https://loaninsurance.co.nz/guides' },
+  openGraph: {
+    title: 'Loan Insurance Guides | Expert Borrower Resources 2026',
+    description: 'Expert guides helping NZ borrowers understand loan protection insurance — income protection, redundancy cover, ACC gaps, mortgage protection and more.',
+    url: 'https://loaninsurance.co.nz/guides',
+    type: 'website',
+  },
 };
 
 export default function GuidesIndexPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'CollectionPage',
+            name: 'Loan Insurance Guides',
+            description: 'Expert guides for New Zealand borrowers on loan protection insurance',
+            url: 'https://loaninsurance.co.nz/guides',
+            publisher: {
+              '@type': 'Organization',
+              name: 'LoanInsurance.co.nz',
+              url: 'https://loaninsurance.co.nz',
+            },
+          }),
+        }}
+      />
       <section className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white py-20">
         <div className="max-w-6xl mx-auto px-4">
           <div className="inline-flex items-center gap-2 bg-blue-700/60 border border-blue-500/40 rounded-full px-4 py-1.5 text-blue-100 text-sm font-medium mb-5">
