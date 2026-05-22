@@ -330,7 +330,7 @@ export function ComparePageClient() {
     <main>
       {/* Hero Section */}
       <section
-        className="relative lg:min-h-[100vh] pt-28 pb-12 sm:pt-28 sm:pb-16 lg:py-28"
+        className="relative flex flex-col lg:min-h-[100vh]"
         style={{
           backgroundImage: 'url(/images/hero-finance-charts.jpg)',
           backgroundSize: 'cover',
@@ -338,7 +338,9 @@ export function ComparePageClient() {
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/70 to-slate-900/40" />
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        {/* Main hero content */}
+        <div className="relative flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-12 sm:pt-28 sm:pb-16 lg:py-28 w-full">
           {/* Breadcrumb */}
           <div className="mb-8 flex items-center gap-2 text-sm text-slate-400">
             <Link href="/" className="hover:text-teal-400 transition-colors">
@@ -375,21 +377,50 @@ export function ComparePageClient() {
               </Link>
             </div>
           </div>
+        </div>
 
-          {/* Scroll indicator */}
+        {/* Brand ticker strip */}
+        <div className="relative z-10 border-t border-white/10 bg-black/40 backdrop-blur-sm overflow-hidden py-4">
+          <p className="text-xs font-bold text-teal-400 uppercase tracking-widest text-center mb-3">
+            8 Licensed NZ Providers Compared
+          </p>
+          <div className="flex overflow-hidden select-none">
+            <div
+              className="flex gap-8 whitespace-nowrap"
+              style={{ animation: 'ticker 28s linear infinite' }}
+            >
+              {/* Doubled list for seamless loop */}
+              {[...providers, ...providers].map((p, i) => (
+                <a
+                  key={i}
+                  href="#providers"
+                  className="inline-flex items-center gap-2.5 group"
+                >
+                  <span className="w-7 h-7 rounded-full bg-gradient-to-br from-sky-500 to-teal-500 text-white text-[10px] font-bold flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                    {p.name.charAt(0)}
+                  </span>
+                  <span className="text-white font-semibold text-sm group-hover:text-teal-300 transition-colors">
+                    {p.name}
+                  </span>
+                  <span className="text-amber-400 text-xs font-bold">★ {p.rating.toFixed(1)}</span>
+                  <span className="text-white/20 ml-4 text-lg">·</span>
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Scroll indicator */}
+        <div className="relative z-10 py-4 flex flex-col items-center bg-black/20">
           <a
             href="#providers"
-            className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/70 hover:text-white transition-colors group"
+            className="flex flex-col items-center gap-1.5 text-white/70 hover:text-white transition-colors group"
             aria-label="Scroll to providers"
           >
-            <span className="text-xs font-semibold tracking-widest uppercase">
-              Scroll
-            </span>
+            <span className="text-xs font-semibold tracking-widest uppercase">Scroll</span>
             <ChevronDown
-              className="w-6 h-6"
-              style={{
-                animation: 'scrollBounce 1.6s ease-in-out infinite',
-              }}
+              className="w-5 h-5"
+              style={{ animation: 'scrollBounce 1.6s ease-in-out infinite' }}
             />
           </a>
         </div>
@@ -397,7 +428,11 @@ export function ComparePageClient() {
         <style>{`
           @keyframes scrollBounce {
             0%, 100% { transform: translateY(0); opacity: 0.7; }
-            50% { transform: translateY(8px); opacity: 1; }
+            50% { transform: translateY(6px); opacity: 1; }
+          }
+          @keyframes ticker {
+            0%   { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
           }
         `}</style>
       </section>
