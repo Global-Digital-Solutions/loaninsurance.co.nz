@@ -1,4 +1,11 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'Terms of Use | LoanInsurance.co.nz',
+  description: 'Terms of use for LoanInsurance.co.nz. Read our conditions for using this loan insurance comparison website.',
+  alternates: { canonical: 'https://www.loaninsurance.co.nz/terms/' },
+};
 
 export default function TermsPage() {
   return (

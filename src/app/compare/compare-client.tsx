@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import QuoteForm from '@/components/QuoteForm';
 import { providers, type Provider } from '@/data/providers';
 import {
   DollarSign,
@@ -162,19 +161,13 @@ function ProviderCard({
 
           {/* CTA row */}
           <div className="px-6 pb-5 flex flex-col sm:flex-row gap-3">
-            <Link
-              href="/contact"
-              className="bg-gradient-to-r from-sky-600 to-teal-500 hover:from-sky-700 hover:to-teal-600 text-white font-semibold py-2.5 px-6 rounded-lg transition-all duration-200 text-center text-sm"
-            >
-              Get a Quote for {provider.name}
-            </Link>
             <a
               href={provider.website}
               target="_blank"
-              rel="noopener noreferrer"
-              className="border border-slate-300 hover:border-teal-500 text-slate-700 hover:text-teal-600 font-semibold py-2.5 px-6 rounded-lg transition-all duration-200 text-center text-sm inline-flex items-center justify-center gap-2"
+              rel="noopener noreferrer sponsored"
+              className="bg-gradient-to-r from-sky-600 to-teal-500 hover:from-sky-700 hover:to-teal-600 text-white font-semibold py-2.5 px-6 rounded-lg transition-all duration-200 text-center text-sm inline-flex items-center justify-center gap-2"
             >
-              Visit Website
+              Get a Quote at {provider.name}
               <ExternalLink className="w-3.5 h-3.5" />
             </a>
           </div>
@@ -263,44 +256,38 @@ export function ComparePageClient() {
             <span className="text-slate-900 font-medium">Compare</span>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
-            {/* Left Column - Content */}
-            <div className="lg:col-span-2">
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
-                Compare NZ Loan Insurance Providers
-              </h1>
+          <div className="max-w-3xl">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
+              Compare NZ Loan Insurance Providers
+            </h1>
 
-              <p className="text-lg text-slate-700 mb-8 leading-relaxed">
-                Compare {providers.length} leading New Zealand loan protection
-                insurance providers side-by-side. See coverage, waiting periods,
-                benefit limits, and key features to find the right fit for you.
-              </p>
+            <p className="text-lg text-slate-700 mb-8 leading-relaxed">
+              Compare {providers.length} leading New Zealand loan protection
+              insurance providers side-by-side. See coverage, waiting periods,
+              benefit limits, and key features — then get a quote directly from
+              your preferred provider.
+            </p>
 
-              <div className="bg-white p-6 rounded-lg border border-slate-200">
-                <h3 className="font-bold text-slate-900 mb-4">
-                  Our Advantage
-                </h3>
-                <p className="text-slate-700 mb-4">
-                  We work with multiple NZ insurance providers to find you the
-                  best loan protection for your situation. Get a free comparison
-                  quote and let our advisers do the work.
-                </p>
-                <p className="text-sm text-slate-600">
-                  No broker fees, no hidden costs, completely free.
-                </p>
-              </div>
-            </div>
-
-            {/* Right Column - Form */}
-            <div className="lg:col-span-3">
-              <QuoteForm mode="compact" />
+            <div className="flex flex-wrap gap-3">
+              <a
+                href="#providers"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-600 to-teal-500 hover:from-sky-700 hover:to-teal-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 shadow-md"
+              >
+                Browse Providers ↓
+              </a>
+              <Link
+                href="/coverage"
+                className="inline-flex items-center gap-2 border border-slate-300 hover:border-teal-500 text-slate-700 hover:text-teal-600 font-semibold py-3 px-6 rounded-lg transition-all duration-200"
+              >
+                What&apos;s Covered
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
       {/* Provider Comparison Section */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-white">
+      <section id="providers" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 text-center mb-4">
             NZ Loan Insurance Providers
@@ -568,18 +555,18 @@ export function ComparePageClient() {
       <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-sky-600 to-teal-500">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-            Start Your Comparison Today
+            Ready to Get Covered?
           </h2>
           <p className="text-lg text-sky-100 mb-8 max-w-2xl mx-auto">
-            Get free quotes from multiple providers and compare side-by-side. No
-            broker fees, no obligations.
+            Click through to any provider above to get a personalised quote
+            directly. No broker fees, no obligations.
           </p>
-          <Link
-            href="/contact"
+          <a
+            href="#providers"
             className="inline-block bg-white hover:bg-slate-50 text-sky-600 font-bold py-3 px-8 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl"
           >
-            Get Free Comparison Quotes
-          </Link>
+            View All Providers ↑
+          </a>
         </div>
       </section>
     </main>

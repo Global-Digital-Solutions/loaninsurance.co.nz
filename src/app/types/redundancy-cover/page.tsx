@@ -1,6 +1,20 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Shield, CheckCircle2, Zap, Lock, ArrowRight, Home, Car, Users, Briefcase } from 'lucide-react';
 import QuoteForm from '@/components/QuoteForm';
+
+export const metadata: Metadata = {
+  title: 'Redundancy Cover NZ | Loan Repayment Protection for Job Loss',
+  description:
+    'Redundancy cover pays your loan repayments if you are made involuntarily redundant. Compare NZ providers and get a quote directly — no broker fees.',
+  alternates: { canonical: 'https://www.loaninsurance.co.nz/types/redundancy-cover/' },
+  openGraph: {
+    title: 'Redundancy Cover NZ | Loan Repayment Protection for Job Loss',
+    description: 'Compare NZ redundancy insurance providers. Your loan repayments covered if you lose your job involuntarily.',
+    url: 'https://www.loaninsurance.co.nz/types/redundancy-cover/',
+    type: 'website',
+  },
+};
 
 export default function RedundancyCoverPage() {
   return (

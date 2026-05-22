@@ -1,6 +1,20 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Shield, CheckCircle2, Zap, Lock, ArrowRight, Home, Car, Users, Briefcase } from 'lucide-react';
 import QuoteForm from '@/components/QuoteForm';
+
+export const metadata: Metadata = {
+  title: 'Home Loan Insurance NZ | Mortgage Repayment Protection',
+  description:
+    'Protect your mortgage repayments if you cannot work. Compare NZ home loan insurance providers offering cover for illness, injury, redundancy and death. No broker fees.',
+  alternates: { canonical: 'https://www.loaninsurance.co.nz/types/home-loan/' },
+  openGraph: {
+    title: 'Home Loan Insurance NZ | Mortgage Repayment Protection',
+    description: 'Compare NZ mortgage protection providers. Cover up to 115% of your repayments. Get a quote directly.',
+    url: 'https://www.loaninsurance.co.nz/types/home-loan/',
+    type: 'website',
+  },
+};
 
 export default function HomeLoanPage() {
   return (

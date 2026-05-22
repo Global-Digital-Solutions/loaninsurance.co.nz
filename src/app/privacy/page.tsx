@@ -1,4 +1,11 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy | LoanInsurance.co.nz',
+  description: 'Read the LoanInsurance.co.nz privacy policy. Understand how we collect, use, and protect your personal information.',
+  alternates: { canonical: 'https://www.loaninsurance.co.nz/privacy/' },
+};
 
 export default function PrivacyPage() {
   return (

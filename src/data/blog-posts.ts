@@ -648,7 +648,7 @@ If you're self-employed and have significant loan obligations, don't assume you 
 Get a free quote today. We'll assess your specific self-employed situation and help you access loan protection insurance appropriate for your income variability and business risks. Don't leave your self-employed income unprotected - secure your loans and your livelihood.`,
     author: 'Aroha Ngata',
     date: '2026-04-05',
-    image: 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&q=80',
     category: 'Specialist',
     readTime: 11,
   },

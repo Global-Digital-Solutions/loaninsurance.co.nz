@@ -1,6 +1,20 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Shield, CheckCircle2, Zap, Lock, ArrowRight, Home, Car, Users, Briefcase } from 'lucide-react';
 import QuoteForm from '@/components/QuoteForm';
+
+export const metadata: Metadata = {
+  title: 'GAP Insurance NZ | Guaranteed Asset Protection for Car Finance',
+  description:
+    'GAP insurance covers the shortfall between your car loan balance and insurance payout if your vehicle is written off. Compare NZ providers and get a quote.',
+  alternates: { canonical: 'https://www.loaninsurance.co.nz/types/gap-insurance/' },
+  openGraph: {
+    title: 'GAP Insurance NZ | Guaranteed Asset Protection for Car Finance',
+    description: 'Compare NZ GAP insurance providers. Covers your shortfall if your financed car is written off or stolen.',
+    url: 'https://www.loaninsurance.co.nz/types/gap-insurance/',
+    type: 'website',
+  },
+};
 
 export default function GapInsurancePage() {
   return (

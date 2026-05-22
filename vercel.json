@@ -1,4 +1,78 @@
 {
+  "framework": "nextjs",
   "buildCommand": "npm run build",
-  "installCommand": "npm install"
+  "installCommand": "npm install",
+  "outputDirectory": ".next",
+  "redirects": [
+    {
+      "source": "/blog/personal-loan-insurance-worth-it/",
+      "destination": "/blog/personal-loan-insurance-worth-cost/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/personal-loan-insurance-worth-it",
+      "destination": "/blog/personal-loan-insurance-worth-cost/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/gap-insurance-explained-nz/",
+      "destination": "/blog/gap-insurance-explained-car-finance/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/gap-insurance-explained-nz",
+      "destination": "/blog/gap-insurance-explained-car-finance/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/home-loan-vs-life-insurance/",
+      "destination": "/blog/home-loan-insurance-vs-life-insurance/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/home-loan-vs-life-insurance",
+      "destination": "/blog/home-loan-insurance-vs-life-insurance/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/what-happens-loan-cant-work/",
+      "destination": "/blog/what-happens-to-loan-if-cant-work/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/what-happens-loan-cant-work",
+      "destination": "/blog/what-happens-to-loan-if-cant-work/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/redundancy-protection-nz/",
+      "destination": "/blog/redundancy-protection-securing-loan-repayments/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/redundancy-protection-nz",
+      "destination": "/blog/redundancy-protection-securing-loan-repayments/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/compare-loan-insurance-providers-nz/",
+      "destination": "/blog/how-to-compare-loan-insurance-providers-nz/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/compare-loan-insurance-providers-nz",
+      "destination": "/blog/how-to-compare-loan-insurance-providers-nz/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-of-not-having-loan-protection/",
+      "destination": "/blog/true-cost-of-not-having-loan-protection/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/cost-of-not-having-loan-protection",
+      "destination": "/blog/true-cost-of-not-having-loan-protection/",
+      "permanent": true
+    }
+  ]
 }

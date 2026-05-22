@@ -1,6 +1,20 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Shield, CheckCircle2, Zap, Lock, ArrowRight, Home, Users, Briefcase, Car } from 'lucide-react';
 import QuoteForm from '@/components/QuoteForm';
+
+export const metadata: Metadata = {
+  title: 'Car Finance Insurance NZ | GAP & Loan Repayment Cover',
+  description:
+    'Protect your car finance repayments against redundancy, accident, and illness. Compare NZ car loan protection providers including GAP insurance. No broker fees.',
+  alternates: { canonical: 'https://www.loaninsurance.co.nz/types/car-finance/' },
+  openGraph: {
+    title: 'Car Finance Insurance NZ | GAP & Loan Repayment Cover',
+    description: 'Compare NZ car finance insurance providers. GAP + payment protection. Get a quote directly — no broker fees.',
+    url: 'https://www.loaninsurance.co.nz/types/car-finance/',
+    type: 'website',
+  },
+};
 
 export default function CarFinancePage() {
   return (
