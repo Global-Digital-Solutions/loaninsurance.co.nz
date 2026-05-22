@@ -178,7 +178,7 @@ export default function HomePage() {
                 </h1>
 
                 <p className="text-lg sm:text-xl text-slate-200 mb-8 leading-relaxed">
-                  Compare NZ loan protection insurance providers side-by-side.
+                  Compare loan protection insurance providers side-by-side.
                   If you lose your job, suffer an illness, or face unexpected hardship —
                   your repayments stay covered.
                 </p>

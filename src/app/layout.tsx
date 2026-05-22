@@ -53,7 +53,7 @@ const schemaOrg = {
       logo: "https://loaninsurance.co.nz/favicon.ico",
       contactPoint: {
         "@type": "ContactPoint",
-        telephone: "+6498859549",
+        email: "hello@cover4you.co.nz",
         contactType: "customer service",
         areaServed: "NZ",
         availableLanguage: "English",
