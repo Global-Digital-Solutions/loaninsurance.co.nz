@@ -12,7 +12,6 @@ import {
   Star,
   CheckCircle2,
   ChevronDown,
-  ExternalLink,
   Filter,
 } from 'lucide-react';
 
@@ -246,15 +245,13 @@ function ProviderCard({
 
             {/* CTA row */}
             <div className="px-6 pb-5 flex flex-col sm:flex-row gap-3">
-              <a
-                href={provider.website}
-                target="_blank"
-                rel="noopener noreferrer sponsored"
+              <Link
+                href={`/providers/${provider.slug}/`}
                 className="bg-gradient-to-r from-sky-600 to-teal-500 hover:from-sky-700 hover:to-teal-600 text-white font-semibold py-2.5 px-6 rounded-lg transition-all duration-200 text-center text-sm inline-flex items-center justify-center gap-2 shadow-md hover:shadow-lg"
               >
-                Get a Quote at {provider.name}
-                <ExternalLink className="w-3.5 h-3.5" />
-              </a>
+                View {provider.name} Profile
+                <ChevronDown className="w-3.5 h-3.5 -rotate-90" />
+              </Link>
             </div>
           </div>
         )}
