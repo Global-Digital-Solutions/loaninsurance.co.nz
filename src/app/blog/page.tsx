@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import Image from 'next/image';
 import { blogPosts } from '@/data/blog-posts';
+import BlogImage from '@/components/BlogImage';
 import { Calendar, Clock } from 'lucide-react';
 import TrustBanner from '@/components/TrustBanner';
 
@@ -16,12 +16,12 @@ interface BlogPost {
 }
 
 export const metadata: Metadata = {
-  title: 'Loan Insurance Blog | LoanInsurance.co.nz',
+  title: 'Articles & Resources | LoanInsurance.co.nz',
   description:
     'Read expert articles and guides about loan protection insurance in New Zealand. Tips, advice, and insights for borrowers.',
   keywords: ['blog', 'loan insurance', 'financial advice'],
   openGraph: {
-    title: 'Loan Insurance Blog',
+    title: 'Articles & Resources | LoanInsurance.co.nz',
     description: 'Expert advice and guides for loan protection insurance in NZ.',
     url: 'https://loaninsurance.co.nz/blog',
     type: 'website',
@@ -48,7 +48,7 @@ export default function BlogPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Blog',
-            name: 'LoanInsurance.co.nz Blog',
+            name: 'LoanInsurance.co.nz Articles & Resources',
             url: 'https://loaninsurance.co.nz/blog',
             description:
               'Expert articles and guides about loan protection insurance.',
@@ -74,11 +74,11 @@ export default function BlogPage() {
                 Home
               </Link>
               <span>/</span>
-              <span className="text-slate-200 font-medium">Blog</span>
+              <span className="text-slate-200 font-medium">Articles & Resources</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
-              Loan Insurance Blog
+              Articles &amp; Resources
             </h1>
             <p className="text-xl text-slate-300">
               Expert advice, guides, and insights about loan protection insurance
@@ -87,7 +87,7 @@ export default function BlogPage() {
           </div>
         </section>
 
-        {/* Blog Grid */}
+        {/* Articles Grid */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-white">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -98,13 +98,7 @@ export default function BlogPage() {
                   className="group flex flex-col bg-white rounded-lg border border-slate-200 overflow-hidden hover:border-teal-500 hover:shadow-lg transition-all duration-200"
                 >
                   {/* Image */}
-                  <div className="relative h-48 w-full overflow-hidden bg-slate-100">
-                    <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200"
-                    />
-                  </div>
+                  <BlogImage src={post.image} alt={post.title} category={post.category} />
 
                   {/* Content */}
                   <div className="flex flex-col flex-1 p-6">
