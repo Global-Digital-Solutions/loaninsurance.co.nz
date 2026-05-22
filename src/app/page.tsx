@@ -19,6 +19,15 @@ import {
   Building2,
   Users,
   ArrowRight,
+  Star,
+  Clock,
+  BadgeCheck,
+  FileText,
+  BarChart2,
+  ShieldCheck,
+  Phone,
+  CreditCard,
+  Umbrella,
 } from 'lucide-react';
 
 interface FAQItem {
@@ -36,73 +45,122 @@ export default function HomePage() {
       title: 'Personal Loans',
       description: 'Protect repayments on personal loans for any purpose',
       href: '/types/personal-loan',
+      badge: 'Most Popular',
+      badgeColor: 'bg-sky-100 text-sky-700',
+      gradient: 'from-sky-500 to-blue-600',
+      accent: 'border-sky-200 hover:border-sky-400',
     },
     {
       icon: Car,
       title: 'Car Finance',
       description: 'Coverage for vehicle financing and car loans',
       href: '/types/car-finance',
+      badge: 'Includes GAP',
+      badgeColor: 'bg-amber-100 text-amber-700',
+      gradient: 'from-amber-500 to-orange-500',
+      accent: 'border-amber-200 hover:border-amber-400',
     },
     {
       icon: HomeIcon,
       title: 'Home Loans',
       description: 'Mortgage and home loan repayment protection',
       href: '/types/home-loan',
+      badge: 'Up to $30k/mo',
+      badgeColor: 'bg-teal-100 text-teal-700',
+      gradient: 'from-teal-500 to-emerald-600',
+      accent: 'border-teal-200 hover:border-teal-400',
     },
     {
       icon: Shield,
       title: 'GAP Insurance',
       description: 'Guaranteed asset protection for financed vehicles',
       href: '/types/gap-insurance',
+      badge: 'Vehicle specialist',
+      badgeColor: 'bg-purple-100 text-purple-700',
+      gradient: 'from-purple-500 to-violet-600',
+      accent: 'border-purple-200 hover:border-purple-400',
     },
     {
       icon: TrendingUp,
       title: 'Redundancy Cover',
       description: 'Income protection if you lose your job',
       href: '/types/redundancy-cover',
+      badge: 'Employer-event cover',
+      badgeColor: 'bg-green-100 text-green-700',
+      gradient: 'from-green-500 to-teal-500',
+      accent: 'border-green-200 hover:border-green-400',
     },
     {
       icon: Building2,
       title: 'Business Loan',
       description: 'Commercial mortgages, equipment finance & key person cover',
       href: '/types/business-loan',
+      badge: 'Broker matched',
+      badgeColor: 'bg-slate-100 text-slate-700',
+      gradient: 'from-slate-600 to-slate-800',
+      accent: 'border-slate-300 hover:border-slate-500',
     },
   ];
 
   const howItWorks = [
     {
-      number: '1',
-      title: 'Get a Quote',
-      description: 'Complete our quick 2-minute online form',
+      number: '01',
+      icon: FileText,
+      title: 'Tell Us About Your Loan',
+      description: 'Complete our quick 2-minute online form. Loan type, amount, and what you need covered.',
+      cta: 'Start here →',
+      href: '/contact',
     },
     {
-      number: '2',
-      title: 'Compare Options',
-      description: 'Review coverage from multiple NZ insurers',
+      number: '02',
+      icon: BarChart2,
+      title: 'Compare NZ Providers',
+      description: 'We match your needs across 8 licensed NZ insurers side-by-side — cover types, limits, and waiting periods.',
+      cta: 'See providers →',
+      href: '/compare',
     },
     {
-      number: '3',
-      title: 'Get Protected',
-      description: 'Start your coverage within 24 hours',
+      number: '03',
+      icon: ShieldCheck,
+      title: 'Get Protected Fast',
+      description: 'A licensed NZ adviser contacts you within 24 hours. Coverage can start the same day.',
+      cta: 'View coverage →',
+      href: '/coverage',
     },
   ];
 
-  const benefits = [
+  const reasons = [
     {
-      title: 'Repayment Protection',
-      description: 'Monthly loan payments covered if you cannot work',
+      icon: BadgeCheck,
+      title: '8 Licensed NZ Providers',
+      description: 'We compare AIA, Partners Life, Fidelity Life, Autosure and more — all regulated by the FMA and RBNZ.',
+      gradient: 'from-sky-500 to-teal-500',
+      link: '/compare',
+      linkLabel: 'Compare providers',
     },
     {
-      title: 'Redundancy Cover',
-      description: 'Protection if you lose your job involuntarily',
+      icon: Clock,
+      title: '24-Hour Response',
+      description: "Submit your details today and a qualified adviser will be in touch before tomorrow — no waiting weeks for cover.",
+      gradient: 'from-teal-500 to-emerald-500',
+      link: '/contact',
+      linkLabel: 'Get a quote',
     },
     {
-      title: 'Death & Disability',
-      description: 'Benefits for serious health events',
+      icon: CreditCard,
+      title: 'No Broker Fees',
+      description: "Our advisers are commission-funded by insurers, so you pay nothing extra to get expert advice on the right cover.",
+      gradient: 'from-amber-500 to-orange-500',
+      link: '/about',
+      linkLabel: 'How we work',
     },
     {
-      title: 'Peace of Mind',
-      description: 'Financial security for you and your family',
+      icon: Umbrella,
+      title: 'Cover Tailored to You',
+      description: 'Personal loans, mortgages, car finance, redundancy — every policy is matched to your loan type and circumstances.',
+      gradient: 'from-purple-500 to-violet-500',
+      link: '/coverage',
+      linkLabel: 'What\'s covered',
     },
   ];
 
@@ -259,10 +317,33 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Personal vs Business Pathway */}
+        {/* ── Social Proof Strip ─────────────────────────────────────── */}
+        <section className="bg-slate-900 border-b border-slate-700">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-slate-700">
+              {[
+                { icon: BadgeCheck, stat: '8', label: 'Licensed NZ Providers' },
+                { icon: Star,       stat: '4.5★', label: 'Average Provider Rating' },
+                { icon: Clock,      stat: '24hr', label: 'Adviser Response Time' },
+                { icon: Shield,     stat: '$0', label: 'Broker Fees Charged' },
+              ].map(({ icon: Icon, stat, label }, i) => (
+                <div key={i} className="flex items-center gap-3 py-4 px-4 sm:px-6 lg:px-8">
+                  <Icon className="w-5 h-5 text-teal-400 flex-shrink-0" />
+                  <div>
+                    <p className="text-white font-bold text-sm sm:text-base leading-tight">{stat}</p>
+                    <p className="text-slate-400 text-xs">{label}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ── Personal vs Business Pathway ──────────────────────────── */}
         <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-10">
+              <p className="text-sm font-semibold text-teal-600 uppercase tracking-widest mb-2">Find Your Cover</p>
               <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-3">
                 Personal or Business Loan?
               </h2>
@@ -273,15 +354,19 @@ export default function HomePage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Personal Path */}
-              <div className="relative rounded-2xl border-2 border-teal-500/30 bg-gradient-to-br from-sky-50 to-teal-50 p-8 hover:shadow-xl hover:border-teal-500/60 transition-all duration-300 group">
-                <div className="w-14 h-14 rounded-xl bg-gradient-to-r from-sky-500 to-teal-500 flex items-center justify-center mb-5">
+              <div className="relative rounded-2xl border-2 border-teal-400/50 bg-gradient-to-br from-sky-50 to-teal-50 p-8 hover:shadow-2xl hover:border-teal-500 transition-all duration-300 group">
+                {/* Most Popular badge */}
+                <div className="absolute -top-3.5 left-8 bg-gradient-to-r from-sky-500 to-teal-500 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-md">
+                  ★ Most Popular
+                </div>
+                <div className="w-14 h-14 rounded-xl bg-gradient-to-r from-sky-500 to-teal-500 flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
                   <Users className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-slate-900 mb-3">Personal Loan Insurance</h3>
                 <p className="text-slate-600 mb-5 leading-relaxed">
-                  Compare 8 NZ providers side-by-side for personal loans, car finance, home loans, GAP insurance and redundancy cover. Browse direct and get quotes from providers instantly.
+                  Compare 8 NZ providers side-by-side for personal loans, car finance, home loans, GAP insurance and redundancy cover.
                 </p>
-                <ul className="space-y-2 mb-6">
+                <ul className="space-y-2.5 mb-7">
                   {['Personal & car loans', 'Home loan / mortgage protection', 'Redundancy & disability cover', 'GAP insurance for vehicles'].map((item) => (
                     <li key={item} className="flex items-center gap-2.5 text-slate-700 text-sm">
                       <CheckCircle2 className="w-4 h-4 text-teal-500 flex-shrink-0" />
@@ -289,24 +374,32 @@ export default function HomePage() {
                     </li>
                   ))}
                 </ul>
-                <Link
-                  href="/compare"
-                  className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-600 to-teal-500 hover:from-sky-700 hover:to-teal-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 shadow-md group-hover:shadow-lg"
-                >
-                  Browse Personal Providers <ArrowRight className="w-4 h-4" />
-                </Link>
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <Link
+                    href="/compare"
+                    className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-sky-600 to-teal-500 hover:from-sky-700 hover:to-teal-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 shadow-md group-hover:shadow-lg"
+                  >
+                    Browse Personal Providers <ArrowRight className="w-4 h-4" />
+                  </Link>
+                  <Link
+                    href="/contact"
+                    className="inline-flex items-center justify-center gap-2 border-2 border-teal-400 hover:bg-teal-50 text-teal-700 font-semibold py-3 px-5 rounded-lg transition-all duration-200 text-sm"
+                  >
+                    Get a Quote
+                  </Link>
+                </div>
               </div>
 
               {/* Business Path */}
-              <div className="relative rounded-2xl border-2 border-slate-200 bg-gradient-to-br from-slate-800 to-slate-900 p-8 hover:shadow-xl hover:border-slate-600 transition-all duration-300 group">
-                <div className="w-14 h-14 rounded-xl bg-gradient-to-r from-sky-500 to-teal-500 flex items-center justify-center mb-5">
+              <div className="relative rounded-2xl border-2 border-slate-600/40 bg-gradient-to-br from-slate-800 to-slate-900 p-8 hover:shadow-2xl hover:border-teal-500/60 transition-all duration-300 group">
+                <div className="w-14 h-14 rounded-xl bg-gradient-to-r from-sky-500 to-teal-500 flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
                   <Building2 className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-3">Business Loan Insurance</h3>
                 <p className="text-slate-300 mb-5 leading-relaxed">
                   Specialist broker-matched cover for business debt. Our licensed NZ brokers provide tailored quotes for commercial mortgages, equipment finance, key person risk and more.
                 </p>
-                <ul className="space-y-2 mb-6">
+                <ul className="space-y-2.5 mb-7">
                   {['Commercial mortgages & overdrafts', 'Equipment & vehicle fleet finance', 'Key person / life cover on debt', 'Sole traders, companies & trusts'].map((item) => (
                     <li key={item} className="flex items-center gap-2.5 text-slate-300 text-sm">
                       <CheckCircle2 className="w-4 h-4 text-teal-400 flex-shrink-0" />
@@ -314,46 +407,64 @@ export default function HomePage() {
                     </li>
                   ))}
                 </ul>
-                <Link
-                  href="/types/business-loan"
-                  className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-600 to-teal-500 hover:from-sky-700 hover:to-teal-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 shadow-md group-hover:shadow-lg"
-                >
-                  Get a Business Quote <ArrowRight className="w-4 h-4" />
-                </Link>
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <Link
+                    href="/types/business-loan"
+                    className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-sky-600 to-teal-500 hover:from-sky-700 hover:to-teal-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 shadow-md group-hover:shadow-lg"
+                  >
+                    Get a Business Quote <ArrowRight className="w-4 h-4" />
+                  </Link>
+                  <Link
+                    href="/contact"
+                    className="inline-flex items-center justify-center gap-2 border-2 border-slate-500 hover:border-teal-400 text-slate-300 hover:text-teal-300 font-semibold py-3 px-5 rounded-lg transition-all duration-200 text-sm"
+                  >
+                    Speak to a Broker
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Insurance Types Grid */}
+        {/* ── Insurance Types Grid ───────────────────────────────────── */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-slate-50">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 text-center mb-4">
-              Insurance for Every Loan Type
-            </h2>
-            <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
-              Whether you have a personal loan, car finance, home loan, or
-              business loan, we have protection tailored for you
-            </p>
+            <div className="text-center mb-12">
+              <p className="text-sm font-semibold text-teal-600 uppercase tracking-widest mb-2">All Loan Types Covered</p>
+              <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+                Insurance for Every Loan Type
+              </h2>
+              <p className="text-slate-600 max-w-2xl mx-auto">
+                Whether you have a personal loan, car finance, home loan, or business loan — we have protection tailored for you.
+              </p>
+            </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {loanTypes.map((type) => {
                 const Icon = type.icon;
                 return (
                   <Link
                     key={type.href}
                     href={type.href}
-                    className="bg-white p-6 rounded-lg border border-slate-200 hover:border-teal-500 hover:shadow-lg transition-all duration-200 group"
+                    className={`group bg-white p-6 rounded-xl border-2 ${type.accent} hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col`}
                   >
-                    <Icon className="w-10 h-10 text-teal-600 mb-4 group-hover:scale-110 transition-transform" />
-                    <h3 className="text-lg font-bold text-slate-900 mb-2">
+                    {/* Icon + badge row */}
+                    <div className="flex items-start justify-between mb-5">
+                      <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${type.gradient} flex items-center justify-center group-hover:scale-110 transition-transform shadow-md`}>
+                        <Icon className="w-6 h-6 text-white" />
+                      </div>
+                      <span className={`text-xs font-semibold px-2.5 py-1 rounded-full ${type.badgeColor}`}>
+                        {type.badge}
+                      </span>
+                    </div>
+                    <h3 className="text-lg font-bold text-slate-900 mb-2 group-hover:text-teal-700 transition-colors">
                       {type.title}
                     </h3>
-                    <p className="text-sm text-slate-600 mb-4">
+                    <p className="text-sm text-slate-600 leading-relaxed flex-1 mb-4">
                       {type.description}
                     </p>
-                    <span className="text-teal-600 font-semibold text-sm inline-flex items-center gap-1 group-hover:gap-2 transition-all">
-                      Learn more <span>→</span>
+                    <span className="inline-flex items-center gap-1 text-teal-600 font-semibold text-sm group-hover:gap-2.5 transition-all">
+                      Explore cover <ArrowRight className="w-4 h-4" />
                     </span>
                   </Link>
                 );
@@ -362,67 +473,126 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* How It Works */}
-        <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-white">
+        {/* ── How It Works ──────────────────────────────────────────── */}
+        <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 text-center mb-4">
-              How It Works
-            </h2>
-            <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
-              Getting protected takes just a few simple steps
-            </p>
+            <div className="text-center mb-14">
+              <p className="text-sm font-semibold text-teal-400 uppercase tracking-widest mb-2">Simple Process</p>
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+                How It Works
+              </h2>
+              <p className="text-slate-400 max-w-xl mx-auto">
+                Getting protected takes less than 2 minutes to start
+              </p>
+            </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {howItWorks.map((step, idx) => (
-                <div
-                  key={idx}
-                  className="relative flex flex-col items-center text-center"
-                >
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-r from-sky-600 to-teal-500 text-white font-bold text-2xl flex items-center justify-center mb-4">
-                    {step.number}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 relative">
+              {/* Connector lines (desktop) */}
+              <div className="hidden md:block absolute top-10 left-[33%] right-[33%] h-0.5 bg-gradient-to-r from-teal-500/40 via-sky-400/60 to-teal-500/40 z-0" />
+
+              {howItWorks.map((step, idx) => {
+                const Icon = step.icon;
+                return (
+                  <div key={idx} className="relative z-10 bg-white/5 border border-white/10 rounded-2xl p-7 hover:bg-white/10 hover:border-teal-500/50 hover:shadow-2xl transition-all duration-300 group flex flex-col">
+                    {/* Step number */}
+                    <div className="text-6xl font-black text-white/5 absolute top-4 right-5 leading-none select-none">
+                      {step.number}
+                    </div>
+                    {/* Icon circle */}
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-sky-500 to-teal-500 flex items-center justify-center mb-5 group-hover:scale-105 transition-transform shadow-lg">
+                      <Icon className="w-6 h-6 text-white" />
+                    </div>
+                    <h3 className="text-lg font-bold text-white mb-2">{step.title}</h3>
+                    <p className="text-slate-400 text-sm leading-relaxed flex-1 mb-5">{step.description}</p>
+                    <Link
+                      href={step.href}
+                      className="inline-flex items-center gap-1.5 text-teal-400 hover:text-teal-300 font-semibold text-sm transition-colors group-hover:gap-3"
+                    >
+                      {step.cta} <ArrowRight className="w-4 h-4" />
+                    </Link>
                   </div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-2">
-                    {step.title}
-                  </h3>
-                  <p className="text-slate-600">{step.description}</p>
+                );
+              })}
+            </div>
 
-                  {idx < howItWorks.length - 1 && (
-                    <div className="hidden md:block absolute top-8 -right-4 lg:-right-8 w-8 h-0.5 bg-gradient-to-r from-sky-600 to-teal-500" />
-                  )}
-                </div>
-              ))}
+            {/* Bottom CTA */}
+            <div className="text-center mt-12">
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-500 to-teal-500 hover:from-sky-600 hover:to-teal-600 text-white font-bold py-4 px-10 rounded-xl transition-all duration-200 shadow-xl hover:shadow-teal-500/30 hover:scale-105 text-lg"
+              >
+                Get a Quote Now <ArrowRight className="w-5 h-5" />
+              </Link>
+              <p className="text-slate-500 text-sm mt-3">Takes less than 2 minutes · No broker fees · 24hr response</p>
             </div>
           </div>
         </section>
 
-        {/* Benefits Grid */}
-        <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-slate-50">
+        {/* ── Why Kiwis Choose Us ───────────────────────────────────── */}
+        <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-white">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 text-center mb-12">
-              Why Choose Our Coverage
-            </h2>
+            <div className="text-center mb-12">
+              <p className="text-sm font-semibold text-teal-600 uppercase tracking-widest mb-2">Why LoanInsurance.co.nz</p>
+              <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+                Why Kiwis Choose Us
+              </h2>
+              <p className="text-slate-600 max-w-2xl mx-auto">
+                We make it easy to find the right loan protection — without the jargon, hidden costs, or delays.
+              </p>
+            </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {benefits.map((benefit, idx) => (
-                <div
-                  key={idx}
-                  className="bg-white p-6 rounded-lg border border-slate-200 hover:border-teal-500 hover:shadow-lg transition-all duration-200"
+              {reasons.map((reason, idx) => {
+                const Icon = reason.icon;
+                return (
+                  <div
+                    key={idx}
+                    className="group bg-slate-50 hover:bg-white border border-slate-200 hover:border-teal-300 rounded-2xl p-6 hover:shadow-xl transition-all duration-300 flex flex-col"
+                  >
+                    {/* Gradient top bar */}
+                    <div className={`h-1 w-full rounded-full bg-gradient-to-r ${reason.gradient} mb-5`} />
+                    <div className={`w-11 h-11 rounded-lg bg-gradient-to-br ${reason.gradient} flex items-center justify-center mb-4 group-hover:scale-105 transition-transform shadow-md`}>
+                      <Icon className="w-5 h-5 text-white" />
+                    </div>
+                    <h3 className="text-base font-bold text-slate-900 mb-2">{reason.title}</h3>
+                    <p className="text-sm text-slate-600 leading-relaxed flex-1 mb-4">{reason.description}</p>
+                    <Link
+                      href={reason.link}
+                      className="inline-flex items-center gap-1 text-teal-600 hover:text-teal-700 font-semibold text-sm transition-colors group-hover:gap-2"
+                    >
+                      {reason.linkLabel} <ArrowRight className="w-3.5 h-3.5" />
+                    </Link>
+                  </div>
+                );
+              })}
+            </div>
+
+            {/* Compare CTA */}
+            <div className="mt-12 bg-gradient-to-r from-sky-50 to-teal-50 border border-teal-200 rounded-2xl p-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+              <div>
+                <h3 className="text-xl font-bold text-slate-900 mb-1">Ready to compare 8 NZ providers?</h3>
+                <p className="text-slate-600 text-sm">See cover types, benefit limits, waiting periods and ratings side-by-side — all in one place.</p>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">
+                <Link
+                  href="/compare"
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-600 to-teal-500 hover:from-sky-700 hover:to-teal-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg whitespace-nowrap"
                 >
-                  <CheckCircle2 className="w-8 h-8 text-teal-600 mb-4" />
-                  <h3 className="text-lg font-bold text-slate-900 mb-2">
-                    {benefit.title}
-                  </h3>
-                  <p className="text-slate-600 text-sm">
-                    {benefit.description}
-                  </p>
-                </div>
-              ))}
+                  Compare Providers <ArrowRight className="w-4 h-4" />
+                </Link>
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center gap-2 border-2 border-teal-500 hover:bg-teal-50 text-teal-700 font-bold py-3 px-6 rounded-lg transition-all duration-200 whitespace-nowrap"
+                >
+                  Get a Quote
+                </Link>
+              </div>
             </div>
           </div>
         </section>
 
         {/* Animated Stats */}
-        <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-white">
+        <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-slate-50">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 text-center mb-4">
               The Insurance Industry at a Glance
@@ -435,7 +605,7 @@ export default function HomePage() {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-slate-50">
+        <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-white">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 text-center mb-4">
               Frequently Asked Questions
@@ -448,7 +618,7 @@ export default function HomePage() {
               {displayedFAQs.map((faq) => (
                 <div
                   key={faq.slug}
-                  className="bg-white border border-slate-200 rounded-lg overflow-hidden hover:border-teal-500 transition-all duration-200"
+                  className="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden hover:border-teal-400 transition-all duration-200"
                 >
                   <button
                     onClick={() =>
@@ -456,7 +626,7 @@ export default function HomePage() {
                         expandedFAQ === faq.slug ? null : faq.slug
                       )
                     }
-                    className="w-full px-6 py-4 flex items-center justify-between hover:bg-slate-50 transition-colors"
+                    className="w-full px-6 py-4 flex items-center justify-between hover:bg-slate-100 transition-colors"
                   >
                     <h3 className="font-bold text-slate-900 text-left">
                       {faq.question}
@@ -469,7 +639,7 @@ export default function HomePage() {
                   </button>
 
                   {expandedFAQ === faq.slug && (
-                    <div className="px-6 py-4 border-t border-slate-200 bg-slate-50">
+                    <div className="px-6 py-4 border-t border-slate-200 bg-white">
                       <div className="prose prose-sm max-w-none">
                         <p className="text-slate-700 whitespace-pre-wrap">
                           {faq.answer}
@@ -496,7 +666,7 @@ export default function HomePage() {
         <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-sky-600 to-teal-500">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Don't Leave Your Loans Unprotected
+              Don&apos;t Leave Your Loans Unprotected
             </h2>
             <p className="text-lg text-sky-100 mb-8 max-w-2xl mx-auto">
               Get a quote today and see how affordable loan protection
