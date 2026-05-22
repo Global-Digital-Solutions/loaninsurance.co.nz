@@ -143,66 +143,109 @@ export default function HomePage() {
           className="relative lg:min-h-[100vh] pt-28 pb-12 sm:pt-28 sm:pb-16 lg:py-28 flex items-center"
           style={{
             backgroundImage:
-              'url(https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1920&h=1080&fit=crop)',
+              'url(https://images.unsplash.com/photo-1450101499163-c8848e66ad76?w=1920&h=1080&fit=crop&q=85)',
             backgroundSize: 'cover',
-            backgroundPosition: 'center',
+            backgroundPosition: 'center 30%',
           }}
         >
-          {/* Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 to-slate-900/70" />
+          {/* Gradient Overlay — dark left, lighter right so image shows */}
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/85 via-slate-900/65 to-slate-900/30" />
 
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-            <div className="max-w-3xl">
-              <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-white mb-6">
-                Protect Your Loan Repayments
-              </h1>
-              <p className="text-lg sm:text-xl text-slate-100 mb-8 max-w-2xl leading-relaxed">
-                Get peace of mind with affordable loan protection insurance. If
-                you lose your job, suffer an illness, or face unexpected
-                hardship, we've got your loan payments covered.
-              </p>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
-              {/* Trust Badges - Overlaid on Hero */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-10">
-                <div className="flex items-center gap-3 bg-white/10 rounded-lg px-4 py-3 backdrop-blur-sm border border-white/20">
-                  <Shield className="w-5 h-5 text-teal-400 flex-shrink-0" />
-                  <span className="text-sm sm:text-base text-white font-semibold">ICNZ Registered Brokers</span>
+              {/* Left Column — main content */}
+              <div>
+                <div className="inline-flex items-center gap-2 bg-teal-500/20 border border-teal-400/30 rounded-full px-4 py-1.5 mb-6">
+                  <Shield className="w-4 h-4 text-teal-300" />
+                  <span className="text-teal-200 text-sm font-semibold">8 Licensed NZ Providers Compared</span>
                 </div>
-                <div className="flex items-center gap-3 bg-white/10 rounded-lg px-4 py-3 backdrop-blur-sm border border-white/20">
-                  <CheckCircle2 className="w-5 h-5 text-teal-400 flex-shrink-0" />
-                  <span className="text-sm sm:text-base text-white font-semibold">No Broker Fees</span>
+
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 leading-tight">
+                  Protect Your<br />
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-300 to-teal-300">
+                    Loan Repayments
+                  </span>
+                </h1>
+
+                <p className="text-lg sm:text-xl text-slate-200 mb-8 leading-relaxed">
+                  Compare NZ loan protection insurance providers side-by-side.
+                  If you lose your job, suffer an illness, or face unexpected hardship —
+                  your repayments stay covered.
+                </p>
+
+                {/* Trust Badges */}
+                <div className="grid grid-cols-2 gap-3 mb-8">
+                  <div className="flex items-center gap-2.5 bg-white/10 rounded-lg px-3 py-2.5 backdrop-blur-sm border border-white/15">
+                    <CheckCircle2 className="w-4 h-4 text-teal-400 flex-shrink-0" />
+                    <span className="text-sm text-white font-medium">Licensed NZ Brokers</span>
+                  </div>
+                  <div className="flex items-center gap-2.5 bg-white/10 rounded-lg px-3 py-2.5 backdrop-blur-sm border border-white/15">
+                    <Lock className="w-4 h-4 text-teal-400 flex-shrink-0" />
+                    <span className="text-sm text-white font-medium">256-bit SSL Secure</span>
+                  </div>
+                  <div className="flex items-center gap-2.5 bg-white/10 rounded-lg px-3 py-2.5 backdrop-blur-sm border border-white/15">
+                    <Zap className="w-4 h-4 text-teal-400 flex-shrink-0" />
+                    <span className="text-sm text-white font-medium">24hr Response</span>
+                  </div>
+                  <div className="flex items-center gap-2.5 bg-white/10 rounded-lg px-3 py-2.5 backdrop-blur-sm border border-white/15">
+                    <MessageCircle className="w-4 h-4 text-teal-400 flex-shrink-0" />
+                    <span className="text-sm text-white font-medium">No Broker Fees</span>
+                  </div>
                 </div>
-                <div className="flex items-center gap-3 bg-white/10 rounded-lg px-4 py-3 backdrop-blur-sm border border-white/20">
-                  <Lock className="w-5 h-5 text-teal-400 flex-shrink-0" />
-                  <span className="text-sm sm:text-base text-white font-semibold">256-bit SSL Secure</span>
-                </div>
-                <div className="flex items-center gap-3 bg-white/10 rounded-lg px-4 py-3 backdrop-blur-sm border border-white/20">
-                  <Zap className="w-5 h-5 text-teal-400 flex-shrink-0" />
-                  <span className="text-sm sm:text-base text-white font-semibold">24hr Quote Response</span>
-                </div>
-                <div className="flex items-center gap-3 bg-white/10 rounded-lg px-4 py-3 backdrop-blur-sm border border-white/20">
-                  <MessageCircle className="w-5 h-5 text-teal-400 flex-shrink-0" />
-                  <span className="text-sm sm:text-base text-white font-semibold">Free Consultation</span>
+
+                {/* CTA Buttons */}
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Link
+                    href="/compare"
+                    className="bg-gradient-to-r from-sky-500 to-teal-500 hover:from-sky-600 hover:to-teal-600 text-white font-bold py-3.5 px-8 rounded-lg transition-all duration-200 inline-flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
+                  >
+                    Compare Providers →
+                  </Link>
+                  <Link
+                    href="/coverage"
+                    className="bg-white/15 hover:bg-white/25 text-white font-semibold py-3.5 px-8 rounded-lg transition-all duration-200 border border-white/30 inline-flex items-center justify-center gap-2 backdrop-blur-sm"
+                  >
+                    What&apos;s Covered
+                  </Link>
                 </div>
               </div>
 
-              {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link
-                  href="/contact"
-                  className="bg-gradient-to-r from-sky-600 to-teal-500 hover:from-sky-700 hover:to-teal-600 text-white font-bold py-3.5 px-8 rounded-lg transition-all duration-200 inline-flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
-                >
-                  Get a Free Quote
-                  <span>→</span>
-                </Link>
-                <Link
-                  href="/compare"
-                  className="bg-white/20 hover:bg-white/30 text-white font-bold py-3.5 px-8 rounded-lg transition-all duration-200 border border-white/40 inline-flex items-center justify-center gap-2 backdrop-blur-sm"
-                >
-                  Compare Providers
-                  <span>→</span>
-                </Link>
+              {/* Right Column — top providers card */}
+              <div className="hidden lg:block">
+                <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 shadow-2xl">
+                  <p className="text-xs font-bold text-teal-300 uppercase tracking-widest mb-4">Top-Rated NZ Providers</p>
+                  <div className="space-y-3">
+                    {[
+                      { name: 'AIA New Zealand', rating: 4.5, bestFor: 'Mortgage protection + wellness', tag: 'Top Rated' },
+                      { name: 'Partners Life', rating: 4.5, bestFor: 'Flexible waiting periods', tag: 'NZ Owned' },
+                      { name: 'Fidelity Life', rating: 4.3, bestFor: 'Highest max benefit ($30k/mo)', tag: 'NZ Owned' },
+                    ].map((p, i) => (
+                      <div key={i} className="flex items-center gap-4 bg-white/10 rounded-xl px-4 py-3 border border-white/10">
+                        <div className="w-8 h-8 rounded-full bg-gradient-to-br from-sky-500 to-teal-500 flex items-center justify-center flex-shrink-0">
+                          <span className="text-white font-bold text-xs">#{i + 1}</span>
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <div className="flex items-center gap-2">
+                            <span className="text-white font-bold text-sm">{p.name}</span>
+                            <span className="text-xs bg-teal-500/30 text-teal-200 px-1.5 py-0.5 rounded-full">{p.tag}</span>
+                          </div>
+                          <p className="text-slate-300 text-xs mt-0.5">{p.bestFor}</p>
+                        </div>
+                        <div className="text-amber-400 font-bold text-sm flex-shrink-0">★ {p.rating}</div>
+                      </div>
+                    ))}
+                  </div>
+                  <Link
+                    href="/compare"
+                    className="mt-4 flex items-center justify-center gap-2 w-full bg-gradient-to-r from-sky-500 to-teal-500 hover:from-sky-600 hover:to-teal-600 text-white font-bold py-3 rounded-xl transition-all duration-200 text-sm"
+                  >
+                    See All 8 Providers →
+                  </Link>
+                  <p className="text-center text-slate-400 text-xs mt-3">No broker fees · Get quotes directly</p>
+                </div>
               </div>
+
             </div>
           </div>
         </section>
