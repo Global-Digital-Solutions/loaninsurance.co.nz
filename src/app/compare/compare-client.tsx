@@ -352,7 +352,7 @@ export function ComparePageClient() {
 
           <div className="max-w-3xl">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
-              Compare NZ Loan Insurance Providers
+              Compare Loan Insurance Providers
             </h1>
 
             <p className="text-lg text-slate-200 mb-8 leading-relaxed">
