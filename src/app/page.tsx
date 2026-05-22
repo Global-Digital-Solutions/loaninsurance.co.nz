@@ -161,7 +161,7 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-gradient-to-r from-slate-900/85 via-slate-900/65 to-slate-900/30" />
 
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-10 lg:gap-16 items-center">
 
               {/* Left Column — main content */}
               <div>
@@ -221,8 +221,8 @@ export default function HomePage() {
               </div>
 
               {/* Right Column — top providers card */}
-              <div className="hidden lg:block">
-                <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 shadow-2xl">
+              <div className="hidden lg:flex lg:justify-end">
+                <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 shadow-2xl w-full max-w-[340px]">
                   <p className="text-xs font-bold text-teal-300 uppercase tracking-widest mb-4">Top-Rated NZ Providers</p>
                   <div className="space-y-3">
                     {[

@@ -60,9 +60,9 @@ export default function GapInsurancePage() {
             <span className="text-slate-200">GAP Insurance</span>
           </div>
 
-          <div className="grid lg:grid-cols-5 gap-8 lg:gap-12 items-start">
+          <div className="grid lg:grid-cols-[2fr_1fr] gap-8 lg:gap-12 items-start">
             {/* Left Column */}
-            <div className="lg:col-span-3">
+            <div className="">
               <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
                 GAP Insurance
               </h1>
@@ -120,7 +120,7 @@ export default function GapInsurancePage() {
             </div>
 
             {/* Right Column - Quote Form */}
-            <div className="lg:col-span-2">
+            <div className="">
               <QuoteForm mode="compact" />
             </div>
           </div>

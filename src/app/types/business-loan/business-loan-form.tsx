@@ -90,7 +90,7 @@ export default function BusinessLoanForm() {
         <input type="text" name="_honey" className="hidden" tabIndex={-1} autoComplete="off" />
 
         {/* Name + Email */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 gap-4">
           <div>
             <label htmlFor="bl-name" className="block text-sm font-semibold text-slate-700 mb-1">
               Your Name <span className="text-red-500">*</span>
@@ -120,7 +120,7 @@ export default function BusinessLoanForm() {
         </div>
 
         {/* Phone + Company */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 gap-4">
           <div>
             <label htmlFor="bl-phone" className="block text-sm font-semibold text-slate-700 mb-1">
               Phone Number <span className="text-red-500">*</span>

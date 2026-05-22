@@ -116,9 +116,9 @@ export function ContactPageClient() {
             <span className="text-white font-medium">Get a Quote</span>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-8 items-start">
             {/* Left Column - Content */}
-            <div className="lg:col-span-2">
+            <div>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
                 Get Your Free Loan Insurance Quote
               </h1>
@@ -165,7 +165,7 @@ export function ContactPageClient() {
             </div>
 
             {/* Right Column - Form */}
-            <div className="lg:col-span-3">
+            <div>
               <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border-2 border-teal-500/30">
                 {/* Form Header */}
                 <div className="bg-gradient-to-r from-sky-600 to-teal-500 p-5">
@@ -178,7 +178,7 @@ export function ContactPageClient() {
                   <input type="text" name="_honey" className="hidden" tabIndex={-1} autoComplete="off" />
 
                   {/* Name + Email */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 gap-4">
                     <div>
                       <label htmlFor="c-name" className="block text-sm font-semibold text-slate-700 mb-1">
                         Full Name <span className="text-red-500">*</span>

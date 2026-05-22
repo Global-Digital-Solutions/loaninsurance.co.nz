@@ -116,9 +116,9 @@ export default function BusinessLoanPage() {
               <span className="text-white font-medium">Business Loan</span>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
+            <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-8 items-start">
               {/* Left — Content */}
-              <div className="lg:col-span-2">
+              <div>
                 <div className="inline-flex items-center gap-2 bg-teal-500/20 border border-teal-500/40 text-teal-300 px-3 py-1.5 rounded-full text-sm font-medium mb-6">
                   <Building2 className="w-4 h-4" />
                   Business Loan Insurance
@@ -155,7 +155,7 @@ export default function BusinessLoanPage() {
               </div>
 
               {/* Right — Form */}
-              <div className="lg:col-span-3">
+              <div>
                 <BusinessLoanForm />
               </div>
             </div>
