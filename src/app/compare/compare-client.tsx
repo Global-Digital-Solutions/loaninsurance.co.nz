@@ -18,6 +18,22 @@ import {
 
 type CategoryFilter = 'all' | 'life-insurer' | 'vehicle-finance' | 'general';
 
+/* ─── Extracts first waiting-period value with its correct unit ─── */
+function getMinWait(s: string): string {
+  if (/no waiting/i.test(s)) return 'None';
+  if (s === 'Selected at application') return 'At application';
+  // "14-day" or "30-day" hyphenated style
+  const hyphen = s.match(/^(\d+)-day/i);
+  if (hyphen) return `${hyphen[1]} days`;
+  // First numeric value
+  const first = s.match(/^(\d+)/);
+  if (!first) return s.split(',')[0].trim();
+  const num = first[1];
+  if (/\bdays?\b/i.test(s)) return `${num} days`;
+  if (/\bweeks?\b/i.test(s)) return `${num} weeks`;
+  return num;
+}
+
 /* ─── Scroll-triggered fade-in-up ─── */
 function AnimatedCard({
   children,
@@ -481,7 +497,7 @@ export function ComparePageClient() {
                           : provider.maxBenefit}
                       </td>
                       <td className="px-4 py-3 text-sm text-slate-300">
-                        {provider.waitingPeriods.split(',')[0].replace(/\s*to\s*.*/, '')}
+                        {getMinWait(provider.waitingPeriods)}
                       </td>
                       <td className="px-4 py-3 text-sm text-slate-300">
                         {provider.benefitPeriods.split(',')[0]}
