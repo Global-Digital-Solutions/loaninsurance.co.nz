@@ -17,7 +17,6 @@ const navLinks = [
   { label: 'Coverage', href: '/coverage' },
   { label: 'Compare', href: '/compare' },
   { label: 'Resources', href: '/blog' },
-  { label: 'Contact', href: '/contact' },
 ];
 
 export default function Header() {
