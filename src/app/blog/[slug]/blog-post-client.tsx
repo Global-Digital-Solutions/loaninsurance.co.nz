@@ -249,14 +249,14 @@ export function BlogPostClient({ post, relatedPosts }: BlogPostClientProps) {
             Ready to Protect Your Loans?
           </h2>
           <p className="text-lg text-sky-100 mb-8 max-w-2xl mx-auto">
-            Get a free quote today and see how affordable loan protection
+            Get a quote today and see how affordable loan protection
             insurance can be for your situation.
           </p>
           <Link
             href="/contact"
             className="inline-block bg-white hover:bg-slate-50 text-sky-600 font-bold py-3 px-8 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl"
           >
-            Get Your Free Quote
+            Get a Quote
           </Link>
         </div>
       </section>

@@ -458,13 +458,13 @@ export default function PersonalLoanPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Ready to Protect Your Personal Loan?</h2>
           <p className="text-lg sm:text-xl text-sky-100 mb-8">
-            Get a free quote in just 2 minutes. No broker fees, no medical exam for loans under $100,000, and coverage starts immediately.
+            Get a quote in just 2 minutes. No broker fees, no medical exam for loans under $100,000, and coverage starts immediately.
           </p>
           <Link
             href="/"
             className="inline-flex items-center gap-2 bg-white text-teal-600 font-bold px-8 py-3 rounded-lg hover:bg-slate-50 transition-all duration-200 shadow-lg hover:shadow-xl"
           >
-            Get Your Free Quote <ArrowRight className="w-5 h-5" />
+            Get a Quote <ArrowRight className="w-5 h-5" />
           </Link>
         </div>
       </section>

@@ -7,7 +7,7 @@ const trustItems = [
   { icon: '✓', text: 'No Broker Fees' },
   { icon: '✓', text: '256-bit SSL Secure' },
   { icon: '✓', text: '24hr Quote Response' },
-  { icon: '✓', text: 'Free Consultation' },
+  { icon: '✓', text: 'Expert Consultation' },
 ];
 
 export default function AnimatedTrustBar() {

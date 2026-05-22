@@ -120,7 +120,7 @@ export function ContactPageClient() {
             {/* Left Column - Content */}
             <div>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
-                Get Your Free Loan Insurance Quote
+                Get Your Loan Insurance Quote
               </h1>
 
               <p className="text-lg text-slate-200 mb-8 leading-relaxed">
@@ -295,7 +295,7 @@ export function ContactPageClient() {
                     ) : (
                       <>
                         <Send className="w-5 h-5" />
-                        Get My Free Quote
+                        Get My Quote
                       </>
                     )}
                   </button>

@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "LoanInsurance.co.nz | Loan Protection Insurance",
   description:
-    "Protect your loan repayments with affordable loan protection insurance. Personal loans, car finance, mortgages, and more. Free quotes within 24 hours.",
+    "Protect your loan repayments with affordable loan protection insurance. Personal loans, car finance, mortgages, and more. Quotes within 24 hours.",
   keywords: [
     "loan insurance",
     "loan protection insurance",

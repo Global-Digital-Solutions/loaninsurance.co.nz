@@ -479,7 +479,7 @@ export default function CarFinancePage() {
             href="/"
             className="inline-flex items-center gap-2 bg-white text-teal-600 font-bold px-8 py-3 rounded-lg hover:bg-slate-50 transition-all duration-200 shadow-lg hover:shadow-xl"
           >
-            Get Your Free Quote <ArrowRight className="w-5 h-5" />
+            Get a Quote <ArrowRight className="w-5 h-5" />
           </Link>
         </div>
       </section>

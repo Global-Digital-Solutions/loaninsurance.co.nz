@@ -85,7 +85,7 @@ export default function Header() {
             {/* CTA Button (Desktop) */}
             <div className="hidden lg:block">
               <Link href="/contact" className="bg-gradient-to-r from-sky-600 to-teal-500 hover:from-sky-700 hover:to-teal-600 text-white font-semibold px-6 py-2.5 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg">
-                Get a Free Quote
+                Get a Quote
               </Link>
             </div>
 
@@ -182,7 +182,7 @@ export default function Header() {
                 {/* Mobile CTA */}
                 <div className="pt-4">
                   <Link href="/contact" className="block w-full text-center bg-gradient-to-r from-sky-600 to-teal-500 hover:from-sky-700 hover:to-teal-600 text-white font-semibold px-6 py-2.5 rounded-lg transition-all duration-200" onClick={() => setMobileMenuOpen(false)}>
-                    Get a Free Quote
+                    Get a Quote
                   </Link>
                 </div>
               </div>

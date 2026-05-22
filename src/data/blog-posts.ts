@@ -50,7 +50,7 @@ One of the biggest questions New Zealand borrowers ask is how much loan protecti
 
 Choosing loan protection insurance requires honestly assessing your financial situation. Do you have enough savings to cover three months of loan payments if you lose your income? Would losing your job create an immediate housing crisis? Are you reliant on your income to support dependents? If you answer yes to these questions, loan protection insurance is likely a wise investment in your financial security.
 
-At LoanInsurance.co.nz, we help New Zealand borrowers find the right coverage at competitive rates. Getting a free quote takes just minutes and gives you clarity on exactly what protection is available and affordable for your situation.`,
+At LoanInsurance.co.nz, we help New Zealand borrowers find the right coverage at competitive rates. Getting a quote takes just minutes and gives you clarity on exactly what protection is available and affordable for your situation.`,
     author: 'Sarah Mitchell',
     date: '2026-01-15',
     image: 'https://images.unsplash.com/photo-1450101499163-c8848e66ad76?w=800&q=80',
@@ -272,7 +272,7 @@ The relatively small cost of loan protection insurance - typically $15-100 per m
 
 If you currently have loans without protection insurance, now is the time to evaluate your risk and consider adding coverage. If you're about to take on a significant loan, discuss insurance protection options before signing the loan agreement.
 
-At LoanInsurance.co.nz, we help New Zealand borrowers understand these risks and access affordable protection. Get a free quote to see how affordable loan protection insurance can be and how much peace of mind it provides.
+At LoanInsurance.co.nz, we help New Zealand borrowers understand these risks and access affordable protection. Get a quote to see how affordable loan protection insurance can be and how much peace of mind it provides.
 
 Don't take the risk of being unable to work without protection. Loan protection insurance ensures that life's unexpected events don't destroy your financial stability and creditworthiness.`,
     author: 'James Cooper',
@@ -346,7 +346,7 @@ This combination of strategies ensures you can weather extended unemployment wit
 
 If you work in any industry where redundancy is possible - and honestly, that's virtually all industries in today's economy - redundancy protection insurance is worth serious consideration. The cost is minimal compared to the protection provided.
 
-At LoanInsurance.co.nz, we help New Zealand employees understand redundancy risk and access affordable protection. Get a free quote to see how redundancy protection insurance can secure your financial stability in a changing employment landscape.`,
+At LoanInsurance.co.nz, we help New Zealand employees understand redundancy risk and access affordable protection. Get a quote to see how redundancy protection insurance can secure your financial stability in a changing employment landscape.`,
     author: 'Aroha Ngata',
     date: '2026-03-10',
     image: 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=800&q=80',
@@ -422,7 +422,7 @@ Don't automatically choose the cheapest option. The cheapest policy might have a
 
 Comparing loan insurance is complex, and making a mistake can leave you underprotected. This is where brokers like LoanInsurance.co.nz help. We have relationships with multiple insurers, we understand policy details, and we help you navigate the comparison process.
 
-Get a free consultation and quote from LoanInsurance.co.nz. Our team will help you understand your options and recommend the best coverage for your specific situation, ensuring you make an informed decision with confidence.`,
+Get a consultation and quote from LoanInsurance.co.nz. Our team will help you understand your options and recommend the best coverage for your specific situation, ensuring you make an informed decision with confidence.`,
     author: 'Sarah Mitchell',
     date: '2026-03-22',
     image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80',
@@ -543,7 +543,7 @@ The cost of that gamble when you lose is catastrophic. It's not just the immedia
 
 Loan protection insurance costs approximately 0.5%-2% of your monthly loan payment. For Sarah, it was about 3-5% of her income protection value. This is exceptional value insurance when you analyze the true cost of going unprotected.
 
-Don't take this risk. Get a free quote from LoanInsurance.co.nz today. Understand what protection costs and what you're risking by going without it. For most New Zealand borrowers with significant loan obligations, loan protection insurance is one of the smartest financial decisions you can make.`,
+Don't take this risk. Get a quote from LoanInsurance.co.nz today. Understand what protection costs and what you're risking by going without it. For most New Zealand borrowers with significant loan obligations, loan protection insurance is one of the smartest financial decisions you can make.`,
     author: 'James Cooper',
     date: '2026-03-28',
     image: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80',
@@ -645,7 +645,7 @@ Combining these protections creates comprehensive security for your self-employe
 
 If you're self-employed and have significant loan obligations, don't assume you can't access protection. Specialist brokers like LoanInsurance.co.nz understand self-employed lending and insurance.
 
-Get a free quote today. We'll assess your specific self-employed situation and help you access loan protection insurance appropriate for your income variability and business risks. Don't leave your self-employed income unprotected - secure your loans and your livelihood.`,
+Get a quote today. We'll assess your specific self-employed situation and help you access loan protection insurance appropriate for your income variability and business risks. Don't leave your self-employed income unprotected - secure your loans and your livelihood.`,
     author: 'Aroha Ngata',
     date: '2026-04-05',
     image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&q=80',

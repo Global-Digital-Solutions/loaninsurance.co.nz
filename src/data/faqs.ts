@@ -56,7 +56,7 @@ The specific coverage varies between policies and insurers, so it's important to
 
 On average, loan protection insurance costs between 0.5% to 2% of your monthly loan repayment. For example, on a $50,000 personal loan, you might pay $15-40 per month. Some policies are one-time premiums added to your loan, while others are monthly.
 
-We work with multiple insurers to ensure you get competitive pricing. Get a free quote today to see exact costs for your specific situation.`,
+We work with multiple insurers to ensure you get competitive pricing. Get a quote today to see exact costs for your specific situation.`,
   },
   {
     slug: 'what-is-gap-insurance',

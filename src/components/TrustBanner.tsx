@@ -11,7 +11,7 @@ const trustItems = [
   { icon: CheckCircle2, text: 'No Broker Fees' },
   { icon: Lock, text: '256-bit SSL Secure' },
   { icon: Zap, text: '24hr Quote Response' },
-  { icon: MessageCircle, text: 'Free Consultation' },
+  { icon: MessageCircle, text: 'Expert Consultation' },
 ];
 
 export default function TrustBanner({ variant = 'gradient' }: TrustBannerProps) {

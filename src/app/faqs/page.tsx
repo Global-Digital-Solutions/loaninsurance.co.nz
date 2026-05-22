@@ -96,7 +96,7 @@ export default function FAQsPage() {
             </h2>
             <p className="text-lg text-slate-700 mb-8 max-w-2xl mx-auto">
               Our team of loan insurance experts is here to help. Contact us for
-              personalized advice and a free, no-obligation quote.
+              personalized advice and a no-obligation quote.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -104,7 +104,7 @@ export default function FAQsPage() {
                 href="/contact"
                 className="inline-block bg-gradient-to-r from-sky-600 to-teal-500 hover:from-sky-700 hover:to-teal-600 text-white font-bold py-3 px-8 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg"
               >
-                Get a Free Quote
+                Get a Quote
               </Link>
               <Link
                 href="mailto:hello@cover4you.co.nz"
