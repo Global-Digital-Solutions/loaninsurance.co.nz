@@ -99,10 +99,10 @@ export default function FAQsPage() {
                 Get a Free Quote
               </Link>
               <Link
-                href="tel:098859549"
+                href="mailto:hello@cover4you.co.nz"
                 className="inline-block bg-white hover:bg-slate-50 text-sky-600 font-bold py-3 px-8 rounded-lg transition-all duration-200 border border-sky-200 hover:border-sky-300"
               >
-                Call Us: 09 885 9549
+                Email Us
               </Link>
             </div>
           </div>

@@ -90,7 +90,6 @@ export default function PrivacyPage() {
           </p>
           <p>
             <strong>LoanInsurance.co.nz</strong><br />
-            Phone: 09 885 9549<br />
             Email: hello@cover4you.co.nz<br />
             Website: https://loaninsurance.co.nz
           </p>

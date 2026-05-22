@@ -10,6 +10,7 @@ const insuranceTypes = [
   { label: 'Home Loan', href: '/types/home-loan' },
   { label: 'GAP Insurance', href: '/types/gap-insurance' },
   { label: 'Redundancy Cover', href: '/types/redundancy-cover' },
+  { label: 'Business Loan', href: '/types/business-loan' },
 ];
 
 const navLinks = [

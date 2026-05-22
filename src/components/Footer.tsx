@@ -18,6 +18,7 @@ const footerLinks = {
       { label: 'Home Loan', href: '/types/home-loan' },
       { label: 'GAP Insurance', href: '/types/gap-insurance' },
       { label: 'Redundancy Cover', href: '/types/redundancy-cover' },
+      { label: 'Business Loan', href: '/types/business-loan' },
     ],
   },
   resources: {
@@ -50,15 +51,6 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Logo variant="white" />
             <div className="mt-4 space-y-3">
-              <div>
-                <p className="text-xs text-slate-400 uppercase tracking-wide mb-1">Phone</p>
-                <a
-                  href="tel:+64988595449"
-                  className="text-white font-semibold hover:text-teal-300 transition-colors"
-                >
-                  09 885 9549
-                </a>
-              </div>
               <div>
                 <p className="text-xs text-slate-400 uppercase tracking-wide mb-1">Email</p>
                 <a
@@ -166,7 +158,7 @@ export default function Footer() {
               © {currentYear} LoanInsurance.co.nz. All rights reserved.
             </p>
             <div className="flex items-center gap-4 text-slate-400 text-sm">
-              <span>Partnered with ICNZ Registered Insurance Brokers</span>
+              <span>Partnered with Licensed NZ Insurance Brokers</span>
               <span className="hidden sm:inline">|</span>
               <Link href="/disclaimer" className="hover:text-teal-300 transition-colors">
                 Disclaimer

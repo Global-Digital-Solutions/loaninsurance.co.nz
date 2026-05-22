@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { CheckCircle2, Phone, Clock, Mail } from 'lucide-react';
+import { CheckCircle2, Clock, Mail } from 'lucide-react';
 
 export default function ThankYouPage() {
   const nextSteps = [
@@ -85,25 +85,9 @@ export default function ThankYouPage() {
           <div className="bg-gradient-to-r from-sky-600 to-teal-500 text-white p-8 rounded-lg mb-12 max-w-2xl mx-auto">
             <h3 className="text-2xl font-bold mb-6">Need to Reach Us?</h3>
 
-            <div className="flex flex-col sm:flex-row gap-6">
-              <div className="flex-1">
-                <div className="flex items-center gap-3 mb-2">
-                  <Phone className="w-6 h-6" />
-                  <span className="font-semibold">Call us</span>
-                </div>
-                <a
-                  href="tel:098859549"
-                  className="text-sky-100 hover:text-white transition-colors text-lg font-bold"
-                >
-                  09 885 9549
-                </a>
-                <p className="text-sky-100 text-sm mt-2">
-                  Monday - Friday, 9am - 5pm NZST
-                </p>
-              </div>
-
-              <div className="flex-1">
-                <div className="flex items-center gap-3 mb-2">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+              <div className="flex-1 text-center">
+                <div className="flex items-center justify-center gap-3 mb-2">
                   <Mail className="w-6 h-6" />
                   <span className="font-semibold">Email us</span>
                 </div>
@@ -113,6 +97,9 @@ export default function ThankYouPage() {
                 >
                   hello@cover4you.co.nz
                 </a>
+                <p className="text-sky-100 text-sm mt-2">
+                  We respond within one business day
+                </p>
               </div>
             </div>
           </div>

@@ -16,6 +16,9 @@ import {
   Lock,
   Zap,
   MessageCircle,
+  Building2,
+  Users,
+  ArrowRight,
 } from 'lucide-react';
 
 interface FAQItem {
@@ -57,6 +60,12 @@ export default function HomePage() {
       title: 'Redundancy Cover',
       description: 'Income protection if you lose your job',
       href: '/types/redundancy-cover',
+    },
+    {
+      icon: Building2,
+      title: 'Business Loan',
+      description: 'Commercial mortgages, equipment finance & key person cover',
+      href: '/types/business-loan',
     },
   ];
 
@@ -250,6 +259,72 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* Personal vs Business Pathway */}
+        <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-3">
+                Personal or Business Loan?
+              </h2>
+              <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+                We cover both. Choose your path below to find the right loan protection for your situation.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Personal Path */}
+              <div className="relative rounded-2xl border-2 border-teal-500/30 bg-gradient-to-br from-sky-50 to-teal-50 p-8 hover:shadow-xl hover:border-teal-500/60 transition-all duration-300 group">
+                <div className="w-14 h-14 rounded-xl bg-gradient-to-r from-sky-500 to-teal-500 flex items-center justify-center mb-5">
+                  <Users className="w-7 h-7 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-slate-900 mb-3">Personal Loan Insurance</h3>
+                <p className="text-slate-600 mb-5 leading-relaxed">
+                  Compare 8 NZ providers side-by-side for personal loans, car finance, home loans, GAP insurance and redundancy cover. Browse direct and get quotes from providers instantly.
+                </p>
+                <ul className="space-y-2 mb-6">
+                  {['Personal & car loans', 'Home loan / mortgage protection', 'Redundancy & disability cover', 'GAP insurance for vehicles'].map((item) => (
+                    <li key={item} className="flex items-center gap-2.5 text-slate-700 text-sm">
+                      <CheckCircle2 className="w-4 h-4 text-teal-500 flex-shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  href="/compare"
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-600 to-teal-500 hover:from-sky-700 hover:to-teal-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 shadow-md group-hover:shadow-lg"
+                >
+                  Browse Personal Providers <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+
+              {/* Business Path */}
+              <div className="relative rounded-2xl border-2 border-slate-200 bg-gradient-to-br from-slate-800 to-slate-900 p-8 hover:shadow-xl hover:border-slate-600 transition-all duration-300 group">
+                <div className="w-14 h-14 rounded-xl bg-gradient-to-r from-sky-500 to-teal-500 flex items-center justify-center mb-5">
+                  <Building2 className="w-7 h-7 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-3">Business Loan Insurance</h3>
+                <p className="text-slate-300 mb-5 leading-relaxed">
+                  Specialist broker-matched cover for business debt. Our licensed NZ brokers provide tailored quotes for commercial mortgages, equipment finance, key person risk and more.
+                </p>
+                <ul className="space-y-2 mb-6">
+                  {['Commercial mortgages & overdrafts', 'Equipment & vehicle fleet finance', 'Key person / life cover on debt', 'Sole traders, companies & trusts'].map((item) => (
+                    <li key={item} className="flex items-center gap-2.5 text-slate-300 text-sm">
+                      <CheckCircle2 className="w-4 h-4 text-teal-400 flex-shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  href="/types/business-loan"
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-600 to-teal-500 hover:from-sky-700 hover:to-teal-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 shadow-md group-hover:shadow-lg"
+                >
+                  Get a Business Quote <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Insurance Types Grid */}
         <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-slate-50">
           <div className="max-w-7xl mx-auto">
@@ -261,7 +336,7 @@ export default function HomePage() {
               business loan, we have protection tailored for you
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6">
               {loanTypes.map((type) => {
                 const Icon = type.icon;
                 return (

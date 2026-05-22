@@ -34,7 +34,7 @@ export default function AboutPage() {
             },
             contactPoint: {
               '@type': 'ContactPoint',
-              telephone: '09 885 9549',
+              email: 'hello@cover4you.co.nz',
               contactType: 'Customer Service',
             },
           }),

@@ -27,7 +27,7 @@ export default function ContactPage() {
             url: 'https://loaninsurance.co.nz/contact',
             contactPoint: {
               '@type': 'ContactPoint',
-              telephone: '09 885 9549',
+              email: 'hello@cover4you.co.nz',
               contactType: 'Customer Service',
               areaServed: 'NZ',
               availableLanguage: ['en'],

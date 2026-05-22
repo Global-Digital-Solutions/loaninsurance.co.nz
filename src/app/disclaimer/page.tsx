@@ -75,9 +75,7 @@ export default function DisclaimerPage() {
           <h2>Contact</h2>
           <p>
             If you have any questions about this disclaimer, please contact us at{' '}
-            <a href="mailto:hello@cover4you.co.nz" className="text-teal-600 hover:text-teal-700">hello@cover4you.co.nz</a>{' '}
-            or call{' '}
-            <a href="tel:+64988595449" className="text-teal-600 hover:text-teal-700">09 885 9549</a>.
+            <a href="mailto:hello@cover4you.co.nz" className="text-teal-600 hover:text-teal-700">hello@cover4you.co.nz</a>.
           </p>
 
           <p className="text-sm text-slate-500 mt-12">Last updated: April 2026</p>
