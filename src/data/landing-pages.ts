@@ -445,7 +445,7 @@ export const guidePages: GuidePage[] = [
     metaTitle: 'Loan Insurance for Self-Employed NZ | Complete Guide 2026',
     metaDescription: 'Self-employed in New Zealand? Standard loan insurance often falls short. Learn which products work for contractors, sole traders, and business owners with mortgages.',
     heroImage: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&q=80',
-    heroHeading: 'Self-Employed? Here\'s How to Protect Your Loans in NZ',
+    heroHeading: 'Self-Employed? Here\'s How to Protect Your Loans',
     intro: 'Self-employment and contracting are increasingly common in New Zealand\'s workforce. The flexibility and income potential can be significant, but so is the financial exposure. Without an employer\'s sick leave, redundancy provisions, or group insurance, self-employed New Zealanders carry their loan obligations entirely on their own income resilience. When that income stops — due to illness, injury, or a business downturn — loan repayments don\'t stop with it.',
     sections: [
       {
@@ -505,7 +505,7 @@ export const guidePages: GuidePage[] = [
     metaTitle: 'Redundancy Cover NZ | How It Works, What It Pays 2026',
     metaDescription: 'Everything you need to know about redundancy cover in New Zealand. Stand-down periods, benefit amounts, exclusions, and how to choose the right policy for your situation.',
     heroImage: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&q=80',
-    heroHeading: 'Redundancy Cover in NZ: A Complete Explainer',
+    heroHeading: 'Redundancy Cover: A Complete Explainer',
     intro: 'New Zealand has no government-mandated redundancy insurance. Unlike some overseas jurisdictions, there\'s no automatic financial safety net beyond what your employer\'s redundancy policy provides — and many employers provide only what the law requires (which can be minimal). If you lose your job, the gap between your final pay and your next income must be bridged somehow. Redundancy cover is the insurance product designed specifically to do that.',
     sections: [
       {
@@ -561,7 +561,7 @@ export const guidePages: GuidePage[] = [
     metaTitle: 'Income Protection vs Loan Insurance NZ | 2026 Comparison',
     metaDescription: 'Compare income protection and loan insurance in New Zealand. Understand the differences, costs, and when each product is right for your financial situation.',
     heroImage: 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=1200&q=80',
-    heroHeading: 'Income Protection vs Loan Insurance: The NZ Borrower\'s Guide',
+    heroHeading: 'Income Protection vs Loan Insurance: The Borrower\'s Guide',
     intro: 'New Zealand borrowers are often confronted with two overlapping protection options: income protection insurance and loan insurance (sometimes called payment protection insurance). Both aim to prevent income disruption from derailing your finances — but they do it differently, cover different risks, and suit different financial profiles. Understanding the distinction is essential to getting the right cover without paying for duplication.',
     sections: [
       {
@@ -669,11 +669,11 @@ export const guidePages: GuidePage[] = [
     metaTitle: 'Compare Loan Insurance Providers NZ | 2026 Buyer\'s Guide',
     metaDescription: 'Compare AIA, Partners Life, Fidelity Life, Asteron Life, and Chubb Life loan insurance products in New Zealand. Learn what to look for and how to get the best value.',
     heroImage: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80',
-    heroHeading: 'Comparing Loan Insurance Providers in NZ: What to Look For in 2026',
+    heroHeading: 'Comparing Loan Insurance Providers: What to Look For in 2026',
     intro: 'New Zealand\'s loan insurance market is served by a relatively small number of major providers, each with distinct product strengths, pricing structures, and underwriting philosophies. Choosing between them requires understanding not just the headline premium but the policy terms, definitions, and claims track record that determine whether your insurance actually pays when you need it most.',
     sections: [
       {
-        heading: 'The Major NZ Loan Insurance Providers',
+        heading: 'The Major Loan Insurance Providers',
         body: 'The main insurers offering loan protection and income protection products in New Zealand are:\n\n**AIA New Zealand**: One of the largest life and health insurers in NZ, AIA has a strong income protection product range with comprehensive illness and injury definitions. Their Vitality programme links health engagement to premium discounts — relevant for younger, health-conscious borrowers.\n\n**Partners Life**: A New Zealand-founded insurer known for comprehensive policy wording and a strong adviser-focused distribution model. Partners Life is frequently cited by advisers for having some of the most consumer-friendly policy definitions in the market.\n\n**Fidelity Life**: New Zealand-owned and focused on simplicity and accessibility. Fidelity Life has invested in digital distribution and has a solid presence in the broker market. Good value for straightforward income protection needs.\n\n**Asteron Life** (Suncorp NZ): Part of the Suncorp group, Asteron offers a broad product range with strong commission structures for advisers. Products are comprehensive and competitive, particularly for bundled life and income protection packages.\n\n**Chubb Life NZ**: Known for specialised products and competitive underwriting of complex cases. Chubb may be more suitable for higher-income professionals or those with occupation-specific requirements.',
       },
       {
