@@ -114,12 +114,12 @@ export function CoveragePageClient() {
 
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
             {/* Left Column - Content */}
-            <div className="lg:col-span-2">
+            <div className="lg:col-span-3">
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
                 Loan Insurance Coverage Options
               </h1>
 
-              <p className="text-lg text-slate-700 mb-8 leading-relaxed">
+              <p className="text-lg text-slate-300 mb-8 leading-relaxed">
                 Understand exactly what your loan protection insurance covers
                 and how it protects you and your family in New Zealand.
               </p>
@@ -137,7 +137,7 @@ export function CoveragePageClient() {
             </div>
 
             {/* Right Column - Form */}
-            <div className="lg:col-span-3">
+            <div className="lg:col-span-2">
               <QuoteForm mode="compact" />
             </div>
           </div>
