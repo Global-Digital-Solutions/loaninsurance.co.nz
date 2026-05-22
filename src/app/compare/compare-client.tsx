@@ -378,7 +378,31 @@ export function ComparePageClient() {
               </Link>
             </div>
           </div>
+
+          {/* Scroll indicator */}
+          <a
+            href="#providers"
+            className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/70 hover:text-white transition-colors group"
+            aria-label="Scroll to providers"
+          >
+            <span className="text-xs font-semibold tracking-widest uppercase">
+              Scroll
+            </span>
+            <ChevronDown
+              className="w-6 h-6"
+              style={{
+                animation: 'scrollBounce 1.6s ease-in-out infinite',
+              }}
+            />
+          </a>
         </div>
+
+        <style>{`
+          @keyframes scrollBounce {
+            0%, 100% { transform: translateY(0); opacity: 0.7; }
+            50% { transform: translateY(8px); opacity: 1; }
+          }
+        `}</style>
       </section>
 
       {/* Provider Comparison Section */}
