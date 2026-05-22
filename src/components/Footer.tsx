@@ -8,25 +8,50 @@ const footerLinks = {
       { label: 'About', href: '/about' },
       { label: 'Contact', href: '/contact' },
       { label: 'FAQs', href: '/faqs' },
+      { label: 'Blog', href: '/blog' },
+      { label: 'Coverage Guide', href: '/coverage' },
+      { label: 'Compare Providers', href: '/compare' },
     ],
   },
   types: {
     title: 'Insurance Types',
     links: [
       { label: 'Personal Loan', href: '/types/personal-loan' },
-      { label: 'Car Finance', href: '/types/car-finance' },
       { label: 'Home Loan', href: '/types/home-loan' },
-      { label: 'GAP Insurance', href: '/types/gap-insurance' },
+      { label: 'Income Protection', href: '/types/income-protection' },
       { label: 'Redundancy Cover', href: '/types/redundancy-cover' },
+      { label: 'Mortgage Protection', href: '/types/mortgage-protection' },
+      { label: 'Car Finance Cover', href: '/types/car-finance' },
+      { label: 'GAP Insurance', href: '/types/gap-insurance' },
       { label: 'Business Loan', href: '/types/business-loan' },
+      { label: 'Payment Protection', href: '/types/payment-protection' },
+      { label: 'Critical Illness', href: '/types/critical-illness' },
+      { label: 'Total Disability', href: '/types/total-disability' },
+      { label: 'Business Interruption', href: '/types/business-interruption' },
     ],
   },
-  resources: {
-    title: 'Resources',
+  locations: {
+    title: 'By Location',
     links: [
-      { label: 'Blog', href: '/blog' },
-      { label: 'Coverage Guide', href: '/coverage' },
-      { label: 'Compare Providers', href: '/compare' },
+      { label: 'Auckland', href: '/locations/auckland' },
+      { label: 'Wellington', href: '/locations/wellington' },
+      { label: 'Christchurch', href: '/locations/christchurch' },
+      { label: 'Hamilton', href: '/locations/hamilton' },
+      { label: 'Tauranga', href: '/locations/tauranga' },
+      { label: 'Dunedin', href: '/locations/dunedin' },
+      { label: 'Palmerston North', href: '/locations/palmerston-north' },
+      { label: 'Nelson', href: '/locations/nelson' },
+    ],
+  },
+  guides: {
+    title: 'Guides',
+    links: [
+      { label: 'First Home Buyers', href: '/guides/first-home-buyers-guide' },
+      { label: 'Self-Employed Guide', href: '/guides/self-employed-loan-insurance' },
+      { label: 'Redundancy Cover Explained', href: '/guides/redundancy-cover-explained' },
+      { label: 'Income Protection vs Loan Insurance', href: '/guides/income-protection-vs-loan-insurance' },
+      { label: 'ACC Gaps Explained', href: '/guides/acc-gaps-and-loan-insurance' },
+      { label: 'Compare Providers Guide', href: '/guides/compare-loan-insurance-providers' },
     ],
   },
   legal: {
@@ -46,7 +71,7 @@ export default function Footer() {
     <footer className="bg-slate-900 text-slate-100 mt-16">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-8">
           {/* Logo and Contact Column */}
           <div className="lg:col-span-1">
             <Logo variant="white" />
@@ -69,10 +94,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {footerLinks.company.links.map((link) => (
                 <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-slate-400 hover:text-teal-300 transition-colors text-sm"
-                  >
+                  <Link href={link.href} className="text-slate-400 hover:text-teal-300 transition-colors text-sm">
                     {link.label}
                   </Link>
                 </li>
@@ -86,10 +108,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {footerLinks.types.links.map((link) => (
                 <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-slate-400 hover:text-teal-300 transition-colors text-sm"
-                  >
+                  <Link href={link.href} className="text-slate-400 hover:text-teal-300 transition-colors text-sm">
                     {link.label}
                   </Link>
                 </li>
@@ -97,16 +116,27 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Resources */}
+          {/* Locations */}
           <div>
-            <h3 className="text-white font-bold mb-4">{footerLinks.resources.title}</h3>
+            <h3 className="text-white font-bold mb-4">{footerLinks.locations.title}</h3>
             <ul className="space-y-2">
-              {footerLinks.resources.links.map((link) => (
+              {footerLinks.locations.links.map((link) => (
                 <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-slate-400 hover:text-teal-300 transition-colors text-sm"
-                  >
+                  <Link href={link.href} className="text-slate-400 hover:text-teal-300 transition-colors text-sm">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Guides */}
+          <div>
+            <h3 className="text-white font-bold mb-4">{footerLinks.guides.title}</h3>
+            <ul className="space-y-2">
+              {footerLinks.guides.links.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="text-slate-400 hover:text-teal-300 transition-colors text-sm">
                     {link.label}
                   </Link>
                 </li>
@@ -120,10 +150,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {footerLinks.legal.links.map((link) => (
                 <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-slate-400 hover:text-teal-300 transition-colors text-sm"
-                  >
+                  <Link href={link.href} className="text-slate-400 hover:text-teal-300 transition-colors text-sm">
                     {link.label}
                   </Link>
                 </li>

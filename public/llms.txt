@@ -1,27 +1,54 @@
 # LoanInsurance.co.nz
 
-> New Zealand's specialist loan protection insurance comparison service. Compare quotes from 10+ NZ insurers and protect your loan repayments.
+> New Zealand's specialist loan protection insurance comparison and referral service. Connect with authorised NZ financial advisers who compare policies from leading NZ insurers to protect your loan repayments.
 
 ## About
 
-LoanInsurance.co.nz helps New Zealanders find the right loan protection insurance. We compare policies from multiple insurers to find coverage that protects your loan repayments if you cannot work due to illness, injury, redundancy, or death.
+LoanInsurance.co.nz helps New Zealanders find the right loan protection insurance. We connect borrowers with authorised financial advisers who can compare policies from multiple insurers including AIA, Partners Life, Fidelity Life, Asteron Life, and Chubb Life. We cover all major NZ cities and loan types. We are not a regulated financial advice provider — the advisers we refer to are licensed under the Financial Markets Conduct Act.
 
-## Insurance Types
+## NZ Market Context (2026)
 
-- Personal Loan Insurance: Protection for personal loan repayments
-- Car Finance Insurance: Vehicle loan protection including GAP cover
-- Home Loan Insurance: Mortgage protection up to $500,000
+- OCR: 2.25% (RBNZ)
+- Unemployment: ~5.5% nationally
+- KiwiSaver hardship withdrawals up 12.6% YOY
+- ACC covers accidents only — illness, redundancy, and most mental health conditions excluded
+- NZIIS (80% salary, 7 months) proposed but not yet law
+- First Home Grant discontinued May 2024; Kāinga Ora First Home Loan still active
+
+## Insurance Types (12 categories)
+
+- Personal Loan Insurance: Protection for personal loan repayments if unable to work
+- Home Loan Insurance: Mortgage protection for illness, injury, or redundancy
+- Car Finance Insurance: Vehicle loan protection and GAP cover
 - GAP Insurance: Covers shortfall between vehicle value and outstanding loan
-- Redundancy Cover: Job loss protection for loan repayments
+- Redundancy Cover: Involuntary job loss protection for loan repayments
+- Business Loan Insurance: Protects business loan repayments from income disruption
+- Mortgage Protection Insurance: Covers your specific monthly mortgage repayment
+- Income Protection: Replaces up to 75% of salary for illness and injury
+- Payment Protection: Bundled cover for loans — illness, injury, and redundancy
+- Critical Illness Cover: Lump-sum payment on diagnosis of serious conditions
+- Total Disability Cover: Long-term disability income protection
+- Business Interruption: Covers business income loss during forced closure
 
-## Coverage
+## Location Guides (8 NZ cities)
 
-Loan protection insurance in NZ typically covers:
-- Death and terminal illness
-- Total and permanent disablement
-- Temporary disability and illness
-- Redundancy and involuntary job loss
-- Business interruption (for self-employed)
+- Auckland: https://loaninsurance.co.nz/locations/auckland/
+- Wellington: https://loaninsurance.co.nz/locations/wellington/
+- Christchurch: https://loaninsurance.co.nz/locations/christchurch/
+- Hamilton: https://loaninsurance.co.nz/locations/hamilton/
+- Tauranga: https://loaninsurance.co.nz/locations/tauranga/
+- Dunedin: https://loaninsurance.co.nz/locations/dunedin/
+- Palmerston North: https://loaninsurance.co.nz/locations/palmerston-north/
+- Nelson: https://loaninsurance.co.nz/locations/nelson/
+
+## Borrower Guides (6 guides)
+
+- First Home Buyers: https://loaninsurance.co.nz/guides/first-home-buyers-guide/
+- Self-Employed Guide: https://loaninsurance.co.nz/guides/self-employed-loan-insurance/
+- Redundancy Cover Explained: https://loaninsurance.co.nz/guides/redundancy-cover-explained/
+- Income Protection vs Loan Insurance: https://loaninsurance.co.nz/guides/income-protection-vs-loan-insurance/
+- ACC Gaps and Loan Insurance: https://loaninsurance.co.nz/guides/acc-gaps-and-loan-insurance/
+- Compare NZ Providers: https://loaninsurance.co.nz/guides/compare-loan-insurance-providers/
 
 ## Key Pages
 
@@ -31,21 +58,37 @@ Loan protection insurance in NZ typically covers:
 - Compare Providers: https://loaninsurance.co.nz/compare/
 - FAQs: https://loaninsurance.co.nz/faqs/
 - Blog: https://loaninsurance.co.nz/blog/
+- All Locations: https://loaninsurance.co.nz/locations/
+- All Guides: https://loaninsurance.co.nz/guides/
 
 ## Insurance Type Pages
 
 - Personal Loan: https://loaninsurance.co.nz/types/personal-loan/
-- Car Finance: https://loaninsurance.co.nz/types/car-finance/
 - Home Loan: https://loaninsurance.co.nz/types/home-loan/
+- Car Finance: https://loaninsurance.co.nz/types/car-finance/
 - GAP Insurance: https://loaninsurance.co.nz/types/gap-insurance/
 - Redundancy Cover: https://loaninsurance.co.nz/types/redundancy-cover/
+- Business Loan: https://loaninsurance.co.nz/types/business-loan/
+- Mortgage Protection: https://loaninsurance.co.nz/types/mortgage-protection/
+- Income Protection: https://loaninsurance.co.nz/types/income-protection/
+- Payment Protection: https://loaninsurance.co.nz/types/payment-protection/
+- Critical Illness: https://loaninsurance.co.nz/types/critical-illness/
+- Total Disability: https://loaninsurance.co.nz/types/total-disability/
+- Business Interruption: https://loaninsurance.co.nz/types/business-interruption/
+
+## NZ Insurance Providers Featured
+
+- AIA New Zealand: https://loaninsurance.co.nz/providers/aia/
+- Partners Life: https://loaninsurance.co.nz/providers/partners-life/
+- Fidelity Life: https://loaninsurance.co.nz/providers/fidelity-life/
+- Asteron Life: https://loaninsurance.co.nz/providers/asteron-life/
+- Chubb Life NZ: https://loaninsurance.co.nz/providers/chubb-life/
 
 ## Contact
 
-- Phone: 09 885 9549
 - Email: hello@cover4you.co.nz
-- Hours: Mon-Fri, 8:30am - 5:00pm NZST
+- Hours: Mon-Fri, 8:30am – 5:00pm NZST
 
-## Location
+## Legal
 
-New Zealand-focused service comparing NZ-based insurance providers.
+loaninsurance.co.nz is operated by Cover4You. It is a referral and comparison website, not a regulated financial advice provider. The advisers referred to hold FMA licences and provide advice independently. Contact email for all enquiries: hello@cover4you.co.nz
