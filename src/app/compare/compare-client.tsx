@@ -245,23 +245,31 @@ export function ComparePageClient() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="lg:min-h-[100vh] pt-28 pb-12 sm:pt-28 sm:pb-16 lg:py-28 bg-gradient-to-br from-slate-50 to-teal-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section
+        className="relative lg:min-h-[100vh] pt-28 pb-12 sm:pt-28 sm:pb-16 lg:py-28"
+        style={{
+          backgroundImage: 'url(/images/hero-finance-charts.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center 30%',
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/70 to-slate-900/40" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Breadcrumb */}
-          <div className="mb-8 flex items-center gap-2 text-sm text-slate-600">
-            <Link href="/" className="hover:text-teal-600 transition-colors">
+          <div className="mb-8 flex items-center gap-2 text-sm text-slate-400">
+            <Link href="/" className="hover:text-teal-400 transition-colors">
               Home
             </Link>
             <span>/</span>
-            <span className="text-slate-900 font-medium">Compare</span>
+            <span className="text-white font-medium">Compare</span>
           </div>
 
           <div className="max-w-3xl">
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
               Compare NZ Loan Insurance Providers
             </h1>
 
-            <p className="text-lg text-slate-700 mb-8 leading-relaxed">
+            <p className="text-lg text-slate-200 mb-8 leading-relaxed">
               Compare {providers.length} leading New Zealand loan protection
               insurance providers side-by-side. See coverage, waiting periods,
               benefit limits, and key features — then get a quote directly from
@@ -277,7 +285,7 @@ export function ComparePageClient() {
               </a>
               <Link
                 href="/coverage"
-                className="inline-flex items-center gap-2 border border-slate-300 hover:border-teal-500 text-slate-700 hover:text-teal-600 font-semibold py-3 px-6 rounded-lg transition-all duration-200"
+                className="inline-flex items-center gap-2 border border-white/40 hover:border-teal-400 text-white hover:text-teal-300 font-semibold py-3 px-6 rounded-lg transition-all duration-200 backdrop-blur-sm"
               >
                 What&apos;s Covered
               </Link>

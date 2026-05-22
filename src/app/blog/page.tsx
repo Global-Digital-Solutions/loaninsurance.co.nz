@@ -58,8 +58,16 @@ export default function BlogPage() {
 
       <main>
         {/* Hero Section */}
-        <section className="pt-28 pb-12 sm:pt-28 sm:pb-16 lg:py-28 bg-gradient-to-br from-slate-900 to-slate-800 text-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section
+          className="relative pt-28 pb-12 sm:pt-28 sm:pb-16 lg:py-28 text-white"
+          style={{
+            backgroundImage: 'url(/images/hero-team-meeting.png)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/70 to-slate-900/40" />
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Breadcrumb */}
             <div className="mb-8 flex items-center gap-2 text-sm text-slate-400">
               <Link href="/" className="hover:text-teal-400 transition-colors">

@@ -93,21 +93,29 @@ export function CoveragePageClient() {
   return (
     <main>
       {/* Hero Section with Form */}
-      <section className="lg:min-h-[100vh] pt-28 pb-12 sm:pt-28 sm:pb-16 lg:py-28 bg-gradient-to-br from-slate-50 to-teal-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section
+        className="relative lg:min-h-[100vh] pt-28 pb-12 sm:pt-28 sm:pb-16 lg:py-28"
+        style={{
+          backgroundImage: 'url(/images/hero-office-worker.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/70 to-slate-900/40" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Breadcrumb */}
-          <div className="mb-8 flex items-center gap-2 text-sm text-slate-600">
-            <Link href="/" className="hover:text-teal-600 transition-colors">
+          <div className="mb-8 flex items-center gap-2 text-sm text-slate-400">
+            <Link href="/" className="hover:text-teal-400 transition-colors">
               Home
             </Link>
             <span>/</span>
-            <span className="text-slate-900 font-medium">Coverage</span>
+            <span className="text-white font-medium">Coverage</span>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
             {/* Left Column - Content */}
             <div className="lg:col-span-2">
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
                 Loan Insurance Coverage Options
               </h1>
 
