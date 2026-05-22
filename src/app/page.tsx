@@ -106,8 +106,8 @@ export default function HomePage() {
     {
       number: '01',
       icon: FileText,
-      title: 'Tell Us About Your Loan',
-      description: 'Complete our quick 2-minute online form. Loan type, amount, and what you need covered.',
+      title: 'Complete Our Quick Quote Form',
+      description: 'Fill in a few details — loan type, amount, and the cover you need. Most people are done in under 90 seconds.',
       cta: 'Start here →',
       href: '/contact',
     },

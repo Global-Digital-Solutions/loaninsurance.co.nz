@@ -8,10 +8,16 @@ import {
   Lock,
   Zap,
   BarChart3,
-  Settings,
   Building2,
   Send,
   Loader2,
+  Users,
+  ArrowRight,
+  BadgeCheck,
+  Clock,
+  Phone,
+  FileText,
+  Star,
 } from 'lucide-react';
 
 const loanTypes = [
@@ -27,18 +33,18 @@ const loanTypes = [
 
 type FormState = 'idle' | 'submitting' | 'success' | 'error';
 
+const trustPills = [
+  { icon: BadgeCheck, text: 'FMA & ICNZ Registered Brokers' },
+  { icon: Lock, text: '256-bit SSL Secure' },
+  { icon: Clock, text: 'Response Within One Business Day' },
+  { icon: Shield, text: 'No Broker Fees — Ever' },
+  { icon: FileText, text: 'Obligation-Free Enquiry' },
+  { icon: Star, text: 'Commercial Lending Specialists' },
+];
+
 export function ContactPageClient() {
   const [formState, setFormState] = useState<FormState>('idle');
   const [errorMsg, setErrorMsg] = useState('');
-
-  const whyChooseUs = [
-    { icon: Shield, text: 'ICNZ Registered Broker Network' },
-    { icon: CheckCircle2, text: 'No Hidden Broker Fees' },
-    { icon: Lock, text: '256-bit SSL Secure' },
-    { icon: Zap, text: '24-Hour Quote Response' },
-    { icon: BarChart3, text: 'Compare Multiple Insurers' },
-    { icon: Settings, text: 'Tailored Coverage Options' },
-  ];
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -93,118 +99,197 @@ export function ContactPageClient() {
 
   return (
     <main>
-      {/* Hero Section with Background Image */}
-      <section
-        className="relative lg:min-h-[100vh] pt-28 pb-12 sm:pt-28 sm:pb-16 lg:py-28"
-        style={{
-          backgroundImage:
-            'url(/images/hero-professional-1.jpg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 to-slate-900/75" />
-
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* ── Path Selector — route users before they even reach the form ── */}
+      <section className="bg-slate-900 pt-24 pb-0 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto">
           {/* Breadcrumb */}
           <div className="mb-8 flex items-center gap-2 text-sm text-slate-400">
-            <Link href="/" className="hover:text-teal-400 transition-colors">
-              Home
-            </Link>
+            <Link href="/" className="hover:text-teal-400 transition-colors">Home</Link>
             <span>/</span>
             <span className="text-white font-medium">Get a Quote</span>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-8 items-start">
-            {/* Left Column - Content */}
-            <div>
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
-                Get Your Loan Insurance Quote
-              </h1>
+          <div className="text-center mb-8">
+            <p className="text-sm font-semibold text-teal-400 uppercase tracking-widest mb-2">Find Your Cover</p>
+            <h1 className="text-3xl sm:text-4xl font-bold text-white mb-3">
+              What type of loan do you need protected?
+            </h1>
+            <p className="text-slate-400 max-w-xl mx-auto">
+              Choose below — we&apos;ll point you to the fastest path for your situation.
+            </p>
+          </div>
 
-              <p className="text-lg text-slate-200 mb-8 leading-relaxed">
-                Personal or business — tell us about your loan and a licensed NZ broker will respond with tailored options. No obligations, no hidden fees.
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pb-12">
+            {/* Personal path — route to /compare */}
+            <Link
+              href="/compare"
+              className="group relative bg-gradient-to-br from-sky-500/10 to-teal-500/10 border-2 border-teal-500/40 hover:border-teal-400 rounded-2xl p-6 hover:shadow-2xl hover:bg-teal-500/15 transition-all duration-300 flex flex-col"
+            >
+              <div className="flex items-start justify-between mb-4">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-sky-500 to-teal-500 flex items-center justify-center">
+                  <Users className="w-6 h-6 text-white" />
+                </div>
+                <span className="text-xs font-bold bg-teal-500/20 text-teal-300 border border-teal-500/30 px-3 py-1 rounded-full">
+                  ★ Most Popular
+                </span>
+              </div>
+              <h2 className="text-xl font-bold text-white mb-2">Personal Loan Cover</h2>
+              <p className="text-slate-300 text-sm leading-relaxed mb-4 flex-1">
+                Personal loan, car finance, home loan, redundancy or GAP insurance? Browse 8 licensed NZ providers side-by-side and connect directly — no form required.
+              </p>
+              <div className="space-y-1.5 mb-5">
+                {['Personal & car loans', 'Home loan / mortgage protection', 'Redundancy & GAP cover'].map((item) => (
+                  <p key={item} className="flex items-center gap-2 text-slate-300 text-sm">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-teal-400 flex-shrink-0" />
+                    {item}
+                  </p>
+                ))}
+              </div>
+              <div className="flex items-center gap-2 text-teal-300 font-bold group-hover:text-teal-200 transition-colors">
+                Browse Personal Providers <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </div>
+            </Link>
+
+            {/* Business path — scroll to form */}
+            <a
+              href="#business-form"
+              className="group relative bg-gradient-to-br from-slate-700/50 to-slate-800/80 border-2 border-slate-600/50 hover:border-teal-500/60 rounded-2xl p-6 hover:shadow-2xl hover:bg-slate-700/60 transition-all duration-300 flex flex-col"
+            >
+              <div className="flex items-start justify-between mb-4">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-sky-500 to-teal-500 flex items-center justify-center">
+                  <Building2 className="w-6 h-6 text-white" />
+                </div>
+                <span className="text-xs font-bold bg-sky-500/20 text-sky-300 border border-sky-500/30 px-3 py-1 rounded-full">
+                  Broker Matched
+                </span>
+              </div>
+              <h2 className="text-xl font-bold text-white mb-2">Business Loan Insurance</h2>
+              <p className="text-slate-300 text-sm leading-relaxed mb-4 flex-1">
+                Commercial mortgage, equipment finance, key person cover or business overdraft? Our licensed brokers tailor quotes for complex business lending needs.
+              </p>
+              <div className="space-y-1.5 mb-5">
+                {['Commercial mortgages & overdrafts', 'Equipment & fleet finance', 'Key person / debt cover'].map((item) => (
+                  <p key={item} className="flex items-center gap-2 text-slate-300 text-sm">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-teal-400 flex-shrink-0" />
+                    {item}
+                  </p>
+                ))}
+              </div>
+              <div className="flex items-center gap-2 text-teal-300 font-bold group-hover:text-teal-200 transition-colors">
+                Complete the form below <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Business Form Section ────────────────────────────────────── */}
+      <section
+        id="business-form"
+        className="relative pt-16 pb-16 sm:pb-24 px-4 sm:px-6 lg:px-8"
+        style={{
+          backgroundImage: 'url(/images/hero-professional-1.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 to-slate-900/85" />
+
+        <div className="relative max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-10 items-start">
+
+            {/* Left Column — Business copy + trust */}
+            <div>
+              <div className="inline-flex items-center gap-2 bg-teal-500/20 border border-teal-500/30 rounded-full px-4 py-1.5 mb-6">
+                <Building2 className="w-4 h-4 text-teal-300" />
+                <span className="text-teal-200 text-sm font-semibold">Business Loan Insurance Enquiry</span>
+              </div>
+
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-5 leading-tight">
+                Specialist Cover for<br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-300 to-teal-300">
+                  Business Lending
+                </span>
+              </h2>
+
+              <p className="text-lg text-slate-200 mb-6 leading-relaxed">
+                Business loan insurance isn&apos;t one-size-fits-all. Whether you&apos;re protecting a commercial mortgage, covering equipment finance, or insuring against key person risk — our licensed brokers build a solution around your actual exposure.
               </p>
 
-              {/* Email Contact */}
-              <div className="bg-white/10 backdrop-blur-sm p-5 rounded-xl border border-white/20 mb-8">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-r from-sky-600 to-teal-500 flex items-center justify-center flex-shrink-0">
-                    <CheckCircle2 className="w-5 h-5 text-white" />
-                  </div>
-                  <div>
-                    <p className="text-xs text-slate-400 uppercase tracking-wide">
-                      Any questions?
-                    </p>
-                    <a
-                      href="mailto:hello@cover4you.co.nz"
-                      className="text-lg font-bold text-white hover:text-teal-300 transition-colors"
-                    >
-                      hello@cover4you.co.nz
-                    </a>
-                  </div>
+              <p className="text-slate-300 mb-8 leading-relaxed">
+                Complete the form and a specialist adviser will assess your loan structure, identify the right cover type, and respond with tailored options within one business day. No obligation. No broker fees charged to you.
+              </p>
+
+              {/* What happens next */}
+              <div className="bg-white/8 backdrop-blur-sm border border-white/15 rounded-2xl p-6 mb-8">
+                <p className="text-xs font-bold text-teal-300 uppercase tracking-widest mb-4">What happens next</p>
+                <div className="space-y-4">
+                  {[
+                    { step: '1', text: 'You complete the 2-minute form below with your loan details.' },
+                    { step: '2', text: 'A licensed NZ broker reviews your enquiry and identifies suitable insurers.' },
+                    { step: '3', text: 'You receive tailored coverage options within one business day.' },
+                  ].map(({ step, text }) => (
+                    <div key={step} className="flex items-start gap-3">
+                      <div className="w-6 h-6 rounded-full bg-gradient-to-br from-sky-500 to-teal-500 text-white text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">
+                        {step}
+                      </div>
+                      <p className="text-slate-300 text-sm leading-relaxed">{text}</p>
+                    </div>
+                  ))}
                 </div>
               </div>
 
-              {/* Business Loan callout */}
-              <div className="bg-teal-500/20 backdrop-blur-sm p-4 rounded-xl border border-teal-500/40">
-                <div className="flex items-start gap-3">
-                  <Building2 className="w-5 h-5 text-teal-300 flex-shrink-0 mt-0.5" />
-                  <div>
-                    <p className="text-teal-200 font-semibold text-sm mb-1">Business Loan Insurance</p>
-                    <p className="text-slate-300 text-sm">
-                      For commercial mortgages, equipment finance and business debt, visit our dedicated{' '}
-                      <Link href="/types/business-loan" className="text-teal-300 hover:text-teal-200 underline">
-                        Business Loan page
-                      </Link>.
-                    </p>
-                  </div>
-                </div>
+              {/* Email contact */}
+              <div className="flex items-center gap-3 text-slate-400 text-sm">
+                <Phone className="w-4 h-4 text-teal-400 flex-shrink-0" />
+                <span>Prefer to email?</span>
+                <a href="mailto:hello@cover4you.co.nz" className="text-teal-300 hover:text-teal-200 font-semibold transition-colors">
+                  hello@cover4you.co.nz
+                </a>
               </div>
             </div>
 
-            {/* Right Column - Form */}
+            {/* Right Column — Form */}
             <div>
               <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border-2 border-teal-500/30">
                 {/* Form Header */}
                 <div className="bg-gradient-to-r from-sky-600 to-teal-500 p-5">
-                  <h2 className="text-lg font-bold text-white">Personal Loan Insurance Enquiry</h2>
-                  <p className="text-sky-100 text-sm mt-1">We'll respond within one business day with your options.</p>
+                  <h3 className="text-lg font-bold text-white">Business Loan Insurance Enquiry</h3>
+                  <p className="text-sky-100 text-sm mt-1">Licensed broker responds within one business day.</p>
                 </div>
 
                 <form onSubmit={handleSubmit} className="p-6 space-y-4">
                   {/* Honeypot */}
                   <input type="text" name="_honey" className="hidden" tabIndex={-1} autoComplete="off" />
 
-                  {/* Name + Email */}
-                  <div className="grid grid-cols-1 gap-4">
-                    <div>
-                      <label htmlFor="c-name" className="block text-sm font-semibold text-slate-700 mb-1">
-                        Full Name <span className="text-red-500">*</span>
-                      </label>
-                      <input
-                        id="c-name"
-                        name="name"
-                        type="text"
-                        required
-                        placeholder="Jane Smith"
-                        className="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-slate-900 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="c-email" className="block text-sm font-semibold text-slate-700 mb-1">
-                        Email Address <span className="text-red-500">*</span>
-                      </label>
-                      <input
-                        id="c-email"
-                        name="email"
-                        type="email"
-                        required
-                        placeholder="jane@example.co.nz"
-                        className="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-slate-900 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all"
-                      />
-                    </div>
+                  {/* Name */}
+                  <div>
+                    <label htmlFor="c-name" className="block text-sm font-semibold text-slate-700 mb-1">
+                      Full Name <span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      id="c-name"
+                      name="name"
+                      type="text"
+                      required
+                      placeholder="Jane Smith"
+                      className="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-slate-900 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all"
+                    />
+                  </div>
+
+                  {/* Email */}
+                  <div>
+                    <label htmlFor="c-email" className="block text-sm font-semibold text-slate-700 mb-1">
+                      Email Address <span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      id="c-email"
+                      name="email"
+                      type="email"
+                      required
+                      placeholder="jane@company.co.nz"
+                      className="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-slate-900 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all"
+                    />
                   </div>
 
                   {/* Phone */}
@@ -269,7 +354,7 @@ export function ContactPageClient() {
                       id="c-message"
                       name="message"
                       rows={3}
-                      placeholder="Tell us anything else that might help us find your best options…"
+                      placeholder="Tell us anything else that might help — e.g. type of business, existing cover, urgency…"
                       className="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-slate-900 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all resize-none"
                     />
                   </div>
@@ -309,19 +394,17 @@ export function ContactPageClient() {
             </div>
           </div>
 
-          {/* USP Badges */}
+          {/* ── Trust Pills ────────────────────────────────────────── */}
           <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
-            {whyChooseUs.map((item, idx) => {
+            {trustPills.map((item, idx) => {
               const Icon = item.icon;
               return (
                 <div
                   key={idx}
-                  className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20 text-center hover:bg-white/20 transition-all duration-200"
+                  className="bg-white/8 backdrop-blur-sm rounded-xl p-4 border border-white/15 text-center hover:bg-white/15 hover:border-teal-500/40 transition-all duration-200"
                 >
-                  <Icon className="w-8 h-8 text-teal-400 mx-auto mb-2" />
-                  <p className="text-white font-semibold text-sm leading-tight">
-                    {item.text}
-                  </p>
+                  <Icon className="w-7 h-7 text-teal-400 mx-auto mb-2" />
+                  <p className="text-white font-semibold text-xs leading-tight">{item.text}</p>
                 </div>
               );
             })}
@@ -329,111 +412,43 @@ export function ContactPageClient() {
         </div>
       </section>
 
-      {/* How It Works Section */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 text-center mb-12">
-            How It Works
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                number: '1',
-                title: 'Complete the Form',
-                description: 'Tell us about your loan and coverage needs. Takes just 2 minutes.',
-              },
-              {
-                number: '2',
-                title: 'We Compare Options',
-                description: 'We search our network of NZ insurers to find your best rates.',
-              },
-              {
-                number: '3',
-                title: 'Get Protected',
-                description: 'Receive your personalised quote and activate coverage within 24 hours.',
-              },
-            ].map((step, idx) => (
-              <div
-                key={idx}
-                className="relative flex flex-col items-center text-center"
-              >
-                <div className="w-16 h-16 rounded-full bg-gradient-to-r from-sky-600 to-teal-500 text-white font-bold text-2xl flex items-center justify-center mb-4">
-                  {step.number}
-                </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-2">
-                  {step.title}
-                </h3>
-                <p className="text-slate-600">{step.description}</p>
-
-                {idx < 2 && (
-                  <div className="hidden md:block absolute top-8 -right-4 lg:-right-8 w-8 h-0.5 bg-gradient-to-r from-sky-600 to-teal-500" />
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Dark Stats & Contact Section */}
+      {/* ── Dark Stats + Personal Reminder ──────────────────────────── */}
       <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-900 to-slate-800 text-white">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            {/* Stats */}
-            <div className="space-y-8">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-8">
-                NZ Insurance Industry
-              </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
-              <div className="space-y-6">
-                <div>
-                  <div className="text-4xl font-bold bg-gradient-to-r from-sky-400 to-teal-400 bg-clip-text text-transparent mb-2">
-                    $3.9B
+            {/* Stats */}
+            <div>
+              <p className="text-sm font-semibold text-teal-400 uppercase tracking-widest mb-4">NZ Insurance Market</p>
+              <h3 className="text-3xl font-bold mb-8">The market protecting Kiwi borrowers</h3>
+              <div className="grid grid-cols-3 gap-6">
+                {[
+                  { stat: '$3.9B', label: 'NZ Life Insurance Market' },
+                  { stat: '31+', label: 'Licensed Life Insurers' },
+                  { stat: '$3.8B', label: 'Claims Paid Annually' },
+                ].map(({ stat, label }) => (
+                  <div key={label}>
+                    <div className="text-3xl font-bold bg-gradient-to-r from-sky-400 to-teal-400 bg-clip-text text-transparent mb-1">{stat}</div>
+                    <p className="text-slate-400 text-sm">{label}</p>
                   </div>
-                  <p className="text-slate-300">NZ Life Insurance Market</p>
-                </div>
-                <div>
-                  <div className="text-4xl font-bold bg-gradient-to-r from-sky-400 to-teal-400 bg-clip-text text-transparent mb-2">
-                    31+
-                  </div>
-                  <p className="text-slate-300">Life Insurers in NZ</p>
-                </div>
-                <div>
-                  <div className="text-4xl font-bold bg-gradient-to-r from-sky-400 to-teal-400 bg-clip-text text-transparent mb-2">
-                    $3.8B
-                  </div>
-                  <p className="text-slate-300">Claims Paid Annually</p>
-                </div>
+                ))}
               </div>
             </div>
 
-            {/* CTA */}
-            <div className="flex flex-col justify-center">
-              <h3 className="text-2xl font-bold mb-6">
-                Looking for Business Loan Cover?
-              </h3>
-
-              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20 mb-6">
-                <div className="flex items-center gap-4 mb-4">
-                  <Building2 className="w-6 h-6 text-teal-400" />
-                  <div>
-                    <p className="text-sm text-slate-400 uppercase tracking-wide">
-                      Business Lending
-                    </p>
-                    <p className="text-lg font-bold">Specialist Business Cover</p>
-                  </div>
-                </div>
-                <p className="text-slate-300 text-sm">
-                  Commercial mortgages, equipment finance, key person cover and business debt protection — our brokers specialise in business lending.
-                </p>
+            {/* Personal reminder card */}
+            <div className="bg-gradient-to-br from-sky-500/10 to-teal-500/10 border border-teal-500/30 rounded-2xl p-8">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-sky-500 to-teal-500 flex items-center justify-center mb-5">
+                <Users className="w-6 h-6 text-white" />
               </div>
-
+              <h3 className="text-xl font-bold text-white mb-3">Looking for personal cover?</h3>
+              <p className="text-slate-300 text-sm leading-relaxed mb-5">
+                For personal loans, car finance, home loans, redundancy cover and GAP insurance — you don&apos;t need the form. Browse all 8 NZ providers side-by-side and connect directly.
+              </p>
               <Link
-                href="/types/business-loan"
-                className="bg-gradient-to-r from-sky-600 to-teal-500 hover:from-sky-700 hover:to-teal-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 inline-flex items-center justify-center gap-2"
+                href="/compare"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-600 to-teal-500 hover:from-sky-700 hover:to-teal-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg"
               >
-                <Building2 className="w-5 h-5" />
-                Get a Business Loan Quote
+                Compare Personal Providers <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
           </div>
