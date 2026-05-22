@@ -65,23 +65,31 @@ export default async function GuidePage({ params }: Props) {
       />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white py-20">
-        <div className="max-w-6xl mx-auto px-4">
-          <nav className="flex items-center gap-2 text-blue-200 text-sm mb-6">
-            <Link href="/" className="hover:text-white transition-colors">Home</Link>
+      <section
+        className="relative pt-28 pb-14 sm:pt-32 sm:pb-20 text-white"
+        style={{
+          backgroundImage: `url(${(guide as unknown as { heroImage: string }).heroImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/70 to-slate-900/40" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <nav className="flex items-center gap-2 text-slate-400 text-sm mb-8">
+            <Link href="/" className="hover:text-teal-400 transition-colors">Home</Link>
             <ChevronRight className="w-4 h-4" />
-            <span className="text-white">Guides</span>
+            <Link href="/guides" className="hover:text-teal-400 transition-colors">Guides</Link>
             <ChevronRight className="w-4 h-4" />
-            <span className="text-white truncate max-w-xs">{guide.title}</span>
+            <span className="text-white truncate max-w-xs font-medium">{guide.title}</span>
           </nav>
-          <div className="inline-flex items-center gap-2 bg-blue-700/60 border border-blue-500/40 rounded-full px-4 py-1.5 text-blue-100 text-sm font-medium mb-5">
+          <div className="inline-flex items-center gap-2 bg-teal-500/20 border border-teal-400/30 rounded-full px-4 py-1.5 text-teal-300 text-sm font-medium mb-5">
             <BookOpen className="w-4 h-4" />
             Borrower Guide
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight max-w-3xl">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 leading-tight max-w-3xl">
             {guide.heroHeading}
           </h1>
-          <p className="text-blue-100 text-sm mt-4">
+          <p className="text-slate-300 text-sm mt-4">
             By {guide.author.name}, {guide.author.title} &middot;{' '}
             {new Date(guide.dateModified).toLocaleDateString('en-NZ', { year: 'numeric', month: 'long' })}
           </p>
