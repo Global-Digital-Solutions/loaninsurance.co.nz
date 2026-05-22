@@ -42,7 +42,7 @@ export default function RedundancyCoverPage() {
       <section
         className="relative lg:min-h-[100vh] pt-28 pb-12 sm:pt-28 sm:pb-16 lg:py-28 overflow-hidden"
         style={{
-          backgroundImage: 'url(https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1920&h=1080&fit=crop)',
+          backgroundImage: 'url(/images/hero-office-worker.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

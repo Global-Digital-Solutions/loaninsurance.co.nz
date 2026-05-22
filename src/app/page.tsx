@@ -152,7 +152,7 @@ export default function HomePage() {
           className="relative lg:min-h-[100vh] pt-28 pb-12 sm:pt-28 sm:pb-16 lg:py-28 flex items-center"
           style={{
             backgroundImage:
-              'url(https://images.unsplash.com/photo-1450101499163-c8848e66ad76?w=1920&h=1080&fit=crop&q=85)',
+              'url(/images/hero-finance-charts.jpg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center 30%',
           }}

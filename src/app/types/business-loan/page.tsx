@@ -99,7 +99,7 @@ export default function BusinessLoanPage() {
           className="relative lg:min-h-[85vh] pt-28 pb-12 sm:pt-28 sm:pb-16 lg:py-28"
           style={{
             backgroundImage:
-              'url(https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1920&h=1080&fit=crop)',
+              'url(/images/hero-professional-2.jpg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center 40%',
           }}

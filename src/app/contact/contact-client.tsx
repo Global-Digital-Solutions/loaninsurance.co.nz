@@ -98,7 +98,7 @@ export function ContactPageClient() {
         className="relative lg:min-h-[100vh] pt-28 pb-12 sm:pt-28 sm:pb-16 lg:py-28"
         style={{
           backgroundImage:
-            'url(https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?w=1920&h=1080&fit=crop)',
+            'url(/images/hero-professional-1.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

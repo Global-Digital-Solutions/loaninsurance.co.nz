@@ -42,7 +42,7 @@ export default function GapInsurancePage() {
       <section
         className="relative lg:min-h-[100vh] pt-28 pb-12 sm:pt-28 sm:pb-16 lg:py-28 overflow-hidden"
         style={{
-          backgroundImage: 'url(https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1920&h=1080&fit=crop)',
+          backgroundImage: 'url(/images/hero-team-meeting.png)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
