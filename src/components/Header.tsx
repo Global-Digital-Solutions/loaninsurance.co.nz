@@ -16,8 +16,7 @@ const insuranceTypes = [
 const navLinks = [
   { label: 'Coverage', href: '/coverage' },
   { label: 'Compare', href: '/compare' },
-  { label: 'Blog', href: '/blog' },
-  { label: 'About', href: '/about' },
+  { label: 'Resources', href: '/blog' },
   { label: 'Contact', href: '/contact' },
 ];
 
