@@ -28,7 +28,7 @@ export function AboutPageClient() {
       icon: CheckCircle2,
       title: 'Trust & Integrity',
       description:
-        'Our broker network is ICNZ registered and committed to the highest ethical standards in insurance brokerage and customer service.',
+        'Our broker network is FSPR-registered and committed to the highest ethical standards in insurance brokerage and customer service.',
     },
   ];
 
@@ -62,16 +62,8 @@ export function AboutPageClient() {
   return (
     <main>
       {/* Hero Section */}
-      <section
-        className="relative lg:min-h-[100vh] pt-28 pb-12 sm:pt-28 sm:pb-16 lg:py-28 text-white"
-        style={{
-          backgroundImage: 'url(/images/hero-boardroom.jpg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/70 to-slate-900/40" />
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="lg:min-h-[100vh] pt-28 pb-12 sm:pt-28 sm:pb-16 lg:py-28 bg-gradient-to-br from-slate-900 to-slate-800 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Breadcrumb */}
           <div className="mb-8 flex items-center gap-2 text-sm text-slate-400">
             <Link href="/" className="hover:text-teal-400 transition-colors">
@@ -197,7 +189,7 @@ export function AboutPageClient() {
         </div>
       </section>
 
-      {/* ICNZ & Compliance */}
+      {/* FSPR & Compliance */}
       <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-sky-50 to-teal-50">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
@@ -208,7 +200,7 @@ export function AboutPageClient() {
             <p className="text-lg text-slate-700 mb-4 leading-relaxed">
               LoanInsurance.co.nz connects you with a network of insurance
               brokers and advisers who are registered with the Insurance Council
-              of New Zealand (ICNZ) and committed to the highest standards of
+              of New Zealand and committed to the highest standards of
               professional conduct and customer service.
             </p>
             <p className="text-slate-600">
@@ -224,7 +216,7 @@ export function AboutPageClient() {
             rel="noopener noreferrer"
             className="inline-block bg-gradient-to-r from-sky-600 to-teal-500 hover:from-sky-700 hover:to-teal-600 text-white font-semibold py-2 px-6 rounded-lg transition-all duration-200"
           >
-            Learn About ICNZ
+            Learn About FSPR
           </Link>
         </div>
       </section>
@@ -249,14 +241,14 @@ export function AboutPageClient() {
             Join Thousands of Protected Families
           </h2>
           <p className="text-lg text-sky-100 mb-8 max-w-2xl mx-auto">
-            Get a quote today and see how loan protection insurance can
+            Get a free quote today and see how loan protection insurance can
             give you peace of mind.
           </p>
           <Link
             href="/contact"
             className="inline-block bg-white hover:bg-slate-50 text-sky-600 font-bold py-3 px-8 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl"
           >
-            Get a Quote
+            Get Your Free Quote
           </Link>
         </div>
       </section>
