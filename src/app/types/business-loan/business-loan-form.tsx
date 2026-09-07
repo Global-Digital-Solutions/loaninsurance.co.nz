@@ -29,9 +29,7 @@ export default function BusinessLoanForm() {
 
     const payload = {
       _to: 'hello@cover4you.co.nz',
-      _cc: 'butlerdarin@gmail.com',
       _subject: 'New Business Loan Insurance Enquiry — LoanInsurance.co.nz',
-      _captcha: 'false',
       _honey: data.get('_honey') || '',
       name: data.get('name') || '',
       email: data.get('email') || '',

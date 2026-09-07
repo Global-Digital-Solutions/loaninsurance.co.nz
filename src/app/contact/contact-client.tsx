@@ -56,9 +56,7 @@ export function ContactPageClient() {
 
     const payload = {
       _to: 'hello@cover4you.co.nz',
-      _cc: 'butlerdarin@gmail.com',
       _subject: 'New Loan Insurance Enquiry — LoanInsurance.co.nz',
-      _captcha: 'false',
       _honey: data.get('_honey') || '',
       name: data.get('name') || '',
       email: data.get('email') || '',
