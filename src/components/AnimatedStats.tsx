@@ -11,7 +11,7 @@ const stats: Stat[] = [
   { value: '$3.9B', label: 'NZ Life Insurance Market' },
   { value: '31+', label: 'Life Insurers in NZ' },
   { value: '$3.8B', label: 'Claims Paid Annually' },
-  { value: '95%', label: 'Market via ICNZ Members' },
+  { value: '95%', label: 'Market via FSP Members' },
 ];
 
 function AnimatedCounter({ value, label, isVisible }: { value: string; label: string; isVisible: boolean }) {

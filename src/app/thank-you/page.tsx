@@ -130,8 +130,8 @@ export default function ThankYouPage() {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div className="p-4 bg-slate-50 rounded-lg">
-              <p className="text-teal-600 font-bold text-lg mb-1">ICNZ Registered Brokers</p>
-              <p className="text-sm text-slate-600">Our broker network is ICNZ registered</p>
+              <p className="text-teal-600 font-bold text-lg mb-1">FSP registered brokers</p>
+              <p className="text-sm text-slate-600">Our broker network is FSP registered</p>
             </div>
             <div className="p-4 bg-slate-50 rounded-lg">
               <p className="text-teal-600 font-bold text-lg mb-1">No Broker Fees</p>

@@ -7,7 +7,7 @@ interface TrustBannerProps {
 }
 
 const trustItems = [
-  { icon: Shield, text: 'ICNZ Registered Brokers' },
+  { icon: Shield, text: 'FSP registered brokers' },
   { icon: CheckCircle2, text: 'No Broker Fees' },
   { icon: Lock, text: '256-bit SSL Secure' },
   { icon: Zap, text: '24hr Quote Response' },

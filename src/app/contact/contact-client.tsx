@@ -34,7 +34,7 @@ const loanTypes = [
 type FormState = 'idle' | 'submitting' | 'success' | 'error';
 
 const trustPills = [
-  { icon: BadgeCheck, text: 'FMA & ICNZ Registered Brokers' },
+  { icon: BadgeCheck, text: 'FMA & FSP registered brokers' },
   { icon: Lock, text: '256-bit SSL Secure' },
   { icon: Clock, text: 'Response Within One Business Day' },
   { icon: Shield, text: 'No Broker Fees — Ever' },

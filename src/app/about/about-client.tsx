@@ -199,7 +199,7 @@ export function AboutPageClient() {
           <div className="bg-white p-8 rounded-lg border border-slate-200 mb-8">
             <p className="text-lg text-slate-700 mb-4 leading-relaxed">
               LoanInsurance.co.nz connects you with a network of insurance
-              brokers and advisers who are registered with the Insurance Council
+              brokers and advisers who are registered on the Financial Service Providers Register
               of New Zealand and committed to the highest standards of
               professional conduct and customer service.
             </p>
@@ -211,7 +211,7 @@ export function AboutPageClient() {
           </div>
 
           <Link
-            href="https://www.icnz.org.nz"
+            href="https://www.fma.govt.nz/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-gradient-to-r from-sky-600 to-teal-500 hover:from-sky-700 hover:to-teal-600 text-white font-semibold py-2 px-6 rounded-lg transition-all duration-200"

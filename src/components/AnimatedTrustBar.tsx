@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 
 const trustItems = [
-  { icon: '✓', text: 'ICNZ Registered Brokers' },
+  { icon: '✓', text: 'FSP registered brokers' },
   { icon: '✓', text: 'No Broker Fees' },
   { icon: '✓', text: '256-bit SSL Secure' },
   { icon: '✓', text: '24hr Quote Response' },

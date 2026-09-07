@@ -115,7 +115,7 @@ export default function DisclaimerPage() {
               <div id="fma" className="scroll-mt-28">
                 <h2 className="text-2xl font-bold text-slate-900 mb-4 pb-3 border-b border-slate-200">Regulated Advisers</h2>
                 <div className="space-y-4 text-slate-700 leading-relaxed">
-                  <p>The insurance advisers and brokers we refer enquiries to are individually licensed under the Financial Markets Conduct Act 2013 and/or registered with the Insurance Council of New Zealand (ICNZ). They operate independently and are responsible for the advice and quotations they provide.</p>
+                  <p>The insurance advisers and brokers we refer enquiries to are individually licensed under the Financial Markets Conduct Act 2013 and/or registered with the Financial Markets Authority. They operate independently and are responsible for the advice and quotations they provide.</p>
                   <p>LoanInsurance.co.nz is not itself regulated as a financial advice provider under the FMCA. We do not provide regulated financial advice. The advisers we connect you with hold their own licences and are subject to the duties and obligations of the FMCA in providing advice to you.</p>
                   <p>You can verify an adviser's licence on the Financial Service Providers Register at <a href="https://www.fsp.govt.nz" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:text-teal-700 underline">fsp.govt.nz</a>.</p>
                 </div>
