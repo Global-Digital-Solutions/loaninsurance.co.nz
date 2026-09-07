@@ -404,7 +404,7 @@ Bundled insurance often requires you to accept your lender's terms without shopp
 
 ## Check Insurer Financial Stability
 
-Before purchasing insurance from any provider, verify they're licensed and financially stable. In New Zealand, check that insurers are registered with the Financial Markets Authority (FMA) and have appropriate financial ratings. You want to ensure the insurer will still be around and able to pay claims when you need them.
+Before purchasing insurance from any provider, verify they're licensed and financially stable. In New Zealand, check that the insurer is licensed by the Reserve Bank of New Zealand, which supervises insurers for financial soundness, and look at its financial strength rating. You want to ensure the insurer will still be around and able to pay claims when you need them.
 
 ## Ask About Special Features
 
