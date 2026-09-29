@@ -7,11 +7,11 @@ export const metadata: Metadata = {
   title: 'Business Loan Insurance NZ | Protect Your Business Borrowing',
   description:
     'Protect your business loan repayments with specialist business loan insurance. Cover for commercial mortgages, business lines of credit, equipment finance and more. Get a tailored quote from NZ licensed brokers.',
-  alternates: { canonical: 'https://loaninsurance.co.nz/types/business-loan/' },
+  alternates: { canonical: 'https://www.loaninsurance.co.nz/types/business-loan/' },
   openGraph: {
     title: 'Business Loan Insurance NZ | Protect Your Business Borrowing',
     description: 'Specialist business loan protection for NZ businesses. Get a tailored quote.',
-    url: 'https://loaninsurance.co.nz/types/business-loan/',
+    url: 'https://www.loaninsurance.co.nz/types/business-loan/',
     type: 'website',
   },
 };

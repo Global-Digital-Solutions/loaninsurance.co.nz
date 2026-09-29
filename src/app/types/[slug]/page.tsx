@@ -20,11 +20,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: type.metaTitle,
     description: type.metaDescription,
-    alternates: { canonical: `https://loaninsurance.co.nz/types/${type.slug}` },
+    alternates: { canonical: `https://www.loaninsurance.co.nz/types/${type.slug}/` },
     openGraph: {
       title: type.metaTitle,
       description: type.metaDescription,
-      url: `https://loaninsurance.co.nz/types/${type.slug}`,
+      url: `https://www.loaninsurance.co.nz/types/${type.slug}/`,
       type: 'website',
     },
   };
@@ -42,8 +42,8 @@ export default async function InsuranceTypePage({ params }: Props) {
       headline: type.title,
       description: type.metaDescription,
       image: type.heroImage,
-      url: `https://loaninsurance.co.nz/types/${type.slug}`,
-      mainEntityOfPage: `https://loaninsurance.co.nz/types/${type.slug}`,
+      url: `https://www.loaninsurance.co.nz/types/${type.slug}/`,
+      mainEntityOfPage: `https://www.loaninsurance.co.nz/types/${type.slug}/`,
       author: {
         '@type': 'Person',
         name: type.author.name,
@@ -52,7 +52,7 @@ export default async function InsuranceTypePage({ params }: Props) {
       publisher: {
         '@type': 'Organization',
         name: 'LoanInsurance.co.nz',
-        url: 'https://loaninsurance.co.nz',
+        url: 'https://www.loaninsurance.co.nz',
       },
       datePublished: type.datePublished,
       dateModified: type.dateModified,
@@ -61,9 +61,9 @@ export default async function InsuranceTypePage({ params }: Props) {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://loaninsurance.co.nz' },
-        { '@type': 'ListItem', position: 2, name: 'Insurance Types', item: 'https://loaninsurance.co.nz/types' },
-        { '@type': 'ListItem', position: 3, name: type.title, item: `https://loaninsurance.co.nz/types/${type.slug}` },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.loaninsurance.co.nz' },
+        { '@type': 'ListItem', position: 2, name: 'Insurance Types', item: 'https://www.loaninsurance.co.nz/types' },
+        { '@type': 'ListItem', position: 3, name: type.title, item: `https://www.loaninsurance.co.nz/types/${type.slug}/` },
       ],
     },
     {

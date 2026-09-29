@@ -7,11 +7,11 @@ export const metadata: Metadata = {
   title: 'Redundancy Cover NZ | Loan Repayment Protection for Job Loss',
   description:
     'Redundancy cover pays your loan repayments if you are made involuntarily redundant. Compare NZ providers and get a quote directly — no broker fees.',
-  alternates: { canonical: 'https://loaninsurance.co.nz/types/redundancy-cover/' },
+  alternates: { canonical: 'https://www.loaninsurance.co.nz/types/redundancy-cover/' },
   openGraph: {
     title: 'Redundancy Cover NZ | Loan Repayment Protection for Job Loss',
     description: 'Compare NZ redundancy insurance providers. Your loan repayments covered if you lose your job involuntarily.',
-    url: 'https://loaninsurance.co.nz/types/redundancy-cover/',
+    url: 'https://www.loaninsurance.co.nz/types/redundancy-cover/',
     type: 'website',
   },
 };
@@ -27,11 +27,11 @@ export default function RedundancyCoverPage() {
             '@type': 'Service',
             name: 'Redundancy Insurance',
             description: 'Job loss insurance covering loan and bill payments if made redundant. Protection for up to 12 months of payments in New Zealand',
-            url: 'https://loaninsurance.co.nz/types/redundancy-cover',
+            url: 'https://www.loaninsurance.co.nz/types/redundancy-cover',
             provider: {
               '@type': 'Organization',
               name: 'LoanInsurance.co.nz',
-              url: 'https://loaninsurance.co.nz',
+              url: 'https://www.loaninsurance.co.nz',
             },
             areaServed: 'NZ',
           }),

@@ -20,10 +20,11 @@ export const metadata: Metadata = {
   description:
     'Read expert articles and guides about loan protection insurance in New Zealand. Tips, advice, and insights for borrowers.',
   keywords: ['blog', 'loan insurance', 'financial advice'],
+  alternates: { canonical: 'https://www.loaninsurance.co.nz/blog/' },
   openGraph: {
     title: 'Articles & Resources | LoanInsurance.co.nz',
     description: 'Expert advice and guides for loan protection insurance in NZ.',
-    url: 'https://loaninsurance.co.nz/blog',
+    url: 'https://www.loaninsurance.co.nz/blog/',
     type: 'website',
   },
 };
@@ -49,7 +50,7 @@ export default function BlogPage() {
             '@context': 'https://schema.org',
             '@type': 'Blog',
             name: 'LoanInsurance.co.nz Articles & Resources',
-            url: 'https://loaninsurance.co.nz/blog',
+            url: 'https://www.loaninsurance.co.nz/blog',
             description:
               'Expert articles and guides about loan protection insurance.',
           }),

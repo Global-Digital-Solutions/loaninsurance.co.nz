@@ -7,11 +7,11 @@ export const metadata: Metadata = {
   title: 'Home Loan Insurance NZ | Mortgage Repayment Protection',
   description:
     'Protect your mortgage repayments if you cannot work. Compare NZ home loan insurance providers offering cover for illness, injury, redundancy and death. No broker fees.',
-  alternates: { canonical: 'https://loaninsurance.co.nz/types/home-loan/' },
+  alternates: { canonical: 'https://www.loaninsurance.co.nz/types/home-loan/' },
   openGraph: {
     title: 'Home Loan Insurance NZ | Mortgage Repayment Protection',
     description: 'Compare NZ mortgage protection providers. Cover up to 115% of your repayments. Get a quote directly.',
-    url: 'https://loaninsurance.co.nz/types/home-loan/',
+    url: 'https://www.loaninsurance.co.nz/types/home-loan/',
     type: 'website',
   },
 };
@@ -27,11 +27,11 @@ export default function HomeLoanPage() {
             '@type': 'Service',
             name: 'Home Loan Insurance',
             description: 'Mortgage protection insurance for homeowners in New Zealand. Coverage up to $500,000 for death, illness, redundancy, and terminal illness.',
-            url: 'https://loaninsurance.co.nz/types/home-loan',
+            url: 'https://www.loaninsurance.co.nz/types/home-loan',
             provider: {
               '@type': 'Organization',
               name: 'LoanInsurance.co.nz',
-              url: 'https://loaninsurance.co.nz',
+              url: 'https://www.loaninsurance.co.nz',
             },
             areaServed: 'NZ',
           }),

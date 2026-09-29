@@ -29,12 +29,12 @@ export async function generateMetadata({
     title: `${provider.name} Loan Insurance Review NZ | LoanInsurance.co.nz`,
     description: `${provider.description} Compare ${provider.name} loan protection coverage, waiting periods, benefit limits and key features. See if it's right for your situation.`,
     alternates: {
-      canonical: `https://loaninsurance.co.nz/providers/${provider.slug}/`,
+      canonical: `https://www.loaninsurance.co.nz/providers/${provider.slug}/`,
     },
     openGraph: {
       title: `${provider.name} Loan Insurance — NZ Review`,
       description: provider.description,
-      url: `https://loaninsurance.co.nz/providers/${provider.slug}/`,
+      url: `https://www.loaninsurance.co.nz/providers/${provider.slug}/`,
       type: 'website',
     },
   };

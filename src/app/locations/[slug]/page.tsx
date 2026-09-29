@@ -20,11 +20,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: loc.metaTitle,
     description: loc.metaDescription,
-    alternates: { canonical: `https://loaninsurance.co.nz/locations/${loc.slug}` },
+    alternates: { canonical: `https://www.loaninsurance.co.nz/locations/${loc.slug}/` },
     openGraph: {
       title: loc.metaTitle,
       description: loc.metaDescription,
-      url: `https://loaninsurance.co.nz/locations/${loc.slug}`,
+      url: `https://www.loaninsurance.co.nz/locations/${loc.slug}/`,
       type: 'website',
     },
   };
@@ -41,11 +41,11 @@ export default async function LocationPage({ params }: Props) {
       '@type': 'WebPage',
       name: loc.metaTitle,
       description: loc.metaDescription,
-      url: `https://loaninsurance.co.nz/locations/${loc.slug}`,
+      url: `https://www.loaninsurance.co.nz/locations/${loc.slug}/`,
       publisher: {
         '@type': 'Organization',
         name: 'LoanInsurance.co.nz',
-        url: 'https://loaninsurance.co.nz',
+        url: 'https://www.loaninsurance.co.nz',
       },
       datePublished: loc.datePublished,
       dateModified: loc.dateModified,
@@ -54,9 +54,9 @@ export default async function LocationPage({ params }: Props) {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://loaninsurance.co.nz' },
-        { '@type': 'ListItem', position: 2, name: 'Locations', item: 'https://loaninsurance.co.nz/locations' },
-        { '@type': 'ListItem', position: 3, name: loc.city, item: `https://loaninsurance.co.nz/locations/${loc.slug}` },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.loaninsurance.co.nz' },
+        { '@type': 'ListItem', position: 2, name: 'Locations', item: 'https://www.loaninsurance.co.nz/locations' },
+        { '@type': 'ListItem', position: 3, name: loc.city, item: `https://www.loaninsurance.co.nz/locations/${loc.slug}/` },
       ],
     },
     {

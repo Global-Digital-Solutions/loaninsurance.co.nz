@@ -6,11 +6,11 @@ export const metadata: Metadata = {
   description:
     "LoanInsurance.co.nz connects New Zealand borrowers with authorised financial advisers for loan protection insurance. Our mission is to make quality advice accessible to every borrower.",
   keywords: ['about us', 'loan insurance nz', 'insurance comparison'],
-  alternates: { canonical: 'https://loaninsurance.co.nz/about' },
+  alternates: { canonical: 'https://www.loaninsurance.co.nz/about/' },
   openGraph: {
     title: 'About LoanInsurance.co.nz',
     description: 'Connecting New Zealand borrowers with authorised financial advisers for loan protection insurance — income protection, redundancy cover, mortgage protection and more.',
-    url: 'https://loaninsurance.co.nz/about',
+    url: 'https://www.loaninsurance.co.nz/about',
     type: 'website',
   },
 };
@@ -25,11 +25,11 @@ export default function AboutPage() {
             '@context': 'https://schema.org',
             '@type': 'AboutPage',
             name: 'About LoanInsurance.co.nz',
-            url: 'https://loaninsurance.co.nz/about',
+            url: 'https://www.loaninsurance.co.nz/about',
             publisher: {
               '@type': 'Organization',
               name: 'LoanInsurance.co.nz',
-              url: 'https://loaninsurance.co.nz',
+              url: 'https://www.loaninsurance.co.nz',
               contactPoint: {
                 '@type': 'ContactPoint',
                 email: 'hello@cover4you.co.nz',

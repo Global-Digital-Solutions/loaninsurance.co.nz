@@ -6,11 +6,11 @@ import { BookOpen, ChevronRight, ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Loan Insurance Guides | Expert Borrower Resources 2026',
   description: 'In-depth guides on loan insurance for borrowers. Covering first home buyers, self-employed, redundancy cover, ACC gaps, income protection comparisons, and more.',
-  alternates: { canonical: 'https://loaninsurance.co.nz/guides' },
+  alternates: { canonical: 'https://www.loaninsurance.co.nz/guides/' },
   openGraph: {
     title: 'Loan Insurance Guides | Expert Borrower Resources 2026',
     description: 'Expert guides helping NZ borrowers understand loan protection insurance — income protection, redundancy cover, ACC gaps, mortgage protection and more.',
-    url: 'https://loaninsurance.co.nz/guides',
+    url: 'https://www.loaninsurance.co.nz/guides',
     type: 'website',
   },
 };
@@ -26,11 +26,11 @@ export default function GuidesIndexPage() {
             '@type': 'CollectionPage',
             name: 'Loan Insurance Guides',
             description: 'Expert guides for New Zealand borrowers on loan protection insurance',
-            url: 'https://loaninsurance.co.nz/guides',
+            url: 'https://www.loaninsurance.co.nz/guides',
             publisher: {
               '@type': 'Organization',
               name: 'LoanInsurance.co.nz',
-              url: 'https://loaninsurance.co.nz',
+              url: 'https://www.loaninsurance.co.nz',
             },
           }),
         }}

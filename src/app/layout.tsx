@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.loaninsurance.co.nz"),
   title: "LoanInsurance.co.nz | Loan Protection Insurance",
   description:
     "Protect your loan repayments with affordable loan protection insurance. Personal loans, car finance, mortgages, and more. Quotes within 24 hours.",
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_NZ",
-    url: "https://loaninsurance.co.nz",
+    url: "https://www.loaninsurance.co.nz",
     title: "LoanInsurance.co.nz | Loan Protection Insurance",
     description:
       "Protect your loan repayments with affordable loan protection insurance. Personal loans, car finance, mortgages, and more.",
@@ -47,10 +48,10 @@ const schemaOrg = {
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://loaninsurance.co.nz/#organization",
+      "@id": "https://www.loaninsurance.co.nz/#organization",
       name: "LoanInsurance.co.nz",
-      url: "https://loaninsurance.co.nz",
-      logo: "https://loaninsurance.co.nz/favicon.ico",
+      url: "https://www.loaninsurance.co.nz",
+      logo: "https://www.loaninsurance.co.nz/favicon.ico",
       contactPoint: {
         "@type": "ContactPoint",
         email: "hello@cover4you.co.nz",
@@ -62,14 +63,14 @@ const schemaOrg = {
     },
     {
       "@type": "WebSite",
-      "@id": "https://loaninsurance.co.nz/#website",
-      url: "https://loaninsurance.co.nz",
+      "@id": "https://www.loaninsurance.co.nz/#website",
+      url: "https://www.loaninsurance.co.nz",
       name: "LoanInsurance.co.nz",
       description: "Loan protection insurance comparison and broker referral service",
-      publisher: { "@id": "https://loaninsurance.co.nz/#organization" },
+      publisher: { "@id": "https://www.loaninsurance.co.nz/#organization" },
       potentialAction: {
         "@type": "SearchAction",
-        target: "https://loaninsurance.co.nz/?s={search_term_string}",
+        target: "https://www.loaninsurance.co.nz/?s={search_term_string}",
         "query-input": "required name=search_term_string",
       },
     },

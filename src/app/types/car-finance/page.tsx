@@ -7,11 +7,11 @@ export const metadata: Metadata = {
   title: 'Car Finance Insurance NZ | GAP & Loan Repayment Cover',
   description:
     'Protect your car finance repayments against redundancy, accident, and illness. Compare NZ car loan protection providers including GAP insurance. No broker fees.',
-  alternates: { canonical: 'https://loaninsurance.co.nz/types/car-finance/' },
+  alternates: { canonical: 'https://www.loaninsurance.co.nz/types/car-finance/' },
   openGraph: {
     title: 'Car Finance Insurance NZ | GAP & Loan Repayment Cover',
     description: 'Compare NZ car finance insurance providers. GAP + payment protection. Get a quote directly — no broker fees.',
-    url: 'https://loaninsurance.co.nz/types/car-finance/',
+    url: 'https://www.loaninsurance.co.nz/types/car-finance/',
     type: 'website',
   },
 };
@@ -27,11 +27,11 @@ export default function CarFinancePage() {
             '@type': 'Service',
             name: 'Car Finance Insurance',
             description: 'Comprehensive insurance protection for car finance loans and vehicle loans in New Zealand',
-            url: 'https://loaninsurance.co.nz/types/car-finance',
+            url: 'https://www.loaninsurance.co.nz/types/car-finance',
             provider: {
               '@type': 'Organization',
               name: 'LoanInsurance.co.nz',
-              url: 'https://loaninsurance.co.nz',
+              url: 'https://www.loaninsurance.co.nz',
             },
             areaServed: 'NZ',
           }),

@@ -18,11 +18,11 @@ export const metadata: Metadata = {
     title: 'Personal Loan Insurance NZ | Protect Your Repayments',
     description:
       'Protect your personal loan with comprehensive insurance coverage. Death, terminal illness, disability, redundancy cover available.',
-    url: 'https://loaninsurance.co.nz/types/personal-loan',
+    url: 'https://www.loaninsurance.co.nz/types/personal-loan',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://loaninsurance.co.nz/types/personal-loan',
+    canonical: 'https://www.loaninsurance.co.nz/types/personal-loan/',
   },
 };
 
@@ -37,11 +37,11 @@ export default function PersonalLoanPage() {
             '@type': 'Service',
             name: 'Personal Loan Insurance',
             description: 'Comprehensive insurance protection for personal loan repayments in New Zealand',
-            url: 'https://loaninsurance.co.nz/types/personal-loan',
+            url: 'https://www.loaninsurance.co.nz/types/personal-loan',
             provider: {
               '@type': 'Organization',
               name: 'LoanInsurance.co.nz',
-              url: 'https://loaninsurance.co.nz',
+              url: 'https://www.loaninsurance.co.nz',
             },
             areaServed: 'NZ',
           }),

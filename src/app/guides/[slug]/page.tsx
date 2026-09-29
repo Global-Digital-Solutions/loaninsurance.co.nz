@@ -20,11 +20,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: guide.metaTitle,
     description: guide.metaDescription,
-    alternates: { canonical: `https://loaninsurance.co.nz/guides/${guide.slug}` },
+    alternates: { canonical: `https://www.loaninsurance.co.nz/guides/${guide.slug}/` },
     openGraph: {
       title: guide.metaTitle,
       description: guide.metaDescription,
-      url: `https://loaninsurance.co.nz/guides/${guide.slug}`,
+      url: `https://www.loaninsurance.co.nz/guides/${guide.slug}/`,
       type: 'article',
     },
   };
@@ -42,8 +42,8 @@ export default async function GuidePage({ params }: Props) {
       headline: guide.title,
       description: guide.metaDescription,
       image: (guide as unknown as { heroImage: string }).heroImage,
-      url: `https://loaninsurance.co.nz/guides/${guide.slug}`,
-      mainEntityOfPage: `https://loaninsurance.co.nz/guides/${guide.slug}`,
+      url: `https://www.loaninsurance.co.nz/guides/${guide.slug}/`,
+      mainEntityOfPage: `https://www.loaninsurance.co.nz/guides/${guide.slug}/`,
       author: {
         '@type': 'Person',
         name: guide.author.name,
@@ -52,7 +52,7 @@ export default async function GuidePage({ params }: Props) {
       publisher: {
         '@type': 'Organization',
         name: 'LoanInsurance.co.nz',
-        url: 'https://loaninsurance.co.nz',
+        url: 'https://www.loaninsurance.co.nz',
       },
       datePublished: guide.datePublished,
       dateModified: guide.dateModified,
@@ -61,9 +61,9 @@ export default async function GuidePage({ params }: Props) {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://loaninsurance.co.nz' },
-        { '@type': 'ListItem', position: 2, name: 'Guides', item: 'https://loaninsurance.co.nz/guides' },
-        { '@type': 'ListItem', position: 3, name: guide.title, item: `https://loaninsurance.co.nz/guides/${guide.slug}` },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.loaninsurance.co.nz' },
+        { '@type': 'ListItem', position: 2, name: 'Guides', item: 'https://www.loaninsurance.co.nz/guides' },
+        { '@type': 'ListItem', position: 3, name: guide.title, item: `https://www.loaninsurance.co.nz/guides/${guide.slug}/` },
       ],
     },
     {

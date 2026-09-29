@@ -16,10 +16,11 @@ export const metadata: Metadata = {
   description:
     'Answers to common questions about loan protection insurance in New Zealand. Find information about coverage, costs, claims, and more.',
   keywords: ['FAQ', 'frequently asked questions', 'loan insurance'],
+  alternates: { canonical: 'https://www.loaninsurance.co.nz/faqs/' },
   openGraph: {
     title: 'Frequently Asked Questions',
     description: 'Everything you need to know about loan insurance.',
-    url: 'https://loaninsurance.co.nz/faqs',
+    url: 'https://www.loaninsurance.co.nz/faqs/',
     type: 'website',
   },
 };

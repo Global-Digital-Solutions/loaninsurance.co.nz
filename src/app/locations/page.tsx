@@ -6,11 +6,11 @@ import { MapPin, ChevronRight, ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Loan Insurance by Location | City Guides 2026',
   description: 'Find loan insurance information for your city. We cover Auckland, Wellington, Christchurch, Hamilton, Tauranga, Dunedin, Palmerston North, and Nelson.',
-  alternates: { canonical: 'https://loaninsurance.co.nz/locations' },
+  alternates: { canonical: 'https://www.loaninsurance.co.nz/locations/' },
   openGraph: {
     title: 'Loan Insurance by Location | City Guides 2026',
     description: "Local context matters. Find loan insurance information tailored to your city's property market, employment landscape, and economic conditions.",
-    url: 'https://loaninsurance.co.nz/locations',
+    url: 'https://www.loaninsurance.co.nz/locations',
     type: 'website',
   },
 };
@@ -26,11 +26,11 @@ export default function LocationsIndexPage() {
             '@type': 'CollectionPage',
             name: 'Loan Insurance by Location',
             description: 'Loan insurance information tailored to NZ cities and regions',
-            url: 'https://loaninsurance.co.nz/locations',
+            url: 'https://www.loaninsurance.co.nz/locations',
             publisher: {
               '@type': 'Organization',
               name: 'LoanInsurance.co.nz',
-              url: 'https://loaninsurance.co.nz',
+              url: 'https://www.loaninsurance.co.nz',
             },
           }),
         }}

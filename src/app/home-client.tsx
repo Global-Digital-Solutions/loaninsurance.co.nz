@@ -176,11 +176,11 @@ export default function HomeClient() {
             '@context': 'https://schema.org',
             '@type': 'WebSite',
             name: 'LoanInsurance.co.nz',
-            url: 'https://loaninsurance.co.nz',
+            url: 'https://www.loaninsurance.co.nz',
             potentialAction: {
               '@type': 'SearchAction',
               target:
-                'https://loaninsurance.co.nz/contact?q={search_term_string}',
+                'https://www.loaninsurance.co.nz/contact?q={search_term_string}',
               'query-input': 'required name=search_term_string',
             },
           }),

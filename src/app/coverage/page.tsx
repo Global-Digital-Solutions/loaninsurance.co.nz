@@ -6,10 +6,11 @@ export const metadata: Metadata = {
   description:
     'Explore comprehensive loan protection insurance coverage options. Death cover, terminal illness, disability, redundancy, and more in New Zealand.',
   keywords: ['insurance coverage', 'loan protection', 'coverage options'],
+  alternates: { canonical: 'https://www.loaninsurance.co.nz/coverage/' },
   openGraph: {
     title: 'Loan Insurance Coverage Options',
     description: 'Comprehensive coverage for every loan situation.',
-    url: 'https://loaninsurance.co.nz/coverage',
+    url: 'https://www.loaninsurance.co.nz/coverage/',
     type: 'website',
   },
 };
@@ -24,7 +25,7 @@ export default function CoveragePage() {
             '@context': 'https://schema.org',
             '@type': 'WebPage',
             name: 'Loan Insurance Coverage Options',
-            url: 'https://loaninsurance.co.nz/coverage',
+            url: 'https://www.loaninsurance.co.nz/coverage',
             description: 'Explore comprehensive loan protection insurance coverage.',
           }),
         }}
